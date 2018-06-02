@@ -1,24 +1,25 @@
 exports[`<ContentSection/> renders correctly 1`] = `
 <div
   className="content-section">
-  <Route
-    component={[Function]}
-    exact={true}
-    path="/" />
-  <Route
-    component={[Function]}
-    path="/about" />
-  <Route
-    component={[Function]}
-    path="/entry/:niceUrl" />
-  <Route
-    component={[Function]}
-    path="/tag/:tag" />
-  <Route
-    component={[Function]}
-    path="/date/:date" />
-  <Route
-    component={[Function]}
-    path="/error/:errorMessage" />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/" />
+    <Route
+      component={[Function]}
+      path="/about" />
+    <Route
+      component={[Function]}
+      path="/entry/:niceUrl" />
+    <Route
+      component={[Function]}
+      path="/tag/:tag" />
+    <Route
+      component={[Function]}
+      path="/date/:date" />
+    <Route
+      component={[Function]} />
+  </Switch>
 </div>
 `;

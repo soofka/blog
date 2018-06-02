@@ -1,0 +1,6 @@
+exports[`<Error/> renders correctly 1`] = `
+<div>
+  <Component
+    message="Whoops, there is no such page." />
+</div>
+`;

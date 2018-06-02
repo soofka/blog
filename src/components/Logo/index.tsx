@@ -6,10 +6,20 @@ import RoutingProvider from 'common/RoutingProvider';
 
 import './styles.scss';
 
-export const Logo = (): JSX.Element => {
+const LOGO_ITEMS_COUNT = 3;
+
+interface LogoPropsInterface {
+  number?: number;
+}
+
+export const Logo = (props: LogoPropsInterface): JSX.Element => {
+  const { number = Math.ceil(Math.random() * LOGO_ITEMS_COUNT) } = props;
   return (
     <Link to={RoutingProvider.getHomeNiceUrlBasePath()}>
-      <img src={`${AssetsProvider.getImagesBasePath()}/soofka-logo.jpg`} className="logo" />
+      <img
+        src={`${AssetsProvider.getImagesBasePath()}/soofka-logo-${number}.jpg`}
+        className="logo"
+      />
     </Link>
   );
 };

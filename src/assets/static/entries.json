@@ -1,14 +1,14 @@
 [
   {
-    "title": "Webpack 4 config example for advanced bundling (react-redux-typescript-boilerplate)",
-    "tags": ["react", "redux", "typescript", "webpack", "react-redux-typescript-boilerplate"],
+    "title": "Webpack 4 config explained (with example)",
+    "tags": ["react", "redux", "typescript", "webpack"],
     "brief": {
       "text": "Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.",
       "imageFileName": "the-doge-in-the-rye.jpg"
     },
     "created": "2018-04-09",
-    "updated": "2018-04-09",
-    "contentFileName": "webpack-4-config-example-for-advanced-bundling-react-redux-typescript-boilerplate.html",
+    "updated": "2018-06-02",
+    "contentFileName": "webpack-4-config-explained-with-example.html",
     "isPublic": true
   },
   {
@@ -67,7 +67,7 @@
       "imageFileName": "disqus-logo.png"
     },
     "created": "2017-08-08",
-    "updated": "2017-08-08",
+    "updated": "2018-06-02",
     "contentFileName": "how-to-integrate-disqus-comments-in-react-app.html",
     "isPublic": true
   },

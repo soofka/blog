@@ -1,5 +1,7 @@
 exports[`<LoadingCover/> renders correctly 1`] = `
 <div>
-  LOADING
+  <h3>
+    Loading...
+  </h3>
 </div>
 `;

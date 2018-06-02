@@ -2,10 +2,15 @@ import * as React from 'react';
 
 import ErrorBox from 'components/ErrorBox';
 
-export const Error = (): JSX.Element => {
+interface ErrorPropsInterface {
+  message?: string;
+}
+
+export const Error = (props: ErrorPropsInterface): JSX.Element => {
+  const { message = 'Whoops, there is no such page.' } = props;
   return (
     <div>
-      <ErrorBox/>
+      <ErrorBox message={message} />
     </div>
   );
 };
