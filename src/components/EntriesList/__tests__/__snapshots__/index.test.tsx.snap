@@ -1,0 +1,6 @@
+exports[`<EntriesList/> renders correctly 1`] = `
+<div>
+  <Component
+    message="Sorry, there are no entries matching your query." />
+</div>
+`;

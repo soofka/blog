@@ -1,0 +1,4 @@
+exports[`<EntryComments/> renders correctly 1`] = `
+<div
+  id="disqus_thread" />
+`;

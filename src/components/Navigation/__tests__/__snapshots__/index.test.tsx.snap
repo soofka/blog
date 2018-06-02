@@ -1,0 +1,21 @@
+exports[`<Navigation/> renders correctly 1`] = `
+<div>
+  <ul
+    className="navigation">
+    <Link
+      replace={false}
+      to="/">
+      <li>
+        Home
+      </li>
+    </Link>
+    <Link
+      replace={false}
+      to="/about">
+      <li>
+        About
+      </li>
+    </Link>
+  </ul>
+</div>
+`;

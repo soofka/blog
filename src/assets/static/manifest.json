@@ -1,0 +1,22 @@
+{
+  "name": "soofka.pl",
+  "short_name": "soofka.pl",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000131",
+  "theme_color": "#000131",
+  "description": "Personal blog of Jakub Sowiński. Focused on programming, mainly full stack web development.",
+  "icons": [{
+    "src": "/images/soofka-icon-128-white.png",
+    "sizes": "128x128",
+    "type": "image/png"
+  }, {
+    "src": "/images/soofka-icon-256-white.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }, {
+    "src": "/images/soofka-icon-512-white.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}

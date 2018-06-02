@@ -1,0 +1,51 @@
+@import 'components/Blog/variables.scss';
+
+.entry-header {
+  &--title {
+    font-size: $fontSizeXL;
+    margin: $marginS 0;
+    padding: 0;
+
+    a {
+      color: $blue;
+      text-decoration: none;
+
+      &:hover {
+        color: $lighterBlue;
+      }
+    }
+  }
+
+  &--meta {
+    font-size: $fontSizeS;
+    margin: $marginS $marginXXS $marginM $marginXXS;
+    padding: 0;
+    color: $lighterBlack;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &--tags {
+    font-size: $fontSizeS;
+    margin: 0 0 $marginM 0;
+    padding: 0;
+
+    /* stylelint-disable */
+    a {
+    /* stylelint-enable */
+      display: inline-block;
+      margin: $marginXXS;
+      padding: $paddingXS $paddingS;
+      background-color: $darkWhite;
+      color: $blue;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $darkerWhite;
+        color: $darkBlue;
+      }
+    }
+  }
+}

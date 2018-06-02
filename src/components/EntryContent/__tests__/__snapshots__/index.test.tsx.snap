@@ -1,0 +1,8 @@
+exports[`<EntryContent/> renders correctly 1`] = `
+<div
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "testContent",
+    }
+  } />
+`;

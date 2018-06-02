@@ -1,0 +1,9 @@
+exports[`<Logo/> renders correctly 1`] = `
+<Link
+  replace={false}
+  to="/">
+  <img
+    className="logo"
+    src="/images/soofka-logo.jpg" />
+</Link>
+`;

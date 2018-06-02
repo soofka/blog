@@ -1,0 +1,17 @@
+@import 'components/Blog/variables.scss';
+
+$entryBriefImageHeight: 24 * $baseDistance;
+
+.entry-brief--image-container {
+  float: left;
+  width: 100%;
+  height: $entryBriefImageHeight;
+  margin: $marginS 0 $marginM 0;
+  padding: 0;
+  border: 2px solid $white;
+  outline: 1px solid $lighterBlack;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}

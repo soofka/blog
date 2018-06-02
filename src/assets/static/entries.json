@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Webpack 4 config example for advanced bundling (react-redux-typescript-boilerplate)",
+    "tags": ["react", "redux", "typescript", "webpack", "react-redux-typescript-boilerplate"],
+    "brief": {
+      "text": "Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.",
+      "imageFileName": "the-doge-in-the-rye.jpg"
+    },
+    "created": "2018-04-09",
+    "updated": "2018-04-09",
+    "contentFileName": "webpack-4-config-example-for-advanced-bundling-react-redux-typescript-boilerplate.html",
+    "isPublic": true
+  },
+  {
+    "title": "I gave a lecture on Code Europe Autumn 2017 too!",
+    "tags": ["react", "pwa", "case study", "code europe", "conference", "lecture"],
+    "brief": {
+      "text": "Yup, I did it again. Second big lecture in my life took place, similarly to my debut, on Code Europe in Warsaw, Poland, this time during Autumn 2017 edition. On the afternoon of 7th of December I talked about my experience with building Progressive Web Apps, particularly in React. It was a case study based on two examples: big, complex application built for hundreds of thousands of users of StepStone; and small, home-brewed one: this blog.",
+      "imageFileName": "code-europe-autumn-2017-badge.jpg"
+    },
+    "created": "2018-04-04",
+    "updated": "2018-04-04",
+    "contentFileName": "i-gave-lecture-on-code-europe-autumn-2017-too.html",
+    "isPublic": true
+  },
+  {
+    "title": "How to setup routing for \"Not Found\" on both sides with React-Router and Express",
+    "tags": ["javascript", "react", "react-router", "howto"],
+    "brief": {
+      "text": "When building web applications in React, I usually choose Express to be my server, and more often than not I use React-Router to manage redirections and changes in history. Not without a reason - both are among the most popular choices in their respective fields nowadays; both are simple and elegant in every day work. However, I had some tough moments with both of them when it came up to setting all unrecognized routing to \"Not Found\" page, and this piece came as a result of them.",
+      "imageFileName": "colorful-tiles.jpg"
+    },
+    "created": "2018-03-26",
+    "updated": "2018-03-26",
+    "contentFileName": "how-to-setup-routing-for-not-found-on-both-sides-with-react-router-and-express.html",
+    "isPublic": true
+  },
+  {
+    "title": "3 things I learned in 2017",
+    "tags": ["react", "typescript", "brain", "codeeurope", "public speaking"],
+    "brief": {
+      "text": "I like to improve myself – at least that’s what I like to think about myself. That’s the thought I had in mind most of 2017. Not every day, of course, but for most of them I tried to remember about it, to learn new things, and to at least try to better myself. So, when 2017 came to an end, I asked myself: what did I actually learn that year?",
+      "imageFileName": "train-leaving.jpg"
+    },
+    "created": "2018-01-07",
+    "updated": "2018-01-07",
+    "contentFileName": "3-things-i-learned-in-2017.html",
+    "isPublic": true
+  },
+  {
+    "title": "FrontEnd-Con 2017: Summary",
+    "tags": ["javascript", "css", "react", "angular", "frontendcon2017", "conference"],
+    "brief": {
+      "text": "On 22nd and 23rd of September, there was FrontEnd Connect 2017 conference in Warsaw, Poland, and I was there. With plenty of speakers from around the globe and many news and announcements related to this event in polish Internet, I hoped for big, prestigious, and independent event focused on front-end of web development on my home soil. My expectations were utterly crushed, but I still had quite a good time.",
+      "imageFileName": "frontend-con-2017-logo.png"
+    },
+    "created": "2017-09-26",
+    "updated": "2017-09-26",
+    "contentFileName": "frontend-con-2017-summary.html",
+    "isPublic": true
+  },
+  {
+    "title": "How to integrate Disqus comments in React app",
+    "tags": ["javascript", "react", "disqus", "howto"],
+    "brief": {
+      "text": "One of the challenges that I faced while programming this, so far, very simple blog app (the one that you are using to read this post, most likely), was how to give my readers a possibility to comment on my posts. Obviously, it is one of the crucial features of this kind of app – I would like my readers to be able to tell me where am I wrong, and I would like me to be able to respond to such heretic claims. However, the whole feature seems quite a lot of work to implement from scratch. Luckily, there are plenty of ready out of the box solutions out there, one of them being Disqus.",
+      "imageFileName": "disqus-logo.png"
+    },
+    "created": "2017-08-08",
+    "updated": "2017-08-08",
+    "contentFileName": "how-to-integrate-disqus-comments-in-react-app.html",
+    "isPublic": true
+  },
+  {
+    "title": "I gave a lecture on Code Europe Spring 2017!",
+    "tags": ["javascript", "optimization", "performance", "code europe", "conference", "lecture"],
+    "brief": {
+      "text": "That's right. Even before I became famous as a blog writer, I got an opportunity to give a lecture on one of the biggest IT conferences in Poland: Code Europe, Spring edition of year 2017. It was my first time as a speaker in front of crowd of that size and volume, so after a few weeks of panicky preparations, I managed to deliver presentation on how to optimize your JavaScript code with variety of tricks and techniques.",
+      "imageFileName": "code-europe-spring-2017-badge.jpg"
+    },
+    "created": "2017-07-10",
+    "updated": "2017-07-10",
+    "contentFileName": "i-gave-lecture-on-code-europe-spring-2017.html",
+    "isPublic": true
+  },
+  {
+    "title": "On the surface",
+    "tags": ["first entry", "not programming related"],
+    "brief": {
+      "text": "I am web developer. My job is to solve problems, usually related to software architecture or specific details of software implementation. During that process, I often find myself browsing the Internet, looking for people who had similar problems, solved them and described their solution. This kind of content is generally found either on internet forums or professional blogs. Since these sources provided me with, often very comprehensive, answers on countless occasions, I thought that the best way to appreciate their effort to share their knowledge would be to contribute to this knowledge base myself.",
+      "imageFileName": "railroad-landscape.jpg"
+    },
+    "created": "2017-06-15",
+    "updated": "2017-06-15",
+    "contentFileName": "on-the-surface.html",
+    "isPublic": true
+  }
+]

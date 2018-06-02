@@ -1,0 +1,30 @@
+@import 'components/Blog/variables.scss';
+
+.content-section {
+  float: left;
+  margin: 0 0 0 $infoSectionWidth;
+  padding: $paddingM;
+  width: $contentSectionWidth;
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  color: $lighterBlack;
+  background-color: $white;
+
+  a {
+    color: $lighterBlack;
+
+    &:hover,
+    &:active {
+      color: $black;
+    }
+  }
+}
+
+@media (max-width: $mobileBreakPointWidth) {
+  .content-section {
+    margin: 0;
+    padding: $paddingS;
+    width: 100%;
+  }
+}

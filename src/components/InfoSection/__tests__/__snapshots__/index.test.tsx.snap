@@ -1,0 +1,8 @@
+exports[`<InfoSection/> renders correctly 1`] = `
+<div
+  className="info-section">
+  <Component />
+  <Component />
+  <Component />
+</div>
+`;

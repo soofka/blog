@@ -1,0 +1,14 @@
+@import 'components/Blog/variables.scss';
+
+.quote {
+  margin: $marginM;
+  padding: $paddingS;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: $mobileBreakPointWidth) {
+  .quote {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+exports[`<Entry/> renders correctly 1`] = `
+<div
+  className="entry">
+  <Component
+    created="testCreated"
+    tags={
+      Array [
+        "tag1",
+        "tag2",
+        "tag3",
+      ]
+    }
+    title="testTitle"
+    titleLink="/entry/testtitle"
+    updated="testUpdated" />
+  <div
+    className="entry-content">
+    <Component />
+  </div>
+</div>
+`;

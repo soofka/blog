@@ -1,0 +1,21 @@
+exports[`<ErrorBox/> renders correctly 1`] = `
+<div>
+  <h3>
+    Error!
+  </h3>
+  <p>
+    Oops! Something wrong happened. Please try again.
+  </p>
+</div>
+`;
+
+exports[`<ErrorBox/> renders correctly with optional props 1`] = `
+<div>
+  <h3>
+    Error!
+  </h3>
+  <p>
+    testMessage
+  </p>
+</div>
+`;

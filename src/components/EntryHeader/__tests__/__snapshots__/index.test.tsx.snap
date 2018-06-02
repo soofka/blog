@@ -1,0 +1,45 @@
+exports[`<EntryHeader/> renders correctly 1`] = `
+<div
+  className="entry-header">
+  <h1
+    className="entry-header--title">
+    <Link
+      replace={false}
+      to="testTitleLink">
+      testTitle
+    </Link>
+  </h1>
+  <p
+    className="entry-header--meta">
+    created on 
+    <span>
+      testCreated
+    </span>
+    , last updated on 
+    <span>
+      testUpdated
+    </span>
+  </p>
+  <p
+    className="entry-header--tags">
+    <Link
+      key="0"
+      replace={false}
+      to="/tag/tag1">
+      tag1
+    </Link>
+    <Link
+      key="1"
+      replace={false}
+      to="/tag/tag2">
+      tag2
+    </Link>
+    <Link
+      key="2"
+      replace={false}
+      to="/tag/tag3">
+      tag3
+    </Link>
+  </p>
+</div>
+`;

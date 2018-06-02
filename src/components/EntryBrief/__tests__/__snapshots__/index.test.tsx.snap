@@ -1,0 +1,29 @@
+exports[`<EntryBrief/> renders correctly 1`] = `
+<div>
+  <p>
+    test
+     
+  </p>
+</div>
+`;
+
+exports[`<EntryBrief/> renders correctly with optional props 1`] = `
+<div>
+  <div
+    className="entry-brief--image-container"
+    style={
+      Object {
+        "backgroundImage": "url(/images/testImageFileName)",
+      }
+    } />
+  <p>
+    tesText
+     
+    <Link
+      replace={false}
+      to="testMoreButtonLink">
+      Continue reading »
+    </Link>
+  </p>
+</div>
+`;

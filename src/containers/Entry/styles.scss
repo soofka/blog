@@ -1,0 +1,112 @@
+@import 'components/Blog/variables.scss';
+
+.entry {
+  margin: $marginM 0;
+  padding: $paddingM;
+  box-sizing: border-box;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &-content {
+    small {
+      display: block;
+      width: 100%;
+      font-size: $fontSizeS;
+      line-height: $fontSizeL;
+      margin: 0 0 $marginM 0;
+      padding: 0;
+      color: $gray;
+
+      a {
+        color: $gray;
+        text-decoration: underline;
+
+        &:hover,
+        &:active {
+          color: $gray;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    p,
+    li {
+      font-size: $fontSizeL;
+      line-height: $fontSizeXXL;
+      margin: 0 0 $marginL 0;
+      padding: 0;
+      text-align: justify;
+
+      /* stylelint-disable */
+      a {
+      /* stylelint-enable */
+        color: $blue;
+
+        &:hover,
+        &:active {
+          color: $lighterBlue;
+        }
+      }
+    }
+
+    li {
+      margin: 0;
+    }
+
+    code {
+      float: left;
+      width: 100%;
+      margin: 0 0 $marginL 0;
+      padding: $paddingM;
+      color: $black;
+      background-color: $darkWhite;
+      box-sizing: border-box;
+
+      pre {
+        margin: 0;
+        padding: 0;
+      }
+    }
+
+    blockquote {
+      color: $blue;
+      margin: 0 $marginXL $marginL $marginXL;
+      padding: 0 $paddingM;
+      font-size: $fontSizeXXXL;
+      border-left: 4px solid $lighterBlue;
+      line-height: $fontSizeXXXXL;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: $marginS auto;
+      padding: 0;
+      border: 2px solid $white;
+      outline: 1px solid $lighterBlack;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0 0 0 $paddingL;
+    }
+  }
+}
+
+@media (max-width: $mobileBreakPointWidth) {
+  .entry {
+    margin: $marginS 0;
+    padding: $paddingS;
+
+    blockquote {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}

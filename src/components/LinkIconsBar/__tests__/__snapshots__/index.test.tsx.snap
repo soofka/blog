@@ -1,0 +1,25 @@
+exports[`<LinkIconsBar/> renders correctly 1`] = `
+<ul
+  className="link-icons-bar">
+  <li>
+    <Component
+      fill="#c3c3c3" />
+  </li>
+  <li>
+    <TwitterIcon
+      fill="#c3c3c3" />
+  </li>
+  <li>
+    <Component
+      fill="#c3c3c3" />
+  </li>
+  <li>
+    <InstagramIcon
+      fill="#c3c3c3" />
+  </li>
+  <li>
+    <LastFmIcon
+      fill="#c3c3c3" />
+  </li>
+</ul>
+`;
