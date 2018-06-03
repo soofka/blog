@@ -11,7 +11,7 @@ declare const DISQUS: any;
 
 export class EntryComments extends React.Component<EntryCommentsPropsInterface, {}> {
 
-  private disqusSetuptAttempts: number = 0;
+  private disqusSetupAttempts: number = 0;
 
   componentDidMount(): void {
     const { title, url, shortName, identifier } = this.props;
@@ -31,8 +31,8 @@ export class EntryComments extends React.Component<EntryCommentsPropsInterface, 
           clearInterval(disqusSetupAttempt);
         }
 
-        this.disqusSetuptAttempts += 1;
-        if (this.disqusSetuptAttempts >= 3) {
+        this.disqusSetupAttempts += 1;
+        if (this.disqusSetupAttempts >= 3) {
           clearInterval(disqusSetupAttempt);
         }
       },

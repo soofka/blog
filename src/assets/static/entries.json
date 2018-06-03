@@ -1,5 +1,17 @@
 [
   {
+    "title": "React-Europe 2018: Summary of the talks",
+    "tags": ["javascript", "react", "react-europe 2018", "conference"],
+    "brief": {
+      "text": "A couple of weeks ago I've visited Paris for the first time in my life. The city, although horribly crowded by tourists at all places, at all times (at least that's what it feels like), made me fell in love with it in only one weekend. I wouldn't have an opportunity for this magnificent experience, if it wasn't for React Europe - a conference, that took place in Paris on 16th and 17th of May, that was my primary goal of the trip. And, similarly to the city itself, the conference exceeded my expectations on many levels. Let me tell you how.",
+      "imageFileName": "react-europe-2018-badge.jpg"
+    },
+    "created": "2018-06-03",
+    "updated": "2018-06-03",
+    "contentFileName": "react-europe-2018-summary-of-the-talks.html",
+    "isPublic": true
+  },
+  {
     "title": "Webpack 4 config explained (with example)",
     "tags": ["react", "redux", "typescript", "webpack"],
     "brief": {
@@ -25,7 +37,7 @@
   },
   {
     "title": "How to setup routing for \"Not Found\" on both sides with React-Router and Express",
-    "tags": ["javascript", "react", "react-router", "howto"],
+    "tags": ["javascript", "react", "react-router", "how to"],
     "brief": {
       "text": "When building web applications in React, I usually choose Express to be my server, and more often than not I use React-Router to manage redirections and changes in history. Not without a reason - both are among the most popular choices in their respective fields nowadays; both are simple and elegant in every day work. However, I had some tough moments with both of them when it came up to setting all unrecognized routing to \"Not Found\" page, and this piece came as a result of them.",
       "imageFileName": "colorful-tiles.jpg"
@@ -37,7 +49,7 @@
   },
   {
     "title": "3 things I learned in 2017",
-    "tags": ["react", "typescript", "brain", "codeeurope", "public speaking"],
+    "tags": ["react", "typescript", "brain", "code europe", "public speaking"],
     "brief": {
       "text": "I like to improve myself – at least that’s what I like to think about myself. That’s the thought I had in mind most of 2017. Not every day, of course, but for most of them I tried to remember about it, to learn new things, and to at least try to better myself. So, when 2017 came to an end, I asked myself: what did I actually learn that year?",
       "imageFileName": "train-leaving.jpg"
@@ -49,10 +61,10 @@
   },
   {
     "title": "FrontEnd-Con 2017: Summary",
-    "tags": ["javascript", "css", "react", "angular", "frontendcon2017", "conference"],
+    "tags": ["javascript", "css", "react", "angular", "frontend-con 2017", "conference"],
     "brief": {
       "text": "On 22nd and 23rd of September, there was FrontEnd Connect 2017 conference in Warsaw, Poland, and I was there. With plenty of speakers from around the globe and many news and announcements related to this event in polish Internet, I hoped for big, prestigious, and independent event focused on front-end of web development on my home soil. My expectations were utterly crushed, but I still had quite a good time.",
-      "imageFileName": "frontend-con-2017-logo.png"
+      "imageFileName": "frontend-con-2017-badge.jpg"
     },
     "created": "2017-09-26",
     "updated": "2017-09-26",
@@ -61,7 +73,7 @@
   },
   {
     "title": "How to integrate Disqus comments in React app",
-    "tags": ["javascript", "react", "disqus", "howto"],
+    "tags": ["javascript", "react", "disqus", "how to"],
     "brief": {
       "text": "One of the challenges that I faced while programming this, so far, very simple blog app (the one that you are using to read this post, most likely), was how to give my readers a possibility to comment on my posts. Obviously, it is one of the crucial features of this kind of app – I would like my readers to be able to tell me where am I wrong, and I would like me to be able to respond to such heretic claims. However, the whole feature seems quite a lot of work to implement from scratch. Luckily, there are plenty of ready out of the box solutions out there, one of them being Disqus.",
       "imageFileName": "disqus-logo.png"
