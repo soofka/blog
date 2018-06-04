@@ -15,6 +15,7 @@ Blog is available at `localhost:3000`.
 ### 1.3.6
 - fixed issue with Disqus comments not appearing below the entry if entered from homepage
 - added randomly changing logo
+- added responsive embedded videos to posts
 
 ### 1.3.5
 - added stylelint to build process 
