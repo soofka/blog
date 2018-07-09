@@ -1,5 +1,17 @@
 [
   {
+    "title": "4 conferences I am looking forward to in 2nd half of 2018",
+    "tags": ["javascript", "react", "front-end", "webdevelopemnt", "conference"],
+    "brief": {
+      "text": "At least every 6 months, I browse web to find interesting, upcoming IT conferences around the world and see if they fit my interests, budget, and calendar. Lately I'm focused particularly on front-end of web development. In this world, there are tons of events every weekend, on every, even tiniest and most specific subject. I find it challenging, to browse through hundreds of agendas, looking for accumulations of talks that seem to be time-worthy, so as I do my research, I try to share results as well. Here are they so far.",
+      "imageFileName": "react-europe-2018-crowd.jpg"
+    },
+    "created": "2018-07-09",
+    "updated": "2018-07-09",
+    "contentFileName": "4-conferences-i-am-looking-forward-to-in-2nd-half-of-2018.html",
+    "isPublic": true
+  },
+  {
     "title": "React-Europe 2018: Summary of the talks",
     "tags": ["javascript", "react", "react-europe 2018", "conference"],
     "brief": {
@@ -7,7 +19,7 @@
       "imageFileName": "react-europe-2018-badge.jpg"
     },
     "created": "2018-06-03",
-    "updated": "2018-06-03",
+    "updated": "2018-07-09",
     "contentFileName": "react-europe-2018-summary-of-the-talks.html",
     "isPublic": true
   },
