@@ -1,0 +1,17 @@
+{
+  "name": "@soofka/webpack-express-api-proxy",
+  "version": "1.0.0",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "http-proxy": "^1.17.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start:webpack": "webpack-dev-server",
+    "start:express:mock": "node express.mock.js",
+    "start:express:proxy": "node express.proxy.js"
+  }
+}
