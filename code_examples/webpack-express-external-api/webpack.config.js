@@ -9,10 +9,19 @@ module.exports = {
     filename: 'main.js',
     path: distPath,
   },
+  mode: 'development',
   devServer: {
+    index: 'index.html',
     contentBase: distPath,
-    proxy: {
-      '/api': 'https://api.wheretheiss.at/v1/satellites/25544',
-    },
+    port: 3000,
+    proxy: [{
+      context: ['/api'],
+      target: 'https://jsonplaceholder.typicode.com/posts/1',
+      secure: false,
+      // bypass: function(req, res, proxyOptions) {
+      //   console.log('just bypassing', req.url);
+      //   return 'lol';
+      // },
+    }],
   },
 };
