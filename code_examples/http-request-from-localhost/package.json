@@ -1,5 +1,5 @@
 {
-  "name": "@soofka/webpack-express-api-proxy",
+  "name": "@soofka/blog/examples/http-request-from-localhost",
   "version": "1.0.0",
   "devDependencies": {
     "express": "^4.16.3",
@@ -9,8 +9,8 @@
     "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
-    "build": "webpack",
-    "start:webpack": "webpack-dev-server",
+    "build": "webpack --config webpack.config.js",
+    "start:webpack": "webpack-dev-server --config webpack.withdevserver.config.js",
     "start:express:mock": "node express.mock.js",
     "start:express:proxy": "node express.proxy.js"
   }

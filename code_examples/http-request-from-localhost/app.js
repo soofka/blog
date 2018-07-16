@@ -1,18 +1,15 @@
 function getIssLocation() {
-  return fetch('/api')
-    .then((response) => {
-      if (response.status === 200) {
-        return response.json();
-      } else {
-        return response.text();
-      }
-    })
-    .catch((error) => error);
+  return fetch('/api', {
+    mode: 'no-cors',
+  })
+    .then((response) => response.text())
+    .catch((error) => error.toString());
 }
 
 function displayIssLocation() {
   getIssLocation()
     .then((response) => {
+      console.log('response', response);
       document.querySelector('div').innerHTML = response;
     });
 }

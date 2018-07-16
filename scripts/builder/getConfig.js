@@ -158,10 +158,10 @@ const getPlugins = (devEnv, audit) => {
       filename: `styles/style.[hash].css`,
       allChunks: true,
     }),
-    new CopyWebpackPlugin([{
-      from: './src/assets/static/',
-      to: './'
-    }]),
+    new CopyWebpackPlugin([
+      { from: './assets/', to: './' },
+      { from: './content/', to: './' },
+    ]),
     new SWPrecacheWebpackPlugin({
       cacheId: `soofka-pl-${new Date().getTime()}`,
       filename: 'sw.js',
@@ -181,7 +181,7 @@ const getPlugins = (devEnv, audit) => {
       inject: false,
       mobile: true,
       template: './src/index.ejs',
-      favicon: './src/assets/favicon.png',
+      favicon: './assets/favicon.png',
       title: appconfig.title,
       meta: appconfig.meta,
       icons: appconfig.icons,

@@ -1,10 +1,12 @@
+const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const express = require('express');
+const webpackConfig = require('./webpack.config.js');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 
+const devMiddleware = new webpackDevMiddleware(webpack(webpackConfig));
 const app = express();
-const devMiddleware = new webpackDevMiddleware(webpack());
 
 app.use(devMiddleware);
 app.get('/api', (request, response) => {
@@ -15,7 +17,7 @@ const indexPath = path.join(__dirname, 'dist/index.html');
 
 app.use(express.static(indexPath));
 app.use((request, response) => {
-  devMiddleware.fileSystem.readFile(indexPath, (error, file) => {
+  fs.readFile(indexPath, (error, file) => {
     if (error) {
       response.status(404).send(error.toString());
     } else {
