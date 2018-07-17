@@ -10,7 +10,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "start:webpack": "webpack-dev-server --config webpack.withdevserver.config.js",
+    "start:webpack:mock": "webpack-dev-server --config webpack.devserver.mock.config.js",
+    "start:webpack:proxy": "webpack-dev-server --config webpack.devserver.proxy.config.js",
     "start:express:mock": "node express.mock.js",
     "start:express:proxy": "node express.proxy.js"
   }
