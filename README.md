@@ -12,6 +12,10 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.3.7
+- reorganized folder structure
+- added code examples
+
 ### 1.3.6
 - fixed issue with Disqus comments not appearing below the entry if entered from homepage
 - added randomly changing logo
