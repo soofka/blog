@@ -3,13 +3,13 @@
     "title": "Mocking and proxying HTTP requests from localhost with Webpack Dev Server or Express",
     "tags": ["javascript", "http", "mock", "proxy", "localhost", "webpack", "webpack-dev-server", "express"],
     "brief": {
-      "text": "",
-      "imageFileName": ""
+      "text": "Back in the day, my JS projects were small and self-contained. Nowadays, in my professional work, majority, if not all of front-end applications I am working on are connected to multiple back-end services for variety of reasons. It gives me a freedom of not caring of the back-end, as long as we have defined a contract, and proceeding happily with what actually matters, i.e. colors and animations. But it also gave ma some headache, when I wanted to have pleasant, convenient coding environment on my localhost, and not have all of these weird back-end stuff running on my local machine as well. Here's how I worked it out with both Webpack Dev Server and Express.",
+      "imageFileName": "eiffel-tower-and-some-people.jpg"
     },
     "created": "2018-07-23",
     "updated": "2018-07-23",
     "contentFileName": "mocking-and-proxying-http-requests-from-localhost-with-webpack-dev-server-or-express.html",
-    "isPublic": false
+    "isPublic": true
   },
   {
     "title": "4 conferences I am looking forward to in 2nd half of 2018",
