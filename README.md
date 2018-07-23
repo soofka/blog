@@ -1,4 +1,4 @@
-# blog
+# @soofka/blog
 This is my blog.
 
 ## Usage

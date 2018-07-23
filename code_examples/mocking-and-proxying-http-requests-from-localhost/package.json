@@ -1,5 +1,5 @@
 {
-  "name": "@soofka/blog/examples/http-request-from-localhost",
+  "name": "@soofka/code-examples--http-request-from-localhost",
   "version": "1.0.0",
   "devDependencies": {
     "express": "^4.16.3",
@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
+    "start:server": "node server.js",
     "start:webpack:mock": "webpack-dev-server --config webpack.devserver.mock.config.js",
     "start:webpack:proxy": "webpack-dev-server --config webpack.devserver.proxy.config.js",
     "start:express:mock": "node express.mock.js",

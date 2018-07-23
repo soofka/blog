@@ -1,5 +1,17 @@
 [
   {
+    "title": "Mocking and proxying HTTP requests from localhost with Webpack Dev Server or Express",
+    "tags": ["javascript", "http", "mock", "proxy", "localhost", "webpack", "webpack-dev-server", "express"],
+    "brief": {
+      "text": "",
+      "imageFileName": ""
+    },
+    "created": "2018-07-23",
+    "updated": "2018-07-23",
+    "contentFileName": "mocking-and-proxying-http-requests-from-localhost-with-webpack-dev-server-or-express.html",
+    "isPublic": false
+  },
+  {
     "title": "4 conferences I am looking forward to in 2nd half of 2018",
     "tags": ["javascript", "react", "front-end", "webdevelopemnt", "conference"],
     "brief": {

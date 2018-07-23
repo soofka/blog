@@ -15,7 +15,7 @@ module.exports = {
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://www.poemist.com/api/v1',
+        target: 'http://localhost:3001/get-secret-data',
         pathRewrite: { '^/api': '' },
       },
     },

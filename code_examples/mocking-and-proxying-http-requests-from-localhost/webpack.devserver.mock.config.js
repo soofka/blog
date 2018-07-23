@@ -15,8 +15,11 @@ module.exports = {
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://www.poemist.com/api/v1',
-        pathRewrite: { '^/api': '' },
+        bypass: (request, response) => {
+          if (request.url.substr(-4) === '/api') {
+            response.send({ data: 'mocked data from webpack.devserver.mock.config.js' })
+          }
+        },
       },
     },
   },
