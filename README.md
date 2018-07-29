@@ -93,6 +93,7 @@ Blog is available at `localhost:3000`.
 # Backlog
 ## bugs
 - specific metrics of google analytics
+- service worker does not work properly when content is updated
 
 ## ideas
 - sorting entries
