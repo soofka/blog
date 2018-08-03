@@ -1,5 +1,5 @@
 var disqus_config = function () {
-  this.page.url = 'http://soofka.pl';
+  this.page.url = 'https://soofka.pl';
   this.page.identifier = document.location.href.substr(document.location.href.indexOf(this.page.url)+this.page.url.length);
 };
 (function() {

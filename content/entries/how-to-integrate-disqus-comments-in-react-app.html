@@ -2,7 +2,7 @@
 <p>First of all, you’ll need a <a href="https://disqus.com/profile/signup/intent/" target="_blank">Disqus account</a>. After successful registration, you need to add your website, providing it’s name and URL address. When it’s done, you’ll see plenty of predefined content management systems to integrate with. You don’t need that. You’re keen on the code, you can do it yourself, so you scroll down to the manual integration part and copy configuration code, that you’ll paste somewhere on your website. Just remember to provide appropriate page URL (root of your website) and identifier (based on variable, related to the specific page, which will be the subject of reader’s comments; in my case it’s part of given blog post’s nice URL).</p>
 <pre>
 <code>var disqus_config = function () {
-    this.page.url = 'http://soofka.pl';
+    this.page.url = 'https://soofka.pl';
     this.page.identifier =
         document.location.href.substr(
             document.location.href.indexOf(this.page.url) + this.page.url.length

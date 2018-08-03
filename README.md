@@ -12,6 +12,10 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.3.8
+- added lectures as PDF files
+- moved all links to blog from HTTP to HTTPS
+
 ### 1.3.7
 - reorganized folder structure
 - added code examples
@@ -94,6 +98,7 @@ Blog is available at `localhost:3000`.
 ## bugs
 - specific metrics of google analytics
 - service worker does not work properly when content is updated
+- https does not work properly on Firefox
 
 ## ideas
 - sorting entries
