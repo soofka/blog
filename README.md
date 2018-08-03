@@ -98,16 +98,18 @@ Blog is available at `localhost:3000`.
 ## bugs
 - specific metrics of google analytics
 - service worker does not work properly when content is updated
-- https does not work properly on Firefox
+- HTTPS does not work properly on Firefox
 
 ## ideas
 - sorting entries
 - error box styling
 - "about" page
 - "archive" pages
+- "lectures and trainings" page
 - loading indicator view with react-loadable
 - better security with content based policy
 - route based chunking
 - random logo, selected from pool of a few different photos
 - animated components
 - nicer and more interactive code display in entries
+- compilation to WebAssembly
