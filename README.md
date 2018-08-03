@@ -96,7 +96,7 @@ Blog is available at `localhost:3000`.
 
 # Backlog
 ## bugs
-- specific metrics of google analytics
+- specific metrics of google analytics are not being recorder properly
 - service worker does not work properly when content is updated
 - HTTPS does not work properly on Firefox
 
