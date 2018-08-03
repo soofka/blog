@@ -1,5 +1,5 @@
 # @soofka/blog
-This is my blog.
+Personal blog of Jakub Sowiński, implemented in React and Typescript.
 
 ## Usage
 
