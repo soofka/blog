@@ -1,7 +1,7 @@
 [
   {
     "title": "Mocking and proxying HTTP requests from localhost with Webpack Dev Server or Express",
-    "tags": ["javascript", "http", "mock", "proxy", "localhost", "webpack", "webpack-dev-server", "express"],
+    "tags": ["javascript", "http", "mock", "proxy", "localhost", "webpack", "webpack-dev-server", "express", "how to"],
     "brief": {
       "text": "Back in the day, my JS projects were small and self-contained. Nowadays, in my professional work, majority, if not all of front-end applications I am working on are connected to multiple back-end services for variety of reasons. It gives me a freedom of not caring of the back-end, as long as we have defined a contract, and proceeding happily with what actually matters, i.e. colors and animations. But it also gave ma some headache, when I wanted to have pleasant, convenient coding environment on my localhost, and not have all of these weird back-end stuff running on my local machine as well. Here's how I worked it out with both Webpack Dev Server and Express.",
       "imageFileName": "eiffel-tower-and-some-people.jpg"
@@ -13,7 +13,7 @@
   },
   {
     "title": "4 conferences I am looking forward to in 2nd half of 2018",
-    "tags": ["javascript", "react", "front-end", "webdevelopemnt", "conference"],
+    "tags": ["javascript", "react", "front-end", "conference"],
     "brief": {
       "text": "At least every 6 months, I browse web to find interesting, upcoming IT conferences around the world and see if they fit my interests, budget, and calendar. Lately I'm focused particularly on front-end of web development. In this world, there are tons of events every weekend, on every, even tiniest and most specific subject. I find it challenging, to browse through hundreds of agendas, looking for accumulations of talks that seem to be time-worthy, so as I do my research, I try to share results as well. Here are they so far.",
       "imageFileName": "react-europe-2018-crowd.jpg"
@@ -121,7 +121,7 @@
   },
   {
     "title": "On the surface",
-    "tags": ["first entry", "not programming related"],
+    "tags": ["random"],
     "brief": {
       "text": "I am web developer. My job is to solve problems, usually related to software architecture or specific details of software implementation. During that process, I often find myself browsing the Internet, looking for people who had similar problems, solved them and described their solution. This kind of content is generally found either on internet forums or professional blogs. Since these sources provided me with, often very comprehensive, answers on countless occasions, I thought that the best way to appreciate their effort to share their knowledge would be to contribute to this knowledge base myself.",
       "imageFileName": "railroad-landscape.jpg"

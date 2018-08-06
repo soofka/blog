@@ -96,20 +96,26 @@ Blog is available at `localhost:3000`.
 
 # Backlog
 ## bugs
-- specific metrics of google analytics are not being recorder properly
-- service worker does not work properly when content is updated
+### major
 - HTTPS does not work properly on Firefox
 
-## ideas
-- sorting entries
-- error box styling
+### minor
+- specific metrics of google analytics are not being recorder properly
+- service worker does not work properly when content is updated
+
+## improvements
+### major
+- polish language version
 - "about" page
 - "archive" pages
 - "lectures and trainings" page
+
+### minor
+- sorting entries
+- error box styling
 - loading indicator view with react-loadable
 - better security with content based policy
 - route based chunking
-- random logo, selected from pool of a few different photos
 - animated components
 - nicer and more interactive code display in entries
 - compilation to WebAssembly
