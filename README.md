@@ -98,17 +98,21 @@ Blog is available at `localhost:3000`.
 ## bugs
 ### major
 - HTTPS does not work properly on Firefox
+- `npm audit fix`
 
 ### minor
 - specific metrics of google analytics are not being recorder properly
 - service worker does not work properly when content is updated
+- no unit tests for code in `common` directory
 
 ## improvements
 ### major
-- polish language version
+- polish language version (with MobX?)
 - "about" page
 - "archive" pages
 - "lectures and trainings" page
+- social media feed below newest posts, with differentiation between all feed sources
+- styling with Styled Components (tested with jest-styled-components)
 
 ### minor
 - sorting entries
