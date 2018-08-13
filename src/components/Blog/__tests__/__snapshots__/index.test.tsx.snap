@@ -1,7 +1,7 @@
 exports[`<Blog/> renders correctly 1`] = `
 <div
   className="blog">
-  <Component />
-  <Component />
+  <_class />
+  <withRouter(_class) />
 </div>
 `;

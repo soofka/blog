@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { SvgIconPropsInterface } from '../../index';
 
-export const GitHubIcon = props => (
+export const GitHubIcon = (props: SvgIconPropsInterface) => (
   <a href="https://github.com/soofka" target="_blank">
     <svg viewBox="0 0 512 512" {...props}>
       {/* tslint:disable-next-line */}

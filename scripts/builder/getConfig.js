@@ -139,10 +139,11 @@ const getModule = (devEnv) => {
 
 const getPlugins = (devEnv, audit) => {
   let staticStyles = ['/styles/normalize.css'];
-  let staticScripts = ['/sw.js'];
+  let staticScripts = [];
 
   if (!devEnv) {
     staticScripts.push(
+      '/sw.js',
       '/scripts/disqus.js',
       '/scripts/googleAnalytics.js',
     );
@@ -162,21 +163,6 @@ const getPlugins = (devEnv, audit) => {
       { from: './assets/', to: './' },
       { from: './content/', to: './' },
     ]),
-    new SWPrecacheWebpackPlugin({
-      cacheId: `soofka-pl-${new Date().getTime()}`,
-      filename: 'sw.js',
-      minify: !devEnv,
-      stripPrefix: 'dist',
-      staticFileGlobs: [
-        'dist/**.*',
-        'dist/styles/**/*',
-        'dist/scripts/**/*',
-      ],
-      staticFileGlobsIgnorePatterns: [
-        /\.gz$/,
-        /sw.js$/,
-      ],
-    }),
     new HtmlWebpackPlugin({
       inject: false,
       mobile: true,
@@ -215,6 +201,21 @@ const getPlugins = (devEnv, audit) => {
     );
   } else {
     plugins.push(
+      new SWPrecacheWebpackPlugin({
+        cacheId: `soofka-pl-${new Date().getTime()}`,
+        filename: 'sw.js',
+        minify: !devEnv,
+        stripPrefix: 'dist',
+        staticFileGlobs: [
+          'dist/**.*',
+          'dist/styles/**/*',
+          'dist/scripts/**/*',
+        ],
+        staticFileGlobsIgnorePatterns: [
+          /\.gz$/,
+          /sw.js$/,
+        ],
+      }),
       new webpack.LoaderOptionsPlugin({
         minimize: true,
         debug: false

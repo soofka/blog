@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { SvgIconPropsInterface } from '../../index';
 
-export const LinkedInIcon = props => (
+export const LinkedInIcon = (props: SvgIconPropsInterface) => (
   <a href="https://www.linkedin.com/in/jakub-sowi%C5%84ski-613557b7" target="_blank">
     <svg viewBox="0 0 512 512" {...props}>
       {/* tslint:disable-next-line */}

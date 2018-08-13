@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { SvgIconPropsInterface } from '../../index';
 
-const LastFmIcon = props => (
+export const LastFmIcon = (props: SvgIconPropsInterface) => (
   <a href="https://www.last.fm/user/soofka" target="_blank">
     <svg viewBox="0 0 512 512" {...props}>
       {/* tslint:disable-next-line */}

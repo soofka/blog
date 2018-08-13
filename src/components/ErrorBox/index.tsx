@@ -1,19 +1,18 @@
 import * as React from 'react';
 
+import LabelsProvider from 'common/LabelsProvider';
+
 interface ErrorBoxPropsInterface {
-  message?: string;
+  language: string;
+  message: string;
 }
 
 export const ErrorBox = (props: ErrorBoxPropsInterface): JSX.Element => {
-  let { message } = props;
-
-  if (!message) {
-    message = 'Oops! Something wrong happened. Please try again.';
-  }
+  const { language, message = LabelsProvider.getLabel('errors__default', language) } = props;
 
   return (
     <div>
-      <h3>Error!</h3>
+      <h3>{LabelsProvider.getLabel('errors__header', language)}</h3>
       <p>{message}</p>
     </div>
   );

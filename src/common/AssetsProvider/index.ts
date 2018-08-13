@@ -1,4 +1,4 @@
-import axios, { AxiosResponse, AxiosError } from 'axios';
+import RequestHandler, { RequestHandlerResponseInterface, RequestHandlerErrorInterface } from 'common/RequestHandler';
 
 import {
   entriesJsonPath,
@@ -8,27 +8,25 @@ import {
   imageDefaultFileName,
 } from './constants';
 
-export interface AssetsProviderResponse extends AxiosResponse {}
-
 export class AssetsProvider {
-  static getEntries(): Promise<AssetsProviderResponse> {
-    return axios
-      .get(entriesJsonPath)
-      .then((response: AxiosResponse) => {
+  static getEntries(language: string): Promise<RequestHandlerResponseInterface> {
+    return RequestHandler.getClient()
+      .get(entriesJsonPath[language])
+      .then((response: RequestHandlerResponseInterface) => {
         return response;
       })
-      .catch((error: AxiosError) => {
+      .catch((error: RequestHandlerErrorInterface) => {
         return error.response;
       });
   }
 
-  static getEntryContent(entryFilePath: string): Promise<AssetsProviderResponse> {
-    return axios
+  static getEntryContent(entryFilePath: string): Promise<RequestHandlerResponseInterface> {
+    return RequestHandler.getClient()
       .get(entryFilePath)
-      .then((response: AxiosResponse) => {
+      .then((response: RequestHandlerResponseInterface) => {
         return response;
       })
-      .catch((error: AxiosError) => {
+      .catch((error: RequestHandlerErrorInterface) => {
         return error.response;
       });
   }

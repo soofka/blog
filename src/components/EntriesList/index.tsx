@@ -3,30 +3,31 @@ import * as React from 'react';
 import ErrorBox from 'components/ErrorBox';
 import { Entry, EntryInterface } from 'containers/Entry';
 
+import LabelsProvider from 'common/LabelsProvider';
+
 interface EntriesListPropsInterface extends React.Props<any> {
   entries: EntryInterface[];
-  isEntryFull: boolean;
+  language: string;
+  fullEntry: boolean;
 }
 
 export const EntriesList = (props: EntriesListPropsInterface) => {
-  const { entries, isEntryFull } = props;
+  const { language, entries, fullEntry } = props;
+
   return (
     <div>
       {entries.length === 0 &&
         <ErrorBox
-          message="Sorry, there are no entries matching your query."
+          language={language}
+          message={LabelsProvider.getLabel('errors__no_entries_matching_query', language)}
         />}
       {entries.sort(sortEntriesByDateCreated).map((entry: EntryInterface, index: number) => {
         return (
           <Entry
             key={index}
-            title={entry.title}
-            tags={entry.tags}
-            brief={entry.brief}
-            created={entry.created}
-            updated={entry.updated}
-            contentFileName={entry.contentFileName}
-            isFull={isEntryFull}
+            {...entry}
+            language={language}
+            full={fullEntry}
           />
         );
       })}

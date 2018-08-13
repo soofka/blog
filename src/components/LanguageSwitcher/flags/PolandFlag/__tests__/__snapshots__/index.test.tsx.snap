@@ -1,0 +1,13 @@
+exports[`<PolandFlag/> renders correctly 1`] = `
+<svg
+  height={60}
+  viewBox="0 0 16 10"
+  width={100}>
+  <path
+    d="M0 0h16v10H0z"
+    fill="#fff" />
+  <path
+    d="M0 5h16v5H0z"
+    fill="#dc143c" />
+</svg>
+`;

@@ -1,14 +1,23 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'mobx-react';
+import { Router } from 'react-router-dom';
+import { syncHistoryWithStore } from 'mobx-react-router';
+import createBrowserHistory from 'history/createBrowserHistory';
 
+import { store } from 'store';
 import Blog from 'components/Blog';
+
+const browserHistory = createBrowserHistory();
+const history = syncHistoryWithStore(browserHistory, store.routing);
 
 const render = () => {
   ReactDOM.render(
-    <BrowserRouter>
-      <Blog />
-    </BrowserRouter>,
+    <Provider {...store}>
+      <Router history={history}>
+        <Blog store={store} />
+      </Router>
+    </Provider>,
     document.querySelector('app'),
   );
 };

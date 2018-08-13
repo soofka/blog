@@ -2,7 +2,9 @@ import * as React from 'react';
 
 import './styles.scss';
 
-import { AssetsProvider, AssetsProviderResponse } from 'common/AssetsProvider';
+import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
+import AssetsProvider from 'common/AssetsProvider';
+import LabelsProvider from 'common/LabelsProvider';
 import RoutingProvider from 'common/RoutingProvider';
 
 import EntryHeader from 'components/EntryHeader';
@@ -12,7 +14,8 @@ import ErrorBox from 'components/ErrorBox';
 import EntryContent from 'components/EntryContent';
 import EntryComments from 'components/EntryComments';
 
-export interface EntryInterface extends React.Props<any> {
+export interface EntryInterface {
+  id: string;
   title: string;
   tags: string[];
   brief: EntryBriefInterface;
@@ -22,39 +25,47 @@ export interface EntryInterface extends React.Props<any> {
   isPublic?: boolean;
 }
 
-interface EntryPropsInterface extends EntryInterface {
-  isFull: boolean;
+export interface EntryPropsInterface extends EntryInterface, React.Props<any> {
+  full: boolean;
+  language: string;
 }
 
 interface EntryStateInterface {
-  contentResponse: AssetsProviderResponse;
+  content: string;
+  loading: boolean;
 }
 
 export class Entry extends React.Component<EntryPropsInterface, EntryStateInterface> {
   constructor(props: EntryPropsInterface) {
     super(props);
-    this.state = {
-      contentResponse: null,
-    };
+    this.state = { content: undefined, loading: false };
   }
 
   componentDidMount() {
-    if (this.props.isFull) {
-      const entryFilePath = AssetsProvider.getEntryFilePath(this.props.contentFileName);
-      AssetsProvider.getEntryContent(entryFilePath).then((response: AssetsProviderResponse) => {
-        this.setState({
-          contentResponse: response,
-        });
-      });
+    if (this.props.full && !this.state.content) {
+      this.getContent();
     }
   }
 
-  render() {
-    const { title, tags, brief, created, updated, isFull } = this.props;
-    const { contentResponse } = this.state;
+  componentDidUpdate(prevProps: EntryPropsInterface) {
+    if (this.props.full && this.props.language !== prevProps.language) {
+      this.getContent();
+    }
+  }
 
-    const isValidResponse = contentResponse !== null;
-    const isSuccessResponse = isValidResponse && contentResponse.status === 200;
+  getContent() {
+    this.setState({ loading: true });
+    AssetsProvider
+      .getEntryContent(AssetsProvider.getEntryFilePath(this.props.contentFileName))
+      .then((response: RequestHandlerResponseInterface) => {
+        const content = RequestHandler.validateResponse(response) ? response.data : undefined;
+        this.setState({ content, loading: false });
+      });
+  }
+
+  render() {
+    const { title, tags, brief, created, updated, full, language } = this.props;
+    const { content, loading } = this.state;
 
     const niceUrl = RoutingProvider.parseTextToNiceUrl(title);
     const niceUrlWithBasePath = `${RoutingProvider.getEntryNiceUrlBasePath()}/${niceUrl}`;
@@ -62,6 +73,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
     return (
       <div className="entry">
         <EntryHeader
+          language={language}
           title={title}
           titleLink={niceUrlWithBasePath}
           tags={tags}
@@ -69,24 +81,29 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
           updated={updated}
         />
         <div className="entry-content">
-          {!isFull &&
+          {!full &&
             <EntryBrief
+              language={language}
               text={brief.text}
               imageFileName={brief.imageFileName}
               moreButtonLink={niceUrlWithBasePath}
             />}
-          {isFull && !isValidResponse &&
+          {full && loading &&
             <LoadingCover />}
-          {isFull && isValidResponse && !isSuccessResponse &&
-            <ErrorBox/>}
-          {isFull && isValidResponse && isSuccessResponse &&
+          {full && !content &&
+            <ErrorBox
+              language={language}
+              message={LabelsProvider.getLabel('errors__no_entry_content', language)}
+            />}
+          {full && !loading && content &&
             <div>
               <EntryBrief
+                language={language}
                 text={brief.text}
                 imageFileName={brief.imageFileName}
               />
               <EntryContent
-                content={contentResponse.data}
+                content={content}
               />
               <EntryComments
                 title={title}

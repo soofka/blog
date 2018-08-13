@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './styles.scss';
 
 import AssetsProvider from 'common/AssetsProvider';
+import LabelsProvider from 'common/LabelsProvider';
 
 export interface EntryBriefInterface {
   text: string;
@@ -11,11 +12,12 @@ export interface EntryBriefInterface {
 }
 
 interface EntryBriefPropsInterface extends EntryBriefInterface {
+  language: string;
   moreButtonLink?: string;
 }
 
 export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
-  const { text, imageFileName, moreButtonLink } = props;
+  const { language, text, imageFileName, moreButtonLink } = props;
   const imageUrl = AssetsProvider.getEntryImageFilePath(imageFileName);
 
   return (
@@ -27,7 +29,9 @@ export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
         </div>
       }
       <p>
-        {text} {moreButtonLink && <Link to={moreButtonLink}>Continue reading &raquo;</Link>}
+        {text} {moreButtonLink && <Link to={moreButtonLink}>
+          {LabelsProvider.getLabel('entry__continue_reading', language)} &raquo;
+        </Link>}
       </p>
     </div>
   );

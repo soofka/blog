@@ -1,6 +1,7 @@
 import * as React from 'react';
+import { SvgIconPropsInterface } from '../../index';
 
-const TwitterIcon = props => (
+export const TwitterIcon = (props: SvgIconPropsInterface) => (
   <a href="https://twitter.com/pansoofka" target="_blank">
     <svg viewBox="0 0 512 512" {...props}>
       {/* tslint:disable-next-line */}

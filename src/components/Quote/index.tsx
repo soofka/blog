@@ -1,14 +1,18 @@
 import * as React from 'react';
 
+import LabelsProvider from 'common/LabelsProvider';
+
 import './styles.scss';
 
-export const Quote = (): JSX.Element => {
+interface QuotePropsInterface {
+  language: string;
+}
+
+export const Quote = (props: QuotePropsInterface): JSX.Element => {
+  const { language } = props;
   return (
     <p className="quote">
-      Passionate of programming in general, lately focused on JavaScript particularly.
-      Ultimately I would like to have some major contribution to development of our civilization,
-      still thinking how JS can help me with that task though.
-      Also interested in astronomy and e-sports.
+      {LabelsProvider.getLabel('quote', language)}
     </p>
   );
 };

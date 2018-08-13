@@ -8,6 +8,10 @@ import LastFmIcon from './icons/LastFmIcon';
 
 import './styles.scss';
 
+export interface SvgIconPropsInterface {
+  fill?: string;
+}
+
 export const LinkIconsBar = (): JSX.Element => {
   return (
     <ul className="link-icons-bar">

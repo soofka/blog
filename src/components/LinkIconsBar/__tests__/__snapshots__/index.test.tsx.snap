@@ -6,7 +6,7 @@ exports[`<LinkIconsBar/> renders correctly 1`] = `
       fill="#c3c3c3" />
   </li>
   <li>
-    <TwitterIcon
+    <Component
       fill="#c3c3c3" />
   </li>
   <li>
@@ -14,11 +14,11 @@ exports[`<LinkIconsBar/> renders correctly 1`] = `
       fill="#c3c3c3" />
   </li>
   <li>
-    <InstagramIcon
+    <Component
       fill="#c3c3c3" />
   </li>
   <li>
-    <LastFmIcon
+    <Component
       fill="#c3c3c3" />
   </li>
 </ul>

@@ -1,20 +1,34 @@
 import * as React from 'react';
-
-import './styles.scss';
+import { observer } from 'mobx-react';
 
 import Logo from 'components/Logo';
 import Quote from 'components/Quote';
-// import Navigation from 'components/Navigation';
 import LinkIconsBar from 'components/LinkIconsBar';
+// import LanguageSwitcher from 'components/LanguageSwitcher';
 
-export const InfoSection = (): JSX.Element => {
+import { StoreInterface } from 'store';
+
+import './styles.scss';
+
+interface InfoSectionPropsInterface {
+  store: StoreInterface;
+}
+
+export const InfoSection = (props: InfoSectionPropsInterface): JSX.Element => {
+  const { store } = props;
+  const language = store.language.getLanguage();
+
   return (
     <div className="info-section">
       <Logo/>
-      <Quote/>
+      {/*<LanguageSwitcher*/}
+        {/*language={language}*/}
+        {/*onLanguageSelection={(language: string) => store.language.setLanguage(language)}*/}
+      {/*/>*/}
+      <Quote language={language} />
       <LinkIconsBar/>
     </div>
   );
 };
 
-export default InfoSection;
+export default observer(InfoSection);

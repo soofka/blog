@@ -12,6 +12,12 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.3.9
+- added MobX
+- refined TSLint rules
+- reorganized folder structure
+- reorganized data flow in components
+
 ### 1.3.8
 - added lectures as PDF files
 - moved all links to blog from HTTP to HTTPS
@@ -98,16 +104,18 @@ Blog is available at `localhost:3000`.
 ## bugs
 ### major
 - HTTPS does not work properly on Firefox
+- lack of tests
 - `npm audit fix`
 
 ### minor
 - specific metrics of google analytics are not being recorder properly
 - service worker does not work properly when content is updated
-- no unit tests for code in `common` directory
+- `any`
+
 
 ## improvements
 ### major
-- polish language version (with MobX?)
+- polish language version
 - "about" page
 - "archive" pages
 - "lectures and trainings" page
@@ -121,5 +129,6 @@ Blog is available at `localhost:3000`.
 - better security with content based policy
 - route based chunking
 - animated components
-- nicer and more interactive code display in entries
+- nicer and more interactive code display in entries (CodeSandbox?)
 - compilation to WebAssembly
+- different route paths per language

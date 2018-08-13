@@ -1,3 +1,5 @@
+import * as queryString from 'query-string';
+
 import {
   homeNiceUrlBasePath,
   aboutNiceUrlBasePath,
@@ -30,6 +32,12 @@ export class RoutingProvider {
 
   static getErrorNiceUrlBasePath(): string {
     return errorNiceUrlBasePath;
+  }
+
+  static setInQueryString(object: any) {
+    const oldQueryStringObject = queryString.parse(location.search);
+    const newQueryStringObject = { ...oldQueryStringObject, ...object };
+    history.pushState(null, '', `?${queryString.stringify(newQueryStringObject)}`);
   }
 
   static parseTextToNiceUrl(text: string): string {

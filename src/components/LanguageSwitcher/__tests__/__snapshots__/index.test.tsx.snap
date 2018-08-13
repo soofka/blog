@@ -1,0 +1,13 @@
+exports[`<LanguageSwitcher/> renders correctly 1`] = `
+<ul
+  className="language-switcher">
+  <li>
+    <Component
+      onClick={[Function]} />
+  </li>
+  <li>
+    <Component
+      onClick={[Function]} />
+  </li>
+</ul>
+`;

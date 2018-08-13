@@ -2,18 +2,22 @@ import * as React from 'react';
 
 import InfoSection from 'components/InfoSection';
 import ContentSection from 'components/ContentSection';
+import { StoreInterface } from 'store';
 
 import './styles.scss';
 
-export class Blog extends React.Component<{}, {}> {
-  public render() {
-    return (
-      <div className="blog">
-        <InfoSection/>
-        <ContentSection/>
-      </div>
-    );
-  }
+interface BlogPropsInterface {
+  store: StoreInterface;
 }
+
+const Blog = (props: BlogPropsInterface) => {
+  const { store } = props;
+  return (
+    <div className="blog">
+      <InfoSection store={store} />
+      <ContentSection store={store} />
+    </div>
+  );
+};
 
 export default Blog;
