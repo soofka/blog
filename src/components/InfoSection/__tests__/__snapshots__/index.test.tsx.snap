@@ -1,9 +1,8 @@
 exports[`<InfoSection/> renders correctly 1`] = `
-<Component
-  languageStore={
-    Object {
-      "getLanguage": [Function],
-      "setLanguage": [Function],
-    }
-  } />
+<div
+  className="info-section">
+  <Component />
+  <Component />
+  <Component />
+</div>
 `;

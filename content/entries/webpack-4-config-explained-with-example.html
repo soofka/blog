@@ -17,8 +17,8 @@
 </pre>
 <p>Main function of this script generates Webpack configuration. It will be different, depending on environment, and if it's meant for local server, or if it's meant for audit, which is represented by mode parameter.</p>
 <p>The configuration is verbose and not much self-explanatory to say the least. That's the main issue people have with Webpack, from what I hear, and it's also the main reason why this kind of explanation makes sense. And it's already on Webpack 4, believe me, it's been worse.</p>
-<pre>
 <h3>Entry</h3>
+<pre>
 <code>const getEntry = () => {
   const main = [
     './src/index.tsx'

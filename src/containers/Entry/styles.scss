@@ -59,6 +59,11 @@
       margin: 0;
     }
 
+    pre {
+      margin: 0;
+      padding: 0;
+    }
+
     code {
       float: left;
       width: 100%;
@@ -67,11 +72,6 @@
       color: $black;
       background-color: $darkWhite;
       box-sizing: border-box;
-
-      pre {
-        margin: 0;
-        padding: 0;
-      }
     }
 
     blockquote {

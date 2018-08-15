@@ -1,7 +1,7 @@
 exports[`<Blog/> renders correctly 1`] = `
 <div
   className="blog">
-  <inject-Function-with-languageStore />
+  <Component />
   <withRouter() />
 </div>
 `;

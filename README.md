@@ -104,12 +104,13 @@ Blog is available at `localhost:3000`.
 ## bugs
 ### major
 - HTTPS does not work properly on Firefox
+- service worker does not work properly when content is updated
 - lack of tests
 - `npm audit fix`
 
 ### minor
 - specific metrics of google analytics are not being recorder properly
-- service worker does not work properly when content is updated
+- while loading entry content, "loading" appears at the same time as "error"
 - `any`
 
 

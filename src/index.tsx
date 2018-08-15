@@ -16,7 +16,7 @@ const render = () => {
   ReactDOM.render(
     <Provider {...store}>
       <Router history={history}>
-        <Blog />
+        <Blog/>
       </Router>
     </Provider>,
     document.querySelector('app'),

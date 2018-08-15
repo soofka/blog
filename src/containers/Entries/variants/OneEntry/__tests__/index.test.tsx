@@ -12,7 +12,8 @@ describe('<OneEntry/>', () => {
       <OneEntry
         {...mockStoreProps}
         {...mockRouteProps}
-      />)).toMatchSnapshot();
+      />,
+    )).toMatchSnapshot();
   });
 
 });

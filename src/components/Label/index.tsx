@@ -10,8 +10,8 @@ interface LabelPropsInterface {
 }
 
 export const Label = (props: LabelPropsInterface) => {
-  const { name, languageStore, ...rest } = props;
-  return <span {...rest}>{LabelsProvider.getLabel(name, languageStore.getLanguage())}</span>;
+  const { name, languageStore: { getLanguage }, ...rest } = props;
+  return <span {...rest}>{LabelsProvider.getLabel(name, getLanguage())}</span>;
 };
 
 export default inject('languageStore')(observer(Label));

@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { inject } from 'mobx-react';
+
+import { LanguageStoreInterface } from 'store/language';
 
 import GreatBritainFlag from './flags/GreatBritainFlag';
 import PolandFlag from './flags/PolandFlag';
@@ -6,7 +9,7 @@ import PolandFlag from './flags/PolandFlag';
 import './styles.scss';
 
 interface LanguageSwitcherPropsInterface {
-  onLanguageSelection: (language: string) => void;
+  languageStore?: LanguageStoreInterface;
 }
 
 export interface FlagPropsInterface {
@@ -14,17 +17,18 @@ export interface FlagPropsInterface {
 }
 
 export const LanguageSwitcher = (props: LanguageSwitcherPropsInterface): JSX.Element => {
-  const { onLanguageSelection } = props;
+  const { languageStore: { setLanguage } } = props;
+
   return (
     <ul className="language-switcher">
       <li>
-        <GreatBritainFlag onClick={() => onLanguageSelection('en')} />
+        <GreatBritainFlag onClick={() => setLanguage('en')} />
       </li>
       <li>
-        <PolandFlag onClick={() => onLanguageSelection('pl')} />
+        <PolandFlag onClick={() => setLanguage('pl')} />
       </li>
     </ul>
   );
 };
 
-export default LanguageSwitcher;
+export default inject('languageStore')(LanguageSwitcher);

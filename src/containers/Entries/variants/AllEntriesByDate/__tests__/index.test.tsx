@@ -12,7 +12,7 @@ describe('<AllEntriesByDate/>', () => {
       <AllEntriesByDate
         {...mockStoreProps}
         {...mockRouteProps}
-      />
+      />,
     )).toMatchSnapshot();
   });
 

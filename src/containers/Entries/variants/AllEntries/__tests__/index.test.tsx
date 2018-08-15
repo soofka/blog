@@ -12,7 +12,7 @@ describe('<AllEntries/>', () => {
       <AllEntries
         {...mockStoreProps}
         {...mockRouteProps}
-      />
+      />,
     )).toMatchSnapshot();
   });
 
