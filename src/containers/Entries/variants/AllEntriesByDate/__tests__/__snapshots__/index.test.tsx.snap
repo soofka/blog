@@ -1,0 +1,18 @@
+exports[`<AllEntriesByDate/> renders correctly 1`] = `
+<AllEntriesByDate
+  languageStore={
+    Object {
+      "getLanguage": [Function],
+      "setLanguage": [Function],
+    }
+  }
+  match={
+    Object {
+      "params": Object {
+        "date": "testDate",
+        "niceUrl": "testNiceUrl",
+        "tag": "testTag",
+      },
+    }
+  } />
+`;
