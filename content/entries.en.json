@@ -1,5 +1,18 @@
 [
   {
+    "id": "b0198de0-002b-47e2-a3c6-244314ddb757",
+    "title": "My first MobX state (and how I wrote it)",
+    "tags": ["javascript", "typescript", "react", "mobx", "state", "how to"],
+    "brief": {
+      "text": "My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle \"language\" parameter. And for that purpose, for the first time, I decided to use MobX.",
+      "imageFileName": "eiffel-tower-and-some-people.jpg"
+    },
+    "created": "2018-08-13",
+    "updated": "2018-08-14",
+    "contentFileName": "my-first-mobx-state-and-how-i-wrote-it.html",
+    "public": true
+  },
+  {
     "id": "528cc6f7-2559-4b94-b6f1-fa22003dedd5",
     "title": "Mocking and proxying HTTP requests from localhost with Webpack Dev Server or Express",
     "tags": ["javascript", "http", "mock", "proxy", "localhost", "webpack", "webpack-dev-server", "express", "how to"],
@@ -10,7 +23,7 @@
     "created": "2018-07-23",
     "updated": "2018-07-23",
     "contentFileName": "mocking-and-proxying-http-requests-from-localhost-with-webpack-dev-server-or-express.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "ebbc221e-2e4f-456f-9e4b-035f9109bfd2",
@@ -23,7 +36,7 @@
     "created": "2018-07-09",
     "updated": "2018-07-09",
     "contentFileName": "4-conferences-i-am-looking-forward-to-in-2nd-half-of-2018.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "eb54a4f6-0ff9-4750-b211-5f2d7675af70",
@@ -36,7 +49,7 @@
     "created": "2018-06-03",
     "updated": "2018-07-09",
     "contentFileName": "react-europe-2018-summary-of-the-talks.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "289744b1-366d-4d07-8a32-d8588de0fe6b",
@@ -49,7 +62,7 @@
     "created": "2018-04-09",
     "updated": "2018-06-02",
     "contentFileName": "webpack-4-config-explained-with-example.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "3c594f32-c9f0-47a2-a811-7a2ca2555026",
@@ -62,7 +75,7 @@
     "created": "2018-04-04",
     "updated": "2018-04-04",
     "contentFileName": "i-gave-lecture-on-code-europe-autumn-2017-too.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "4b15b77b-c727-49fe-b0e6-91f5656b2682",
@@ -75,7 +88,7 @@
     "created": "2018-03-26",
     "updated": "2018-03-26",
     "contentFileName": "how-to-setup-routing-for-not-found-on-both-sides-with-react-router-and-express.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "5c84ef0f-b7be-4aa9-af9b-dcf5d22028c6",
@@ -88,7 +101,7 @@
     "created": "2018-01-07",
     "updated": "2018-01-07",
     "contentFileName": "3-things-i-learned-in-2017.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "26bb42df-78cb-4eb8-8685-89ea78d2fd8c",
@@ -101,7 +114,7 @@
     "created": "2017-09-26",
     "updated": "2017-09-26",
     "contentFileName": "frontend-con-2017-summary.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "7d0ac221-e911-4f02-9cc7-4cd95be8f244",
@@ -114,7 +127,7 @@
     "created": "2017-08-08",
     "updated": "2018-06-02",
     "contentFileName": "how-to-integrate-disqus-comments-in-react-app.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "e16ac8a2-97cf-478a-bf9d-e29f55565929",
@@ -127,7 +140,7 @@
     "created": "2017-07-10",
     "updated": "2017-07-10",
     "contentFileName": "i-gave-lecture-on-code-europe-spring-2017.html",
-    "isPublic": true
+    "public": true
   },
   {
     "id": "da1d29c9-5d66-4012-b73b-b4b45c708a20",
@@ -140,6 +153,6 @@
     "created": "2017-06-15",
     "updated": "2017-06-15",
     "contentFileName": "on-the-surface.html",
-    "isPublic": true
+    "public": false
   }
 ]

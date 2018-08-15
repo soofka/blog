@@ -12,7 +12,8 @@ describe('<EntryComments/>', () => {
         url="testUrl"
         shortName="testShortName"
         identifier="testIdentifier"
-      />)).toMatchSnapshot();
+      />,
+    )).toMatchSnapshot();
   });
 
 });

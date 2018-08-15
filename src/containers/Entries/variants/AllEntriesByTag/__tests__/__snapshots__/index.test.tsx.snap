@@ -1,5 +1,5 @@
-exports[`<OneEntry/> renders correctly 1`] = `
-<OneEntry
+exports[`<AllEntriesByTag/> renders correctly 1`] = `
+<AllEntriesByTag
   languageStore={
     Object {
       "getLanguage": [Function],

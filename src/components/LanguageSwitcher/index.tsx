@@ -6,7 +6,6 @@ import PolandFlag from './flags/PolandFlag';
 import './styles.scss';
 
 interface LanguageSwitcherPropsInterface {
-  language: string;
   onLanguageSelection: (language: string) => void;
 }
 
@@ -15,7 +14,7 @@ export interface FlagPropsInterface {
 }
 
 export const LanguageSwitcher = (props: LanguageSwitcherPropsInterface): JSX.Element => {
-  const { language, onLanguageSelection } = props;
+  const { onLanguageSelection } = props;
   return (
     <ul className="language-switcher">
       <li>

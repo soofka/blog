@@ -1,6 +1,7 @@
 exports[`<Quote/> renders correctly 1`] = `
 <p
   className="quote">
-  Passionate of programming in general, lately focused on JavaScript particularly. Ultimately I would like to have some major contribution to development of our civilization, still thinking how JS can help me with that task though. Also interested in astronomy and e-sports.
+  <inject-_class-with-languageStore
+    name="quote" />
 </p>
 `;

@@ -6,7 +6,12 @@ import EntriesList from 'components/EntriesList';
 describe('<EntriesList/>', () => {
 
   it('renders correctly', () => {
-    expect(shallow(<EntriesList entries={[]} isEntryFull={true}/>)).toMatchSnapshot();
+    expect(shallow(
+      <EntriesList
+        entries={[]}
+        fullEntry={true}
+      />,
+    )).toMatchSnapshot();
   });
 
 });

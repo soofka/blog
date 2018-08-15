@@ -6,16 +6,21 @@ import EntryBrief from 'components/EntryBrief';
 describe('<EntryBrief/>', () => {
 
   it('renders correctly', () => {
-    expect(shallow(<EntryBrief text="test"/>)).toMatchSnapshot();
+    expect(shallow(
+      <EntryBrief
+        text="testText"
+      />,
+    )).toMatchSnapshot();
   });
 
   it('renders correctly with optional props', () => {
     expect(shallow(
-    <EntryBrief
-      text="tesText"
-      imageFileName="testImageFileName"
-      moreButtonLink="testMoreButtonLink"
-    />)).toMatchSnapshot();
+      <EntryBrief
+        text="testText"
+        imageFileName="testImageFileName"
+        moreButtonLink="testMoreButtonLink"
+      />,
+    )).toMatchSnapshot();
   });
 
 });

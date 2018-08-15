@@ -6,7 +6,11 @@ import LanguageSwitcher from 'components/LanguageSwitcher';
 describe('<LanguageSwitcher/>', () => {
 
   it('renders correctly', () => {
-    expect(shallow(<LanguageSwitcher/>)).toMatchSnapshot();
+    expect(shallow(
+      <LanguageSwitcher
+        onClick="testOnClick"
+      />,
+    )).toMatchSnapshot();
   });
 
 });

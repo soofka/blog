@@ -1,19 +1,13 @@
 import * as React from 'react';
 
 import ErrorBox from 'components/ErrorBox';
-import LabelsProvider from 'common/LabelsProvider';
+import Label from 'components/Label';
 
-interface NotFoundErrorPropsInterface {
-  language: string;
-}
-
-export const NotFoundError = (props: NotFoundErrorPropsInterface): JSX.Element => {
-  const { language } = props;
+export const NotFoundError = (): JSX.Element => {
   return (
     <div>
       <ErrorBox
-        language={language}
-        message={LabelsProvider.getLabel('errors__page_not_found', language)} />
+        message={<Label name="errors__page_not_found"/>} />
     </div>
   );
 };

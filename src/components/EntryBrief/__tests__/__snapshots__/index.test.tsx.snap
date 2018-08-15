@@ -1,7 +1,7 @@
 exports[`<EntryBrief/> renders correctly 1`] = `
 <div>
   <p>
-    test
+    testText
      
   </p>
 </div>
@@ -17,12 +17,14 @@ exports[`<EntryBrief/> renders correctly with optional props 1`] = `
       }
     } />
   <p>
-    tesText
+    testText
      
     <Link
       replace={false}
       to="testMoreButtonLink">
-      Continue reading »
+      <inject-_class-with-languageStore
+        name="entry__continue_reading" />
+       »
     </Link>
   </p>
 </div>

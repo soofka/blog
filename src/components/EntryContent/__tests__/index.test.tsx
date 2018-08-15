@@ -6,7 +6,11 @@ import EntryContent from 'components/EntryContent';
 describe('<EntryContent/>', () => {
 
   it('renders correctly', () => {
-    expect(shallow(<EntryContent content="testContent" />)).toMatchSnapshot();
+    expect(shallow(
+      <EntryContent
+        content="testContent"
+      />,
+    )).toMatchSnapshot();
   });
 
 });

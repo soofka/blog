@@ -1,32 +1,28 @@
 import * as React from 'react';
 
+import Label from 'components/Label';
 import ErrorBox from 'components/ErrorBox';
-import { Entry, EntryInterface } from 'containers/Entry';
-
-import LabelsProvider from 'common/LabelsProvider';
+import Entry, { EntryInterface } from 'containers/Entry';
 
 interface EntriesListPropsInterface extends React.Props<any> {
   entries: EntryInterface[];
-  language: string;
   fullEntry: boolean;
 }
 
 export const EntriesList = (props: EntriesListPropsInterface) => {
-  const { language, entries, fullEntry } = props;
+  const { entries, fullEntry } = props;
 
   return (
     <div>
       {entries.length === 0 &&
         <ErrorBox
-          language={language}
-          message={LabelsProvider.getLabel('errors__no_entries_matching_query', language)}
+          message={<Label name="errors__no_entries_matching_query"/>}
         />}
       {entries.sort(sortEntriesByDateCreated).map((entry: EntryInterface, index: number) => {
         return (
           <Entry
             key={index}
             {...entry}
-            language={language}
             full={fullEntry}
           />
         );

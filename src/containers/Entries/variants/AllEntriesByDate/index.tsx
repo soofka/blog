@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { inject } from 'mobx-react';
 
 import DateHelper from 'common/DateHelper';
 
@@ -73,4 +74,4 @@ function getEntriesByYearMonthDay(
   });
 }
 
-export default AllEntriesByDate;
+export default inject('languageStore')(AllEntriesByDate as any);

@@ -1,0 +1,9 @@
+exports[`<NotFoundError/> renders correctly 1`] = `
+<div>
+  <Component
+    message={
+      <inject-_class-with-languageStore
+        name="errors__page_not_found" />
+    } />
+</div>
+`;

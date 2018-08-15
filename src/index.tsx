@@ -5,17 +5,18 @@ import { Router } from 'react-router-dom';
 import { syncHistoryWithStore } from 'mobx-react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import { store } from 'store';
 import Blog from 'components/Blog';
 
+import { store } from 'store';
+
 const browserHistory = createBrowserHistory();
-const history = syncHistoryWithStore(browserHistory, store.routing);
+const history = syncHistoryWithStore(browserHistory, store.routingStore);
 
 const render = () => {
   ReactDOM.render(
     <Provider {...store}>
       <Router history={history}>
-        <Blog store={store} />
+        <Blog />
       </Router>
     </Provider>,
     document.querySelector('app'),

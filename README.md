@@ -132,3 +132,4 @@ Blog is available at `localhost:3000`.
 - nicer and more interactive code display in entries (CodeSandbox?)
 - compilation to WebAssembly
 - different route paths per language
+- move entries and entry content to global state to avoid loading them again with each rerender

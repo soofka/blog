@@ -1,17 +1,24 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-import LinkedInIcon from 'components/LinkIconsBar/icons/LinkedInIcon';
+import { mockStoreProps } from 'common/testMocks';
 
-describe('<LinkedInIcon/>', () => {
+import Label from 'components/Label';
+
+describe('<Label/>', () => {
 
   it('renders correctly', () => {
-    expect(shallow(<LinkedInIcon/>)).toMatchSnapshot();
+    expect(shallow(
+      <Label
+        {...mockStoreProps}
+      />,
+    )).toMatchSnapshot();
   });
 
   it('renders correctly with optional props', () => {
     expect(shallow(
-      <LinkedInIcon
+      <Label
+        {...mockStoreProps}
         className="testClassName"
       />,
     )).toMatchSnapshot();

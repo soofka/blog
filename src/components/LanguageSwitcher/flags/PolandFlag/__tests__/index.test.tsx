@@ -9,4 +9,12 @@ describe('<PolandFlag/>', () => {
     expect(shallow(<PolandFlag/>)).toMatchSnapshot();
   });
 
+  it('renders correctly with optional props', () => {
+    expect(shallow(
+      <PolandFlag
+        className="testClassName"
+      />,
+    )).toMatchSnapshot();
+  });
+
 });

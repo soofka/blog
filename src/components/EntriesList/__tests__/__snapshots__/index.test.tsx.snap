@@ -1,6 +1,9 @@
 exports[`<EntriesList/> renders correctly 1`] = `
 <div>
   <Component
-    message="Sorry, there are no entries matching your query." />
+    message={
+      <inject-_class-with-languageStore
+        name="errors__no_entries_matching_query" />
+    } />
 </div>
 `;

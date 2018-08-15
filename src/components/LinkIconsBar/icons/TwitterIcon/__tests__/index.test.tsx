@@ -9,4 +9,12 @@ describe('<TwitterIcon/>', () => {
     expect(shallow(<TwitterIcon/>)).toMatchSnapshot();
   });
 
+  it('renders correctly with optional props', () => {
+    expect(shallow(
+      <TwitterIcon
+        className="testClassName"
+      />,
+    )).toMatchSnapshot();
+  });
+
 });

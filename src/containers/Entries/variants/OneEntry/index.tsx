@@ -1,9 +1,10 @@
 import * as React from 'react';
-
-import RoutingProvider from 'common/RoutingProvider';
+import { inject } from 'mobx-react';
 
 import { Entries, EntriesParamsInterface, EntriesPropsInterface } from 'containers/Entries';
 import { EntryInterface } from 'containers/Entry';
+
+import RoutingProvider from 'common/RoutingProvider';
 
 export class OneEntry extends Entries {
   constructor(props: EntriesPropsInterface) {
@@ -27,4 +28,4 @@ export class OneEntry extends Entries {
   }
 }
 
-export default OneEntry;
+export default inject('languageStore')(OneEntry as any);

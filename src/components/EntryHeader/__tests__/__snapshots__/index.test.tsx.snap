@@ -11,11 +11,13 @@ exports[`<EntryHeader/> renders correctly 1`] = `
   </h1>
   <p
     className="entry-header--meta">
-    created on 
+    <inject-_class-with-languageStore
+      name="entry__created" />
     <span>
       testCreated
     </span>
-    , last updated on 
+    <inject-_class-with-languageStore
+      name="entry__last_updated" />
     <span>
       testUpdated
     </span>

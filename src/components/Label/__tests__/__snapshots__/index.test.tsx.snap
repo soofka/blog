@@ -1,0 +1,20 @@
+exports[`<Label/> renders correctly 1`] = `
+<_class
+  languageStore={
+    Object {
+      "getLanguage": [Function],
+      "setLanguage": [Function],
+    }
+  } />
+`;
+
+exports[`<Label/> renders correctly with optional props 1`] = `
+<_class
+  className="testClassName"
+  languageStore={
+    Object {
+      "getLanguage": [Function],
+      "setLanguage": [Function],
+    }
+  } />
+`;

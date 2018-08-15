@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { inject } from 'mobx-react';
 
 import RoutingProvider from 'common/RoutingProvider';
 
@@ -20,4 +21,4 @@ function prepareTag(tag: string): string {
   return tag.trim().toLowerCase();
 }
 
-export default AllEntriesByTag;
+export default inject('languageStore')(AllEntriesByTag as any);

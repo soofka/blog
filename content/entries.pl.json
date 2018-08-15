@@ -1,15 +1,15 @@
 [
   {
     "id": "da1d29c9-5d66-4012-b73b-b4b45c708a20",
-    "title": "On the surface",
+    "title": "Na powierzchni",
     "tags": ["random"],
     "brief": {
-      "text": "I am web developer. My job is to solve problems, usually related to software architecture or specific details of software implementation. During that process, I often find myself browsing the Internet, looking for people who had similar problems, solved them and described their solution. This kind of content is generally found either on internet forums or professional blogs. Since these sources provided me with, often very comprehensive, answers on countless occasions, I thought that the best way to appreciate their effort to share their knowledge would be to contribute to this knowledge base myself.",
+      "text": "Do napisania",
       "imageFileName": "railroad-landscape.jpg"
     },
     "created": "2017-06-15",
     "updated": "2017-06-15",
-    "contentFileName": "on-the-surface.html",
-    "isPublic": true
+    "contentFileName": "na-powierzchni.html",
+    "public": true
   }
 ]

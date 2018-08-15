@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-import './styles.scss';
-
+import Label from 'components/Label';
 import AssetsProvider from 'common/AssetsProvider';
-import LabelsProvider from 'common/LabelsProvider';
+
+import './styles.scss';
 
 export interface EntryBriefInterface {
   text: string;
@@ -12,12 +12,11 @@ export interface EntryBriefInterface {
 }
 
 interface EntryBriefPropsInterface extends EntryBriefInterface {
-  language: string;
   moreButtonLink?: string;
 }
 
 export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
-  const { language, text, imageFileName, moreButtonLink } = props;
+  const { text, imageFileName, moreButtonLink } = props;
   const imageUrl = AssetsProvider.getEntryImageFilePath(imageFileName);
 
   return (
@@ -30,7 +29,7 @@ export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
       }
       <p>
         {text} {moreButtonLink && <Link to={moreButtonLink}>
-          {LabelsProvider.getLabel('entry__continue_reading', language)} &raquo;
+          {<Label name="entry__continue_reading"/>} &raquo;
         </Link>}
       </p>
     </div>

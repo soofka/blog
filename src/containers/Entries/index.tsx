@@ -1,15 +1,19 @@
 import * as React from 'react';
+import { reaction } from 'mobx';
+import { inject } from 'mobx-react';
 import { RouteComponentProps } from 'react-router-dom';
 
+import AssetsProvider from 'common/AssetsProvider';
+import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
+
+import { LanguageStoreInterface } from 'store/language';
+
+import Label from 'components/Label';
 import LoadingCover from 'components/LoadingCover';
 import ErrorBox from 'components/ErrorBox';
 import EntriesList from 'components/EntriesList';
 
 import { EntryInterface } from 'containers/Entry';
-
-import AssetsProvider from 'common/AssetsProvider';
-import LabelsProvider from 'common/LabelsProvider';
-import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
 
 export interface EntriesParamsInterface {
   tag?: string;
@@ -18,7 +22,7 @@ export interface EntriesParamsInterface {
 }
 
 export interface EntriesPropsInterface extends RouteComponentProps<EntriesParamsInterface> {
-  language: string;
+  languageStore?: LanguageStoreInterface;
 }
 
 interface EntriesStateInterface {
@@ -30,6 +34,13 @@ export class Entries extends React.Component<EntriesPropsInterface, EntriesState
   constructor(props: EntriesPropsInterface) {
     super(props);
     this.state = { entries: undefined, loading: false };
+
+    reaction(
+      () => this.props.languageStore.language,
+      () => {
+        this.getEntries();
+      },
+    );
   }
 
   componentDidMount() {
@@ -38,24 +49,20 @@ export class Entries extends React.Component<EntriesPropsInterface, EntriesState
     }
   }
 
-  componentDidUpdate(prevProps: EntriesPropsInterface) {
-    if (this.props.language !== prevProps.language) {
-      this.getEntries();
-    }
-  }
-
   getEntries() {
     this.setState({ loading: true });
     AssetsProvider
-      .getEntries(this.props.language)
+      .getEntries(this.props.languageStore.getLanguage())
       .then((response: RequestHandlerResponseInterface) => {
-        const entries = RequestHandler.validateResponse(response) ? response.data : undefined;
+        const entries = RequestHandler.validateResponse(response)
+          ? response.data
+          : undefined;
         this.setState({ entries, loading: false });
       });
   }
 
   render() {
-    const { language, match: { params } } = this.props;
+    const { match: { params } } = this.props;
     const { entries, loading } = this.state;
 
     if (loading) {
@@ -67,8 +74,7 @@ export class Entries extends React.Component<EntriesPropsInterface, EntriesState
     if (!entries) {
       return (
         <ErrorBox
-          language={language}
-          message={LabelsProvider.getLabel('errors__no_entries_in_db', language)}
+          message={<Label name="errors__no_entries_in_db" />}
         />
       );
     }
@@ -80,7 +86,6 @@ export class Entries extends React.Component<EntriesPropsInterface, EntriesState
 
     return (
       <EntriesList
-        language={language}
         entries={entriesFiltered}
         fullEntry={this.isEntryFull()}
       />
@@ -102,8 +107,8 @@ function prepareEntries(entries: EntryInterface[]): EntryInterface[] {
 
 function filterPrivateEntries(entries: EntryInterface[]): EntryInterface[] {
   return entries.filter((entry: EntryInterface) => {
-    return entry.isPublic === true;
+    return entry.public === true;
   });
 }
 
-export default Entries;
+export default inject('languageStore')(Entries);

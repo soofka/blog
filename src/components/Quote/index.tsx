@@ -1,18 +1,13 @@
 import * as React from 'react';
 
-import LabelsProvider from 'common/LabelsProvider';
+import Label from 'components/Label';
 
 import './styles.scss';
 
-interface QuotePropsInterface {
-  language: string;
-}
-
-export const Quote = (props: QuotePropsInterface): JSX.Element => {
-  const { language } = props;
+export const Quote = (): JSX.Element => {
   return (
     <p className="quote">
-      {LabelsProvider.getLabel('quote', language)}
+      <Label name="quote"/>
     </p>
   );
 };

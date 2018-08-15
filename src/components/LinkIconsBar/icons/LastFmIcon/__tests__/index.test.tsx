@@ -9,4 +9,12 @@ describe('<LastFmIcon/>', () => {
     expect(shallow(<LastFmIcon/>)).toMatchSnapshot();
   });
 
+  it('renders correctly with optional props', () => {
+    expect(shallow(
+      <LastFmIcon
+        className="testClassName"
+      />,
+    )).toMatchSnapshot();
+  });
+
 });

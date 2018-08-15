@@ -9,4 +9,12 @@ describe('<GreatBritainFlag/>', () => {
     expect(shallow(<GreatBritainFlag/>)).toMatchSnapshot();
   });
 
+  it('renders correctly with optional props', () => {
+    expect(shallow(
+      <GreatBritainFlag
+        className="testClassName"
+      />,
+    )).toMatchSnapshot();
+  });
+
 });

@@ -1,21 +1,46 @@
 exports[`<Entry/> renders correctly 1`] = `
-<div
-  className="entry">
-  <Component
-    created="testCreated"
-    tags={
-      Array [
-        "tag1",
-        "tag2",
-        "tag3",
-      ]
+<Entry
+  bried={null}
+  contentFileName="testContentFileName"
+  created="testCreated"
+  full={true}
+  languageStore={
+    Object {
+      "getLanguage": [Function],
+      "setLanguage": [Function],
     }
-    title="testTitle"
-    titleLink="/entry/testtitle"
-    updated="testUpdated" />
-  <div
-    className="entry-content">
-    <Component />
-  </div>
-</div>
+  }
+  tags={
+    Array [
+      "tag1",
+      "tag2",
+      "tag3",
+    ]
+  }
+  title="testTitle"
+  updated="testUpdated" />
+`;
+
+exports[`<Entry/> renders correctly with optional props 1`] = `
+<Entry
+  bried={null}
+  contentFileName="testContentFileName"
+  created="testCreated"
+  full={true}
+  languageStore={
+    Object {
+      "getLanguage": [Function],
+      "setLanguage": [Function],
+    }
+  }
+  public={false}
+  tags={
+    Array [
+      "tag1",
+      "tag2",
+      "tag3",
+    ]
+  }
+  title="testTitle"
+  updated="testUpdated" />
 `;

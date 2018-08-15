@@ -1,18 +1,22 @@
 import * as React from 'react';
-
-import './styles.scss';
+import { reaction } from 'mobx';
+import { inject } from 'mobx-react';
 
 import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
 import AssetsProvider from 'common/AssetsProvider';
-import LabelsProvider from 'common/LabelsProvider';
 import RoutingProvider from 'common/RoutingProvider';
 
+import { LanguageStoreInterface } from 'store/language';
+
+import Label from 'components/Label';
 import EntryHeader from 'components/EntryHeader';
 import EntryBrief, { EntryBriefInterface } from 'components/EntryBrief';
 import LoadingCover from 'components/LoadingCover';
 import ErrorBox from 'components/ErrorBox';
 import EntryContent from 'components/EntryContent';
 import EntryComments from 'components/EntryComments';
+
+import './styles.scss';
 
 export interface EntryInterface {
   id: string;
@@ -22,12 +26,12 @@ export interface EntryInterface {
   created: string;
   updated: string;
   contentFileName: string;
-  isPublic?: boolean;
+  public?: boolean;
 }
 
 export interface EntryPropsInterface extends EntryInterface, React.Props<any> {
   full: boolean;
-  language: string;
+  languageStore?: LanguageStoreInterface;
 }
 
 interface EntryStateInterface {
@@ -39,16 +43,19 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
   constructor(props: EntryPropsInterface) {
     super(props);
     this.state = { content: undefined, loading: false };
+
+    reaction(
+      () => this.props.languageStore.language,
+      () => {
+        if (this.props.full) {
+          this.getContent();
+        }
+      },
+    );
   }
 
   componentDidMount() {
     if (this.props.full && !this.state.content) {
-      this.getContent();
-    }
-  }
-
-  componentDidUpdate(prevProps: EntryPropsInterface) {
-    if (this.props.full && this.props.language !== prevProps.language) {
       this.getContent();
     }
   }
@@ -58,13 +65,15 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
     AssetsProvider
       .getEntryContent(AssetsProvider.getEntryFilePath(this.props.contentFileName))
       .then((response: RequestHandlerResponseInterface) => {
-        const content = RequestHandler.validateResponse(response) ? response.data : undefined;
+        const content = RequestHandler.validateResponse(response)
+          ? response.data
+          : undefined;
         this.setState({ content, loading: false });
       });
   }
 
   render() {
-    const { title, tags, brief, created, updated, full, language } = this.props;
+    const { title, tags, brief, created, updated, full } = this.props;
     const { content, loading } = this.state;
 
     const niceUrl = RoutingProvider.parseTextToNiceUrl(title);
@@ -73,7 +82,6 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
     return (
       <div className="entry">
         <EntryHeader
-          language={language}
           title={title}
           titleLink={niceUrlWithBasePath}
           tags={tags}
@@ -83,7 +91,6 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
         <div className="entry-content">
           {!full &&
             <EntryBrief
-              language={language}
               text={brief.text}
               imageFileName={brief.imageFileName}
               moreButtonLink={niceUrlWithBasePath}
@@ -92,13 +99,11 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
             <LoadingCover />}
           {full && !content &&
             <ErrorBox
-              language={language}
-              message={LabelsProvider.getLabel('errors__no_entry_content', language)}
+              message={<Label name="errors__no_entry_content" />}
             />}
           {full && !loading && content &&
             <div>
               <EntryBrief
-                language={language}
                 text={brief.text}
                 imageFileName={brief.imageFileName}
               />
@@ -118,4 +123,4 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
   }
 }
 
-export default Entry;
+export default inject('languageStore')(Entry);

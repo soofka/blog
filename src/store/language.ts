@@ -1,4 +1,4 @@
-import { decorate, observable } from 'mobx';
+import { action, decorate, observable } from 'mobx';
 
 import LanguageHandler from 'common/LanguageHandler';
 
@@ -25,6 +25,7 @@ class LanguageStore implements LanguageStoreInterface {
 
 decorate(LanguageStore, {
   language: observable,
+  setLanguage: action,
 });
 
 export const languageStore = new LanguageStore();

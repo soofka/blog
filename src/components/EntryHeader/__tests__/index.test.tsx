@@ -13,7 +13,8 @@ describe('<EntryHeader/>', () => {
         tags={['tag1', 'tag2', 'tag3']}
         created="testCreated"
         updated="testUpdated"
-      />)).toMatchSnapshot();
+      />,
+    )).toMatchSnapshot();
   });
 
 });

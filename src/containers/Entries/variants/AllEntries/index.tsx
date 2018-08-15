@@ -1,4 +1,4 @@
-import { Entries } from 'containers/Entries';
+import Entries from 'containers/Entries';
 
 export class AllEntries extends Entries {}
 

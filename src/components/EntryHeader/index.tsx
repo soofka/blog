@@ -2,12 +2,12 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 import RoutingProvider from 'common/RoutingProvider';
-import LabelsProvider from 'common/LabelsProvider';
+
+import Label from 'components/Label';
 
 import './styles.scss';
 
 interface EntryHeaderPropsInterface {
-  language: string;
   title: string;
   titleLink: string;
   tags: string[];
@@ -16,7 +16,7 @@ interface EntryHeaderPropsInterface {
 }
 
 export const EntryHeader = (props: EntryHeaderPropsInterface): JSX.Element => {
-  const { language, title, titleLink, tags, created, updated } = props;
+  const { title, titleLink, tags, created, updated } = props;
 
   return (
     <div className="entry-header">
@@ -24,9 +24,9 @@ export const EntryHeader = (props: EntryHeaderPropsInterface): JSX.Element => {
         <Link to={titleLink}>{title}</Link>
       </h1>
       <p className="entry-header--meta">
-        {LabelsProvider.getLabel('entry__created', language)}
+        {<Label name="entry__created"/>}
         <span>{created}</span>
-        {LabelsProvider.getLabel('entry__last_updated', language)}
+        {<Label name="entry__last_updated"/>}
         <span>{updated}</span>
       </p>
       <p className="entry-header--tags">

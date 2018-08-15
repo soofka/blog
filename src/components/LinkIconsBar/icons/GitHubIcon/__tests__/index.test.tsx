@@ -9,4 +9,12 @@ describe('<GitHubIcon/>', () => {
     expect(shallow(<GitHubIcon/>)).toMatchSnapshot();
   });
 
+  it('renders correctly with optional props', () => {
+    expect(shallow(
+      <GitHubIcon
+        className="testClassName"
+      />,
+    )).toMatchSnapshot();
+  });
+
 });

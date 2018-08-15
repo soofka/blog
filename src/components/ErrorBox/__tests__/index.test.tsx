@@ -10,7 +10,11 @@ describe('<ErrorBox/>', () => {
   });
 
   it('renders correctly with optional props', () => {
-    expect(shallow(<ErrorBox message="testMessage" />)).toMatchSnapshot();
+    expect(shallow(
+      <ErrorBox
+        message="testMessage"
+      />,
+    )).toMatchSnapshot();
   });
 
 });

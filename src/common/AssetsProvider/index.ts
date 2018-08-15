@@ -9,7 +9,9 @@ import {
 } from './constants';
 
 export class AssetsProvider {
-  static getEntries(language: string): Promise<RequestHandlerResponseInterface> {
+  static getEntries(
+    language: string,
+  ): Promise<RequestHandlerResponseInterface | RequestHandlerErrorInterface> {
     return RequestHandler.getClient()
       .get(entriesJsonPath[language])
       .then((response: RequestHandlerResponseInterface) => {
@@ -20,7 +22,9 @@ export class AssetsProvider {
       });
   }
 
-  static getEntryContent(entryFilePath: string): Promise<RequestHandlerResponseInterface> {
+  static getEntryContent(
+    entryFilePath: string,
+  ): Promise<RequestHandlerResponseInterface | RequestHandlerErrorInterface> {
     return RequestHandler.getClient()
       .get(entryFilePath)
       .then((response: RequestHandlerResponseInterface) => {
