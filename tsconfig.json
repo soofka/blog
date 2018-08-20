@@ -9,7 +9,8 @@
     "declaration": false,
     "noImplicitAny": false,
     "sourceMap": true,
-    "jsx": "react"
+    "jsx": "react",
+    "types": ["node"]
   },
   "include": [
     ".src/index.tsx"

@@ -1,16 +1,20 @@
 import * as React from 'react';
+import { ThemeProvider } from 'styled-components';
+
+import { theme } from 'common/theme';
+import { StyledBlog } from './styled';
 
 import InfoSection from 'components/InfoSection';
 import ContentSection from 'components/ContentSection';
 
-import './styles.scss';
-
 const Blog = () => {
   return (
-    <div className="blog">
-      <InfoSection />
-      <ContentSection />
-    </div>
+    <ThemeProvider theme={theme}>
+      <StyledBlog>
+        <InfoSection />
+        <ContentSection />
+      </StyledBlog>
+    </ThemeProvider>
   );
 };
 

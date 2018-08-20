@@ -16,7 +16,7 @@ import ErrorBox from 'components/ErrorBox';
 import EntryContent from 'components/EntryContent';
 import EntryComments from 'components/EntryComments';
 
-import './styles.scss';
+import { StyledEntry, StyledEntryContent } from './styled';
 
 export interface EntryInterface {
   id: string;
@@ -80,7 +80,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
     const niceUrlWithBasePath = `${RoutingProvider.getEntryNiceUrlBasePath()}/${niceUrl}`;
 
     return (
-      <div className="entry">
+      <StyledEntry>
         <EntryHeader
           title={title}
           titleLink={niceUrlWithBasePath}
@@ -88,7 +88,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
           created={created}
           updated={updated}
         />
-        <div className="entry-content">
+        <StyledEntryContent>
           {!full &&
             <EntryBrief
               text={brief.text}
@@ -117,8 +117,8 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
                 identifier={niceUrl}
               />
             </div>}
-        </div>
-      </div>
+        </StyledEntryContent>
+      </StyledEntry>
     );
   }
 }

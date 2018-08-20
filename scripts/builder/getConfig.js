@@ -92,12 +92,6 @@ const getModule = (devEnv) => {
           minimize: !devEnv,
         }
       },
-      {
-        loader: 'sass-loader',
-        options: {
-          includePaths: ['./src']
-        }
-      }
     ],
   });
 

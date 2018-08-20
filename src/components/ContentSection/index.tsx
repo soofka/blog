@@ -3,17 +3,17 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 
 import RoutingProvider from 'common/RoutingProvider';
 
-import AllEntries from 'containers/Entries/variants/AllEntries';
-import AllEntriesByTag from 'containers/Entries/variants/AllEntriesByTag';
-import AllEntriesByDate from 'containers/Entries/variants/AllEntriesByDate';
-import OneEntry from 'containers/Entries/variants/OneEntry';
+import AllEntries from 'containers/Entries/components/AllEntries';
+import AllEntriesByTag from 'containers/Entries/components/AllEntriesByTag';
+import AllEntriesByDate from 'containers/Entries/components/AllEntriesByDate';
+import OneEntry from 'containers/Entries/components/OneEntry';
 import NotFoundError from 'components/NotFoundError';
 
-import './styles.scss';
+import { StyledContentSection } from './styled';
 
 export const ContentSection = (): JSX.Element => {
   return (
-    <div className="content-section">
+    <StyledContentSection>
       <Switch>
         <Route
           exact
@@ -36,7 +36,7 @@ export const ContentSection = (): JSX.Element => {
           component={NotFoundError}
         />
       </Switch>
-    </div>
+    </StyledContentSection>
   );
 };
 

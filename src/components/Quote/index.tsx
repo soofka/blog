@@ -2,13 +2,13 @@ import * as React from 'react';
 
 import Label from 'components/Label';
 
-import './styles.scss';
+import { StyledQuote } from './styled';
 
 export const Quote = (): JSX.Element => {
   return (
-    <p className="quote">
+    <StyledQuote>
       <Label name="quote"/>
-    </p>
+    </StyledQuote>
   );
 };
 

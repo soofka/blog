@@ -1,14 +1,27 @@
 [
   {
+    "id": "9a6a22e7-6468-4f1e-a066-4e06c437d383",
+    "title": "Moving from Sass to Styled Components (with snapshot tests)",
+    "tags": ["javascript", "css", "sass", "styled components", "how to"],
+    "brief": {
+      "text": "not ready yet",
+      "imageFileName": "dubai-eye.jpg"
+    },
+    "created": "2018-08-20",
+    "updated": "2018-08-21",
+    "contentFileName": "moving-from-sass-to-styled-component-with-snapshot-tests.html",
+    "public": false
+  },
+  {
     "id": "b0198de0-002b-47e2-a3c6-244314ddb757",
     "title": "My first MobX store (and how I wrote it)",
     "tags": ["javascript", "typescript", "react", "mobx", "store", "global app state", "how to"],
     "brief": {
       "text": "My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle language parameter. And for that purpose, for the first time, I decided to use MobX.",
-      "imageFileName": "dubai-eye.jpg"
+      "imageFileName": "react-mobx-typescript.jpg"
     },
     "created": "2018-08-13",
-    "updated": "2018-08-15",
+    "updated": "2018-08-16",
     "contentFileName": "my-first-mobx-store-and-how-i-wrote-it.html",
     "public": true
   },

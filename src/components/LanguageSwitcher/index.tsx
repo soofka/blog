@@ -3,10 +3,10 @@ import { inject } from 'mobx-react';
 
 import { LanguageStoreInterface } from 'store/language';
 
-import GreatBritainFlag from './flags/GreatBritainFlag';
-import PolandFlag from './flags/PolandFlag';
+import GreatBritainFlag from './components/GreatBritainFlag';
+import PolandFlag from './components/PolandFlag';
 
-import './styles.scss';
+import { StyledLanguageSwitcher } from './styled';
 
 interface LanguageSwitcherPropsInterface {
   languageStore?: LanguageStoreInterface;
@@ -20,14 +20,14 @@ export const LanguageSwitcher = (props: LanguageSwitcherPropsInterface): JSX.Ele
   const { languageStore: { setLanguage } } = props;
 
   return (
-    <ul className="language-switcher">
+    <StyledLanguageSwitcher>
       <li>
         <GreatBritainFlag onClick={() => setLanguage('en')} />
       </li>
       <li>
         <PolandFlag onClick={() => setLanguage('pl')} />
       </li>
-    </ul>
+    </StyledLanguageSwitcher>
   );
 };
 

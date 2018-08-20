@@ -6,7 +6,7 @@ import GitHubIcon from './icons/GitHubIcon';
 import InstagramIcon from './icons/InstagramIcon';
 import LastFmIcon from './icons/LastFmIcon';
 
-import './styles.scss';
+import { StyledLinkIconsBar } from './styled';
 
 export interface SvgIconPropsInterface {
   fill?: string;
@@ -14,7 +14,7 @@ export interface SvgIconPropsInterface {
 
 export const LinkIconsBar = (): JSX.Element => {
   return (
-    <ul className="link-icons-bar">
+    <StyledLinkIconsBar>
       <li>
         <LinkedInIcon fill="#c3c3c3" />
       </li>
@@ -30,7 +30,7 @@ export const LinkIconsBar = (): JSX.Element => {
       <li>
         <LastFmIcon fill="#c3c3c3" />
       </li>
-    </ul>
+    </StyledLinkIconsBar>
   );
 };
 

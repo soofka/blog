@@ -21,8 +21,6 @@
     "enzyme-to-json/serializer"
   ],
   "testRegex": "__tests__/.*\\.test\\.(ts|tsx|js)$",
-  "setupTestFrameworkScriptFile": "<rootDir>/enzyme-react-16-config.js",
-  "globals": {
-    "__TS_CONFIG__": "<rootDir>/tsconfig.json"
-  }
+  "testURL": "http://localhost",
+  "setupTestFrameworkScriptFile": "<rootDir>/enzyme-react-16-config.js"
 }

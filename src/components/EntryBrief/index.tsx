@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Label from 'components/Label';
 import AssetsProvider from 'common/AssetsProvider';
 
-import './styles.scss';
+import { StyledEntryBrief } from './styled';
 
 export interface EntryBriefInterface {
   text: string;
@@ -22,10 +22,10 @@ export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
   return (
     <div>
       {imageFileName &&
-        <div className="entry-brief--image-container" style={{
+        <StyledEntryBrief style={{
           backgroundImage: `url(${imageUrl})`,
         }}>
-        </div>
+        </StyledEntryBrief>
       }
       <p>
         {text} {moreButtonLink && <Link to={moreButtonLink}>

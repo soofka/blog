@@ -5,16 +5,16 @@ import Quote from 'components/Quote';
 import LinkIconsBar from 'components/LinkIconsBar';
 import LanguageSwitcher from 'components/LanguageSwitcher';
 
-import './styles.scss';
+import { StyledInfoSection } from './styled';
 
 export const InfoSection = (): JSX.Element => {
   return (
-    <div className="info-section">
+    <StyledInfoSection>
       <Logo/>
       {/*<LanguageSwitcher/>*/}
       <Quote/>
       <LinkIconsBar/>
-    </div>
+    </StyledInfoSection>
   );
 };
 
