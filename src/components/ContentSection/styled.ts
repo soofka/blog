@@ -11,7 +11,7 @@ export const StyledContentSection = styledComponents.div`
   color: ${props => props.theme.lighterBlack};
   background-color: ${props => props.theme.white};
 
-  & a {
+  a {
     color: ${props => props.theme.lighterBlack};
 
     &:hover,
@@ -25,3 +25,5 @@ export const StyledContentSection = styledComponents.div`
   padding: ${props => props.theme.paddingS};
   width: 100%;
 }`;
+
+export default StyledContentSection;

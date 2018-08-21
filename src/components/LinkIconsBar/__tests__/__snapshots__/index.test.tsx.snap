@@ -1,25 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<LinkIconsBar/> renders correctly 1`] = `
-<ul
-  className="link-icons-bar">
+<styled.ul>
   <li>
     <Component
-      fill="#c3c3c3" />
+      fill="#c3c3c3"
+    />
   </li>
   <li>
     <Component
-      fill="#c3c3c3" />
+      fill="#c3c3c3"
+    />
   </li>
   <li>
     <Component
-      fill="#c3c3c3" />
+      fill="#c3c3c3"
+    />
   </li>
   <li>
     <Component
-      fill="#c3c3c3" />
+      fill="#c3c3c3"
+    />
   </li>
   <li>
     <Component
-      fill="#c3c3c3" />
+      fill="#c3c3c3"
+    />
   </li>
-</ul>
+</styled.ul>
 `;

@@ -1,17 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Logo/> is styled correctly 1`] = `
-<img
-  className="sc-bdVaJa lcWtxS"
-/>
-`;
-
 exports[`<Logo/> renders correctly 1`] = `
 <Link
   replace={false}
-  to="/">
-  <img
+  to="/"
+>
+  <styled.img
     className="logo"
-    src="/images/soofka-logo-1.jpg" />
+    src="/images/soofka-logo-1.jpg"
+  />
 </Link>
 `;

@@ -4,7 +4,7 @@
     "title": "Moving from Sass to Styled Components (with snapshot tests)",
     "tags": ["javascript", "css", "sass", "styled components", "how to"],
     "brief": {
-      "text": "not ready yet",
+      "text": "Who doesn't like to constantly rework perfectly working stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of this famous JS fatigue feeling (approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!",
       "imageFileName": "dubai-eye.jpg"
     },
     "created": "2018-08-20",

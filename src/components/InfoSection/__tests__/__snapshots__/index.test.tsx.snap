@@ -1,8 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<InfoSection/> renders correctly 1`] = `
-<div
-  className="info-section">
+<styled.div>
   <Component />
   <Component />
   <Component />
-</div>
+</styled.div>
 `;

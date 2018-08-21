@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-import PolandFlag from 'components/LanguageSwitcher/flags/PolandFlag';
+import PolandFlag from 'components/LanguageSwitcher/components/PolandFlag';
 
 describe('<PolandFlag/>', () => {
 

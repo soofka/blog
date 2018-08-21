@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-import GreatBritainFlag from 'components/LanguageSwitcher/flags/GreatBritainFlag';
+import GreatBritainFlag from 'components/LanguageSwitcher/components/GreatBritainFlag';
 
 describe('<GreatBritainFlag/>', () => {
 

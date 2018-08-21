@@ -1,33 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<GreatBritainFlag/> renders correctly 1`] = `
 <svg
   height={60}
   viewBox="0 0 60 30"
-  width={100}>
+  width={100}
+>
   <clipPath
-    id="a">
+    id="a"
+  >
     <path
-      d="M30 15h30v15zv15H0zH0V0zV0h30z" />
+      d="M30 15h30v15zv15H0zH0V0zV0h30z"
+    />
   </clipPath>
   <path
     d="M0 0v30h60V0z"
-    fill="#00247d" />
+    fill="#00247d"
+  />
   <path
     d="M0 0l60 30m0-30L0 30"
     stroke="#fff"
-    strokeWidth={6} />
+    strokeWidth={6}
+  />
   <path
     clipPath="url(#a)"
     d="M0 0l60 30m0-30L0 30"
     stroke="#cf142b"
-    strokeWidth={4} />
+    strokeWidth={4}
+  />
   <path
     d="M30 0v30M0 15h60"
     stroke="#fff"
-    strokeWidth={10} />
+    strokeWidth={10}
+  />
   <path
     d="M30 0v30M0 15h60"
     stroke="#cf142b"
-    strokeWidth={6} />
+    strokeWidth={6}
+  />
 </svg>
 `;
 
@@ -36,31 +46,39 @@ exports[`<GreatBritainFlag/> renders correctly with optional props 1`] = `
   className="testClassName"
   height={60}
   viewBox="0 0 60 30"
-  width={100}>
+  width={100}
+>
   <clipPath
-    id="a">
+    id="a"
+  >
     <path
-      d="M30 15h30v15zv15H0zH0V0zV0h30z" />
+      d="M30 15h30v15zv15H0zH0V0zV0h30z"
+    />
   </clipPath>
   <path
     d="M0 0v30h60V0z"
-    fill="#00247d" />
+    fill="#00247d"
+  />
   <path
     d="M0 0l60 30m0-30L0 30"
     stroke="#fff"
-    strokeWidth={6} />
+    strokeWidth={6}
+  />
   <path
     clipPath="url(#a)"
     d="M0 0l60 30m0-30L0 30"
     stroke="#cf142b"
-    strokeWidth={4} />
+    strokeWidth={4}
+  />
   <path
     d="M30 0v30M0 15h60"
     stroke="#fff"
-    strokeWidth={10} />
+    strokeWidth={10}
+  />
   <path
     d="M30 0v30M0 15h60"
     stroke="#cf142b"
-    strokeWidth={6} />
+    strokeWidth={6}
+  />
 </svg>
 `;

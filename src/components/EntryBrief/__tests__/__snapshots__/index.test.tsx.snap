@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<EntryBrief/> renders correctly 1`] = `
 <div>
   <p>
@@ -9,21 +11,23 @@ exports[`<EntryBrief/> renders correctly 1`] = `
 
 exports[`<EntryBrief/> renders correctly with optional props 1`] = `
 <div>
-  <div
-    className="entry-brief--image-container"
+  <styled.div
     style={
       Object {
         "backgroundImage": "url(/images/testImageFileName)",
       }
-    } />
+    }
+  />
   <p>
     testText
      
     <Link
       replace={false}
-      to="testMoreButtonLink">
+      to="testMoreButtonLink"
+    >
       <inject-_class-with-languageStore
-        name="entry__continue_reading" />
+        name="entry__continue_reading"
+      />
        »
     </Link>
   </p>

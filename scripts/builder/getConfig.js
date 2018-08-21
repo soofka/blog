@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const ExtractTextWebpackPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
@@ -84,17 +83,6 @@ const getModule = (devEnv) => {
     },
   );
 
-  const styleLoaders = ExtractTextWebpackPlugin.extract({
-    use: [
-      {
-        loader: 'css-loader',
-        options: {
-          minimize: !devEnv,
-        }
-      },
-    ],
-  });
-
   const fontLoaders = [{
     loader: 'file-loader',
     options: {
@@ -115,10 +103,6 @@ const getModule = (devEnv) => {
         test: /\.tsx?$/,
         exclude: /node_modules/,
         loaders: typeScriptLoaders,
-      },
-      {
-        test: /\.scss$/,
-        loader: styleLoaders,
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
@@ -148,10 +132,6 @@ const getPlugins = (devEnv, audit) => {
       'process.env':{
         'NODE_ENV': JSON.stringify(devEnv ? 'development' : 'production')
       }
-    }),
-    new ExtractTextWebpackPlugin({
-      filename: `styles/style.[hash].css`,
-      allChunks: true,
     }),
     new CopyWebpackPlugin([
       { from: './assets/', to: './' },
@@ -189,7 +169,7 @@ const getPlugins = (devEnv, audit) => {
         config: './tslintconfig.json',
       }),
       new StyleLintWebpackPlugin(({
-        files: ['./src/**/*.{css,scss}'],
+        files: ['./src/**/*'],
         configFile: './.stylelintrc',
       })),
     );

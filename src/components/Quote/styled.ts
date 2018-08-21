@@ -10,3 +10,5 @@ export const StyledQuote = styledComponents.p`
     display: none;
   }
 `;
+
+export default StyledQuote;

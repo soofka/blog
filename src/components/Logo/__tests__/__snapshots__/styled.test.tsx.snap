@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledLogo/> is styled correctly 1`] = `
+.c0 {
+  display: block;
+  margin: 32px auto;
+  padding: 0;
+  width: 224px;
+  height: 224px;
+  border-radius: 32px;
+}
+
+@media (max-width:968px) {
+  .c0 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+  }
+}
+
+<img
+  className="c0"
+/>
+`;

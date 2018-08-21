@@ -1,9 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<NotFoundError/> renders correctly 1`] = `
 <div>
   <Component
     message={
       <inject-_class-with-languageStore
-        name="errors__page_not_found" />
-    } />
+        name="errors__page_not_found"
+      />
+    }
+  />
 </div>
 `;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EntryHeaderTags/> renders correctly 1`] = `
+<styled.p>
+  <Link
+    key="0"
+    replace={false}
+    to="/tag/tag1"
+  >
+    tag1
+  </Link>
+  <Link
+    key="1"
+    replace={false}
+    to="/tag/tag2"
+  >
+    tag2
+  </Link>
+  <Link
+    key="2"
+    replace={false}
+    to="/tag/tag3"
+  >
+    tag3
+  </Link>
+</styled.p>
+`;

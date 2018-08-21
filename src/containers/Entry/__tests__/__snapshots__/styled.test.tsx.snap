@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledEntry/> is styled correctly 1`] = `
+.c0 {
+  margin: 16px 0;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.c0:first-of-type {
+  margin-top: 0;
+}
+
+.c0:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width:968px) {
+  .c0 {
+    margin: 8px 0;
+    padding: 8px;
+  }
+
+  .c0 blockquote {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`<StyledEntryContent/> is styled correctly 1`] = `
+.c0 small {
+  display: block;
+  width: 100%;
+  font-size: 0.7em;
+  line-height: 1.25em;
+  margin: 0 0 16px 0;
+  padding: 0;
+  color: rgb(144,144,144);
+}
+
+.c0 small a {
+  color: rgb(144,144,144);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 small a:hover,
+.c0 small a:active {
+  color: rgb(144,144,144);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.c0 p,
+.c0 li {
+  font-size: 1.25em;
+  line-height: 2em;
+  margin: 0 0 32px 0;
+  padding: 0;
+  text-align: justify;
+}
+
+.c0 p a,
+.c0 li a {
+  color: rgb(0,1,49);
+}
+
+.c0 p a:hover,
+.c0 li a:hover,
+.c0 p a:active,
+.c0 li a:active {
+  color: rgb(0,3,147);
+}
+
+.c0 li {
+  margin: 0;
+}
+
+.c0 pre {
+  margin: 0;
+  padding: 0;
+}
+
+.c0 code {
+  float: left;
+  width: 100%;
+  margin: 0 0 32px 0;
+  padding: 16px;
+  color: rgb(20,20,20);
+  background-color: rgb(222,222,222);
+  box-sizing: border-box;
+}
+
+.c0 blockquote {
+  color: rgb(0,1,49);
+  margin: 0 48px 32px 48px;
+  padding: 0 16px;
+  font-size: 4em;
+  border-left: 4px solid rgb(0,3,147);
+  line-height: 6em;
+}
+
+.c0 img {
+  display: block;
+  max-width: 100%;
+  margin: 8px auto;
+  padding: 0;
+  border: 2px solid rgb(246,246,246);
+  outline: 1px solid rgb(44,44,44);
+}
+
+.c0 ul {
+  margin: 0;
+  padding: 0 0 0 32px;
+}
+
+.c0 hr {
+  margin: 64px;
+}
+
+.c0 .video-container {
+  max-width: 800px;
+  max-height: 450px;
+  margin: 8px auto 16px auto;
+  overflow: hidden;
+}
+
+.c0 .video-container--wrapper {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.c0 .video-container--wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+<div
+  className="c0"
+/>
+`;

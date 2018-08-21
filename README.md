@@ -12,6 +12,11 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.3.10
+- removed Sass-based styling
+- added Styled Components
+- added snapshot test for Styled Components
+
 ### 1.3.9
 - added MobX
 - refined TSLint rules

@@ -13,3 +13,5 @@ export const StyledEntryBrief = styledComponents.div`
   background-attachment: scroll;
   background-size: cover;
 `;
+
+export default StyledEntryBrief;

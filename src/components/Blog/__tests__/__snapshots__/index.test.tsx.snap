@@ -1,7 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Blog/> renders correctly 1`] = `
-<div
-  className="blog">
-  <Component />
-  <withRouter() />
-</div>
+<ThemeProvider
+  theme={
+    Object {
+      "baseDistance": "8",
+      "baseFontSize": "18px",
+      "baseLineHeight": "24px",
+      "black": "rgb(20,20,20)",
+      "blue": "rgb(0,1,49)",
+      "contentSectionWidth": "68%",
+      "darkBlue": "rgb(0,0,24)",
+      "darkWhite": "rgb(222,222,222)",
+      "darkerBlue": "rgb(0,0,0)",
+      "darkerWhite": "rgb(198,198,198)",
+      "fontSizeL": "1.25em",
+      "fontSizeM": "1em",
+      "fontSizeS": "0.7em",
+      "fontSizeXL": "1.5em",
+      "fontSizeXXL": "2em",
+      "fontSizeXXXL": "4em",
+      "fontSizeXXXXL": "6em",
+      "gray": "rgb(144,144,144)",
+      "infoSectionWidth": "32%",
+      "lightBlack": "rgb(32,32,32)",
+      "lightBlue": "rgb(0,2,98)",
+      "lighterBlack": "rgb(44,44,44)",
+      "lighterBlue": "rgb(0,3,147)",
+      "marginL": "32px",
+      "marginM": "16px",
+      "marginS": "8px",
+      "marginXL": "48px",
+      "marginXS": "4px",
+      "marginXXL": "64px",
+      "marginXXS": "2px",
+      "mobileBreakPointWidth": "968px",
+      "paddingL": "32px",
+      "paddingM": "16px",
+      "paddingS": "8px",
+      "paddingXL": "48px",
+      "paddingXS": "4px",
+      "paddingXXL": "64px",
+      "paddingXXS": "2px",
+      "white": "rgb(246,246,246)",
+    }
+  }
+>
+  <styled.div>
+    <Component />
+    <withRouter() />
+  </styled.div>
+</ThemeProvider>
 `;

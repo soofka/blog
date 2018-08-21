@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledQuote/> is styled correctly 1`] = `
+.c0 {
+  margin: 16px;
+  padding: 8px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width:968px) {
+  .c0 {
+    display: none;
+  }
+}
+
+<p
+  className="c0"
+/>
+`;

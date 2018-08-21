@@ -1,47 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<EntryHeader/> renders correctly 1`] = `
-<div
-  className="entry-header">
-  <h1
-    className="entry-header--title">
-    <Link
-      replace={false}
-      to="testTitleLink">
-      testTitle
-    </Link>
-  </h1>
-  <p
-    className="entry-header--meta">
-    <inject-_class-with-languageStore
-      name="entry__created" />
-    <span>
-      testCreated
-    </span>
-    <inject-_class-with-languageStore
-      name="entry__last_updated" />
-    <span>
-      testUpdated
-    </span>
-  </p>
-  <p
-    className="entry-header--tags">
-    <Link
-      key="0"
-      replace={false}
-      to="/tag/tag1">
-      tag1
-    </Link>
-    <Link
-      key="1"
-      replace={false}
-      to="/tag/tag2">
-      tag2
-    </Link>
-    <Link
-      key="2"
-      replace={false}
-      to="/tag/tag3">
-      tag3
-    </Link>
-  </p>
+<div>
+  <Component
+    link="testTitleLink"
+    title="testTitle"
+  />
+  <Component
+    created="testCreated"
+    updated="testUpdated"
+  />
+  <Component
+    tags={
+      Array [
+        "tag1",
+        "tag2",
+        "tag3",
+      ]
+    }
+  />
 </div>
 `;

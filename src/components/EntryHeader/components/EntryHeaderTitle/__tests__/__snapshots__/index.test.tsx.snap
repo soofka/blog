@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EntryHeaderTitle/> renders correctly 1`] = `
+<styled.h1>
+  <Link
+    replace={false}
+    to="testTitleLink"
+  >
+    testTitle
+  </Link>
+</styled.h1>
+`;

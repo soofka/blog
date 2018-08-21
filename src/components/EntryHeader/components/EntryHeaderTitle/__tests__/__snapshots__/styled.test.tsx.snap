@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledEntryHeaderTitle/> is styled correctly 1`] = `
+.c0 {
+  font-size: 1.5em;
+  margin: 8px 0;
+  padding: 0;
+}
+
+.c0 a {
+  color: rgb(0,1,49);
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 a:hover {
+  color: rgb(0,3,147);
+}
+
+<h1
+  className="c0"
+/>
+`;

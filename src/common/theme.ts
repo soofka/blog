@@ -54,3 +54,5 @@ export const theme = {
   fontSizeXXXL: '4em',
   fontSizeXXXXL: '6em',
 };
+
+export default theme;

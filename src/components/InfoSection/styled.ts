@@ -30,3 +30,6 @@ export const StyledInfoSection = styledComponents.div`
     min-height: 0;
 }
 `;
+
+export default StyledInfoSection;
+

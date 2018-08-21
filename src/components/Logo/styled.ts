@@ -17,3 +17,5 @@ export const StyledLogo = styledComponents.img`
     border-radius: ${props => props.theme.baseDistance}px;
   }
 `;
+
+export default StyledLogo;

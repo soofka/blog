@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<Entry/> renders correctly 1`] = `
 <Entry
   bried={null}
@@ -18,7 +20,8 @@ exports[`<Entry/> renders correctly 1`] = `
     ]
   }
   title="testTitle"
-  updated="testUpdated" />
+  updated="testUpdated"
+/>
 `;
 
 exports[`<Entry/> renders correctly with optional props 1`] = `
@@ -42,5 +45,6 @@ exports[`<Entry/> renders correctly with optional props 1`] = `
     ]
   }
   title="testTitle"
-  updated="testUpdated" />
+  updated="testUpdated"
+/>
 `;

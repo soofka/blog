@@ -6,3 +6,5 @@ export const StyledBlog = styledComponents.div`
   font-size: ${props => props.theme.baseFontSize};
   line-height: ${props => props.theme.baseLineHeight};
 `;
+
+export default StyledBlog;

@@ -2,7 +2,6 @@ import * as React from 'react';
 import { shallow } from 'enzyme';
 
 import Logo from 'components/Logo';
-import { StyledLogo } from 'components/Logo/styled';
 
 describe('<Logo/>', () => {
 
@@ -12,10 +11,6 @@ describe('<Logo/>', () => {
         number="1"
       />,
     )).toMatchSnapshot();
-  });
-
-  it('is styled correctly', () => {
-    expect(shallow(<StyledLogo/>)).toMatchSnapshot();
   });
 
 });

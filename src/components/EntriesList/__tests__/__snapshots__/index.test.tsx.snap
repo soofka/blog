@@ -1,9 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<EntriesList/> renders correctly 1`] = `
 <div>
   <Component
     message={
       <inject-_class-with-languageStore
-        name="errors__no_entries_matching_query" />
-    } />
+        name="errors__no_entries_matching_query"
+      />
+    }
+  />
 </div>
 `;

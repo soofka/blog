@@ -3,7 +3,7 @@ import * as React from 'react';
 import Logo from 'components/Logo';
 import Quote from 'components/Quote';
 import LinkIconsBar from 'components/LinkIconsBar';
-import LanguageSwitcher from 'components/LanguageSwitcher';
+// import LanguageSwitcher from 'components/LanguageSwitcher';
 
 import { StyledInfoSection } from './styled';
 

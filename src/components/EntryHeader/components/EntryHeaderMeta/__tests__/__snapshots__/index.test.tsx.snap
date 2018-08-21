@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EntryHeaderMeta/> renders correctly 1`] = `
+<styled.p>
+  <inject-_class-with-languageStore
+    name="entry__created"
+  />
+  <span>
+    testCreated
+  </span>
+  <inject-_class-with-languageStore
+    name="entry__last_updated"
+  />
+  <span>
+    testUpdated
+  </span>
+</styled.p>
+`;

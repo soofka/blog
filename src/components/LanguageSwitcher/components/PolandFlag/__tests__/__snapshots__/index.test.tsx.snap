@@ -1,14 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<PolandFlag/> renders correctly 1`] = `
 <svg
   height={60}
   viewBox="0 0 16 10"
-  width={100}>
+  width={100}
+>
   <path
     d="M0 0h16v10H0z"
-    fill="#fff" />
+    fill="#fff"
+  />
   <path
     d="M0 5h16v5H0z"
-    fill="#dc143c" />
+    fill="#dc143c"
+  />
 </svg>
 `;
 
@@ -17,12 +22,15 @@ exports[`<PolandFlag/> renders correctly with optional props 1`] = `
   className="testClassName"
   height={60}
   viewBox="0 0 16 10"
-  width={100}>
+  width={100}
+>
   <path
     d="M0 0h16v10H0z"
-    fill="#fff" />
+    fill="#fff"
+  />
   <path
     d="M0 5h16v5H0z"
-    fill="#dc143c" />
+    fill="#dc143c"
+  />
 </svg>
 `;

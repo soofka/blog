@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<LanguageSwitcher/> renders correctly 1`] = `
 <Component
   languageStore={
@@ -5,5 +7,6 @@ exports[`<LanguageSwitcher/> renders correctly 1`] = `
       "getLanguage": [Function],
       "setLanguage": [Function],
     }
-  } />
+  }
+/>
 `;

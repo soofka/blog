@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import { mockStoreProps, mockRouteProps } from 'common/testMocks';
 
-import AllEntries from 'containers/Entries/variants/AllEntries';
+import AllEntries from 'containers/Entries/components/AllEntries';
 
 describe('<AllEntries/>', () => {
 

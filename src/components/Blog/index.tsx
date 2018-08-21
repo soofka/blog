@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import { theme } from 'common/theme';
+import theme from 'common/theme';
 import { StyledBlog } from './styled';
 
 import InfoSection from 'components/InfoSection';

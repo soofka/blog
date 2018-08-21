@@ -1,8 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<EntryContent/> renders correctly 1`] = `
 <div
   dangerouslySetInnerHTML={
     Object {
       "__html": "testContent",
     }
-  } />
+  }
+/>
 `;

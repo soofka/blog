@@ -1,3 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
 exports[`<AllEntriesByTag/> renders correctly 1`] = `
 <AllEntriesByTag
   languageStore={
@@ -14,5 +16,6 @@ exports[`<AllEntriesByTag/> renders correctly 1`] = `
         "tag": "testTag",
       },
     }
-  } />
+  }
+/>
 `;
