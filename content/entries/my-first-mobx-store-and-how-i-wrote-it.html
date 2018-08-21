@@ -182,7 +182,7 @@ export default inject('languageStore')(observer(Label));</code>
     }
   }
 
-  //...
+  // ...
 }
 
 export default inject('languageStore')(Entries);</code>
@@ -192,7 +192,7 @@ export default inject('languageStore')(Entries);</code>
 <p>So, what I learned in the process? One thing I learned, at least a little bit, is, of course, MobX itself. Being quite keen on Redux already, I find MobX's approach to the same problem... intriguing. It indeed seems simpler, at least to start working with, than complicated data flow in Redux, with all it's actions and reducers. It seems more human-readable. Hard to say if it's better or not and in which cases, but after my first experience, I want to try it more, to see its flaws and boundaries.</p>
 <p>When I first learned about MobX and read about it's simplicity, I thought that it must be also much more limited. Surprisingly, it seems to be very flexible and ready for variety of use cases, with plenty of different ways to interact with the state. I didn't discover them all, I touched only these, which I needed, but during my research I've realized, that it can do much more than simple use case I presented in this post. I'm wondering now how would it handle sophisticated, complex logic of real world applications, with hundreds of views, scenarios, API calls, etc. Redux might be an overkill for small project with one variable in state, but it handles these complex ones very well. How would MobX perform there? I guess I'll see it in future.</p>
 <p>One last thought I had on this subject: introduction of global state to your application makes you rethink data flow within it. I was horrified by some of ideas I had when I implemented this blog originally, almost 2 years ago, when I was forced to look at them closely, while adapting different components for integration with MobX. I had to do some refactoring, because I realized, some of those little monsters I had here and there cannot exist peacefully in organized world, which I created with MobX. When it comes to this point, I think it's the same with Redux. Having one of them in your application is not always the way to go, but once you introduce it, you might want to rethink your data flow and relations between components, and it's for the better.</p>
-<h3>References</h3>
+<h2>References</h2>
 <ul>
   <li><a href="https://mobx.js.org/">MobX documentation</a></li>
   <li><a href="https://github.com/mobxjs/mobx-react">MobX-React documentation</a></li>

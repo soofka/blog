@@ -2,15 +2,15 @@
   {
     "id": "9a6a22e7-6468-4f1e-a066-4e06c437d383",
     "title": "Moving from Sass to Styled Components (with snapshot tests)",
-    "tags": ["javascript", "css", "sass", "styled components", "how to"],
+    "tags": ["javascript", "css", "sass", "css-in-js", "styled components", "jest", "snapshot tests", "how to"],
     "brief": {
-      "text": "Who doesn't like to constantly rework perfectly working stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of this famous JS fatigue feeling (approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!",
+      "text": "Who doesn't like to constantly rework perfectly fine stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of famous \"JS fatigue\" feeling (so approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!",
       "imageFileName": "dubai-eye.jpg"
     },
     "created": "2018-08-20",
     "updated": "2018-08-21",
     "contentFileName": "moving-from-sass-to-styled-component-with-snapshot-tests.html",
-    "public": false
+    "public": true
   },
   {
     "id": "b0198de0-002b-47e2-a3c6-244314ddb757",
