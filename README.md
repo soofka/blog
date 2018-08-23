@@ -109,6 +109,7 @@ Blog is available at `localhost:3000`.
 ## bugs
 ### major
 - HTTPS does not work properly on Firefox
+- impossible to add blog to Feedly
 - service worker does not work properly when content is updated
 - lack of tests
 - `npm audit fix`
@@ -140,3 +141,5 @@ Blog is available at `localhost:3000`.
 - different route paths per language
 - move entries and entry content to global state to avoid loading them again with each rerender
 - make about section collapsible
+- move styled-components to devDependencies
+- rethink styling variables and redo them properly

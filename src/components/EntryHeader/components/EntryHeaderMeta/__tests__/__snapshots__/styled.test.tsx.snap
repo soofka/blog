@@ -3,6 +3,7 @@
 exports[`<StyledEntryHeaderMeta/> is styled correctly 1`] = `
 .c0 {
   font-size: 0.7em;
+  line-height: 1em;
   margin: 8px 2px 16px 2px;
   padding: 0;
   color: rgb(44,44,44);

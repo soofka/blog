@@ -29,7 +29,7 @@ export const StyledEntryContent = styledComponents.div`
     display: block;
     width: 100%;
     font-size: ${props => props.theme.fontSizeS};
-    line-height: ${props => props.theme.fontSizeL};
+    line-height: ${props => props.theme.lineHeightS};
     margin: 0 0 ${props => props.theme.marginM} 0;
     padding: 0;
     color: ${props => props.theme.gray};
@@ -48,8 +48,8 @@ export const StyledEntryContent = styledComponents.div`
 
   p,
   li {
-    font-size: ${props => props.theme.fontSizeL};
-    line-height: ${props => props.theme.fontSizeXXL};
+    font-size: ${props => props.theme.fontSizeM};
+    line-height: ${props => props.theme.lineHeightM};
     margin: 0 0 ${props => props.theme.marginL} 0;
     padding: 0;
     text-align: justify;
@@ -89,8 +89,8 @@ export const StyledEntryContent = styledComponents.div`
     margin: 0 ${props => `${props.theme.marginXL} ${props.theme.marginL} ${props.theme.marginXL}`};
     padding: 0 ${props => props.theme.paddingM};
     font-size: ${props => props.theme.fontSizeXXXL};
-    border-left: 4px solid ${props => props.theme.lighterBlue};
     line-height: ${props => props.theme.fontSizeXXXXL};
+    border-left: 4px solid ${props => props.theme.lighterBlue};
   }
 
   img {

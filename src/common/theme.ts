@@ -1,7 +1,7 @@
 const infoSectionWidthPercentageValue = 32;
 const baseDistanceValue = 8;
 const baseFontSizeValue = 18;
-const baseLineHeightValue = 24;
+const baseLineHeightValue = 26;
 
 export const theme = {
   mobileBreakPointWidth: '968px',
@@ -49,10 +49,15 @@ export const theme = {
   fontSizeS: '0.7em',
   fontSizeM: '1em',
   fontSizeL: '1.25em',
-  fontSizeXL: '1.5em',
+  fontSizeXL: '1.75em',
   fontSizeXXL: '2em',
   fontSizeXXXL: '4em',
   fontSizeXXXXL: '6em',
+
+  lineHeightS: '1em',
+  lineHeightM: '1.75em',
+  lineHeightL: '3em',
+  lineHeightXL: '4em',
 };
 
 export default theme;
