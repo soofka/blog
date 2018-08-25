@@ -4,12 +4,28 @@ interface EntryContentPropsInterface {
   content: string;
 }
 
-export const EntryContent = (props: EntryContentPropsInterface): JSX.Element => {
-  const { content } = props;
+declare const hljs: any;
 
-  return (
-    <div dangerouslySetInnerHTML={{ __html: content }}></div>
-  );
-};
+export class EntryContent extends React.Component<EntryContentPropsInterface> {
+
+  componentDidMount(): void {
+    this.highlightCodeBlocks();
+  }
+
+  highlightCodeBlocks(): void {
+    document.querySelectorAll('pre code').forEach((codeBlock: Node) => {
+      hljs.highlightBlock(codeBlock);
+    });
+  }
+
+  render(): JSX.Element {
+    const { content } = this.props;
+
+    return (
+      <div dangerouslySetInnerHTML={{ __html: content }}></div>
+    );
+  }
+
+}
 
 export default EntryContent;

@@ -15,6 +15,7 @@ import LoadingCover from 'components/LoadingCover';
 import ErrorBox from 'components/ErrorBox';
 import EntryContent from 'components/EntryContent';
 import EntryComments from 'components/EntryComments';
+import ContentDivider from 'components/ContentDivider';
 
 import { StyledEntry, StyledEntryContent } from './styled';
 
@@ -65,6 +66,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
     AssetsProvider
       .getEntryContent(AssetsProvider.getEntryFilePath(this.props.contentFileName))
       .then((response: RequestHandlerResponseInterface) => {
+
         const content = RequestHandler.validateResponse(response)
           ? response.data
           : undefined;
@@ -97,7 +99,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
             />}
           {full && loading &&
             <LoadingCover />}
-          {full && !content &&
+          {full && !loading && !content &&
             <ErrorBox
               message={<Label name="errors__no_entry_content" />}
             />}
@@ -110,6 +112,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
               <EntryContent
                 content={content}
               />
+              <ContentDivider/>
               <EntryComments
                 title={title}
                 url={niceUrlWithBasePath}

@@ -2,7 +2,7 @@ import styledComponents from 'styled-components';
 
 export const StyledEntryHeaderTags = styledComponents.p`
   font-size: ${props => props.theme.fontSizeS};
-  line-height: ${props => props.theme.lineHeightM};
+  line-height: ${props => props.theme.lineHeightL};
   margin: 0 0 ${props => props.theme.marginM} 0;
   padding: 0;
 

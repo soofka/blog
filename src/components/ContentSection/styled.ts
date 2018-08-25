@@ -4,12 +4,13 @@ export const StyledContentSection = styledComponents.div`
   float: left;
   margin: 0 0 0 ${props => props.theme.infoSectionWidth};
   padding: ${props => props.theme.paddingM};
-  width: ${props => props.theme.contentSectionWidth};
+  width: 100%;
   height: auto;
   min-height: 100%;
   box-sizing: border-box;
   color: ${props => props.theme.lighterBlack};
   background-color: ${props => props.theme.white};
+  box-shadow: ${props => `0 0 ${props.theme.baseDistanceValue}px 0 ${props.theme.white}`};
 
   a {
     color: ${props => props.theme.lighterBlack};

@@ -4,12 +4,11 @@ exports[`<Blog/> renders correctly 1`] = `
 <ThemeProvider
   theme={
     Object {
-      "baseDistance": "8",
+      "baseDistanceValue": 8,
       "baseFontSize": "18px",
-      "baseLineHeight": "26px",
+      "baseLineHeight": "18px",
       "black": "rgb(20,20,20)",
       "blue": "rgb(0,1,49)",
-      "contentSectionWidth": "68%",
       "darkBlue": "rgb(0,0,24)",
       "darkWhite": "rgb(222,222,222)",
       "darkerBlue": "rgb(0,0,0)",
@@ -22,15 +21,14 @@ exports[`<Blog/> renders correctly 1`] = `
       "fontSizeXXXL": "4em",
       "fontSizeXXXXL": "6em",
       "gray": "rgb(144,144,144)",
-      "infoSectionWidth": "32%",
+      "infoSectionHeightValue": 128,
       "lightBlack": "rgb(32,32,32)",
       "lightBlue": "rgb(0,2,98)",
       "lighterBlack": "rgb(44,44,44)",
       "lighterBlue": "rgb(0,3,147)",
-      "lineHeightL": "3em",
-      "lineHeightM": "1.75em",
+      "lineHeightL": "1.5em",
+      "lineHeightM": "1.2em",
       "lineHeightS": "1em",
-      "lineHeightXL": "4em",
       "marginL": "32px",
       "marginM": "16px",
       "marginS": "8px",
@@ -46,13 +44,16 @@ exports[`<Blog/> renders correctly 1`] = `
       "paddingXS": "4px",
       "paddingXXL": "64px",
       "paddingXXS": "2px",
+      "siteMaxWidth": "1200px",
       "white": "rgb(246,246,246)",
     }
   }
 >
   <styled.div>
-    <Component />
-    <withRouter() />
+    <styled.div>
+      <Component />
+      <withRouter() />
+    </styled.div>
   </styled.div>
 </ThemeProvider>
 `;

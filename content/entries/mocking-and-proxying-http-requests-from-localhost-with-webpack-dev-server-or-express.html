@@ -3,7 +3,7 @@
 <h2>Mocking</h2>
 <p>With mocked HTTP request response, you don't even call any back-end at all. Request is intercepted, and mocked - manually defined by you - response is served by your localhost. It's useful for most cases, because it gets the job done easily. It's particularly useful, when your back-end is just slow, or there is a lot of data to transfer, or a lot of calls - you just don't transfer any data over the wire, and there is no delay in your development. Downside of this solution is that you never see actual response that is coming from the service. You may end up surprised by totally different data model provided by back-end, or by any other difference between your assumption stated in your mock and actual response.</p>
 <h3>Webpack Dev Server</h3>
-<p>There is an option in <a href="https://webpack.js.org/configuration/dev-server/" target="_blank">configuration of Webpack Dev Server</a>, which allows you to define proxy for any HTTP request that comes out of your localhost. You can also define specific bypass in it, with conditions as detailed as you want. In my example, I'm intercepting all calls to /api URL, and respond with mocked JS object instead.</p>
+<p><code>proxy</code> is an option in <a href="https://webpack.js.org/configuration/dev-server/" target="_blank">configuration of Webpack Dev Server</a>, which allows you to define proxy for any HTTP request that comes out of your localhost. You can also define specific bypass in it, with conditions as detailed as you want. In my example, I'm intercepting all calls to <code>/api</code> URL, and respond with mocked JS object instead.</p>
 <pre>
 <code>devServer: {
   // ...
@@ -34,7 +34,7 @@ app.get('/api', (request, response) => {
 <h2>Proxying</h2>
 <p>With proxied HTTP request, you call actual back-end service. Request is only proxied - redirected to it's true destination, and potentially modified a bit. It's usually preferred for when you are fine with getting real data from real service, even at a cost of waiting some additional time with each visit to your localhost, but your back-end is on different host than your local, which is usually the case. Cons? If you can afford it time- and resources-wise, there are none, in my experience.</p>
 <h3>Webpack Dev Server</h3>
-<p>Proxy with Webpack Dev Server can be achieved using proxy configuration option, this time more like it was originally intended. Target parameter describes destination to which certain call should be redirected. If pathRewrite parameter is not provided, /api will be concatenated with the target, which is not what I wanted to achieve here (hence I've defined this parameter), but you may find it useful.</p>
+<p>Proxy with Webpack Dev Server can be achieved using <code>proxy</code> configuration option, this time more like it was originally intended. <code>target</code> parameter describes destination to which certain call should be redirected. If <code>pathRewrite</code> parameter is not provided, <code>/api</code> will be concatenated with the target, which is not what I wanted to achieve here (hence I've defined this parameter), but you may find it useful.</p>
 <pre>
 <code>devServer: {
   // ...
@@ -48,7 +48,7 @@ app.get('/api', (request, response) => {
 </pre>
 <p>(content of the whole script available <a href="https://github.com/soofka/blog/blob/master/code_examples/mocking-and-proxying-http-requests-from-localhost/webpack.devserver.proxy.config.js" target="_blank">here</a>)</p>
 <h3>Express</h3>
-<p>In Express, it's a little bit more effort, since it's required to incorporate http-proxy package for this operation. Similarly to Webpack Dev Server, target parameter defines destination of your redirection. The other parameter, ignorePath, is set to false by default. If you don't override it, /api will be added to the end of your request's URL. Again, it might be what you want in some cases.</p>
+<p>In Express, it's a little bit more effort, since it's required to incorporate http-proxy package for this operation. Similarly to Webpack Dev Server, <code>target</code> parameter defines destination of your redirection. The other parameter, <code>ignorePath</code>, is set to <code>false</code> by default. If you don't override it, <code>/api</code> will be added to the end of your request's URL. Again, it might be what you want in some cases.</p>
 <pre>
 <code>const app = express();
 const apiProxy = httpProxy.createProxyServer();

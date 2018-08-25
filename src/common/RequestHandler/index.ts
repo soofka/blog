@@ -9,7 +9,7 @@ export class RequestHandler {
   }
 
   static validateResponse(response: RequestHandlerResponseInterface): boolean {
-    return response.status === 200 && response.data;
+    return response && response.status === 200 && response.data;
   }
 }
 

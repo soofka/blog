@@ -83,6 +83,10 @@ const getModule = (devEnv) => {
     },
   );
 
+  const styleLoaders = [
+    'css-loader',
+  ];
+
   const fontLoaders = [{
     loader: 'file-loader',
     options: {
@@ -105,6 +109,10 @@ const getModule = (devEnv) => {
         loaders: typeScriptLoaders,
       },
       {
+        test: /\.css$/,
+        use: styleLoaders,
+      },
+      {
         test: /\.(eot|svg|ttf|woff|woff2)$/,
         loader: fontLoaders,
       }, {
@@ -116,8 +124,13 @@ const getModule = (devEnv) => {
 };
 
 const getPlugins = (devEnv, audit) => {
-  let staticStyles = ['/styles/normalize.css'];
-  let staticScripts = [];
+  let staticStyles = [
+    '/styles/normalize.css',
+    '/scripts/highlight/styles/dracula.css',
+  ];
+  let staticScripts = [
+    '/scripts/highlight/highlight.pack.js',
+  ];
 
   if (!devEnv) {
     staticScripts.push(

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Logo from 'components/Logo';
-import Quote from 'components/Quote';
+// import Quote from 'components/Quote';
 import LinkIconsBar from 'components/LinkIconsBar';
 // import LanguageSwitcher from 'components/LanguageSwitcher';
 
@@ -12,7 +12,7 @@ export const InfoSection = (): JSX.Element => {
     <StyledInfoSection>
       <Logo/>
       {/*<LanguageSwitcher/>*/}
-      <Quote/>
+      {/*<Quote/>*/}
       <LinkIconsBar/>
     </StyledInfoSection>
   );

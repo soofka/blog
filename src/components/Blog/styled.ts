@@ -7,4 +7,10 @@ export const StyledBlog = styledComponents.div`
   line-height: ${props => props.theme.baseLineHeight};
 `;
 
-export default StyledBlog;
+export const StyledBlogContainer = styledComponents.div`
+  position: relative;
+  width: 100%;
+  max-width: ${props => props.theme.siteMaxWidth};
+  height: 100%;
+  margin: 0 auto;
+`;

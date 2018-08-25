@@ -1,13 +1,11 @@
-const infoSectionWidthPercentageValue = 32;
 const baseDistanceValue = 8;
-const baseFontSizeValue = 18;
-const baseLineHeightValue = 26;
 
 export const theme = {
-  mobileBreakPointWidth: '968px',
+  baseDistanceValue,
+  infoSectionHeightValue: 16 * baseDistanceValue,
 
-  infoSectionWidth: `${infoSectionWidthPercentageValue}%`,
-  contentSectionWidth: `${100 - infoSectionWidthPercentageValue}%`,
+  siteMaxWidth: '1200px',
+  mobileBreakPointWidth: '968px',
 
   blue: 'rgb(0,1,49)',
   darkBlue: 'rgb(0,0,24)',
@@ -25,8 +23,6 @@ export const theme = {
 
   gray: 'rgb(144,144,144)',
 
-  baseDistance: `${baseDistanceValue}`,
-
   marginXXS: `${0.25 * baseDistanceValue}px`,
   marginXS: `${0.5 * baseDistanceValue}px`,
   marginS: `${baseDistanceValue}px`,
@@ -43,8 +39,8 @@ export const theme = {
   paddingXL: `${6 * baseDistanceValue}px`,
   paddingXXL: `${8 * baseDistanceValue}px`,
 
-  baseFontSize: `${baseFontSizeValue}px`,
-  baseLineHeight: `${baseLineHeightValue}px`,
+  baseFontSize: '18px',
+  baseLineHeight: '18px',
 
   fontSizeS: '0.7em',
   fontSizeM: '1em',
@@ -55,9 +51,9 @@ export const theme = {
   fontSizeXXXXL: '6em',
 
   lineHeightS: '1em',
-  lineHeightM: '1.75em',
-  lineHeightL: '3em',
-  lineHeightXL: '4em',
+  lineHeightM: '1.2em',
+  lineHeightL: '1.5em',
+  // lineHeightXL: '4em',
 };
 
 export default theme;

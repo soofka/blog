@@ -59,7 +59,7 @@ exports[`<StyledEntryContent/> is styled correctly 1`] = `
 .c0 p,
 .c0 li {
   font-size: 1em;
-  line-height: 1.75em;
+  line-height: 1.5em;
   margin: 0 0 32px 0;
   padding: 0;
   text-align: justify;
@@ -79,21 +79,6 @@ exports[`<StyledEntryContent/> is styled correctly 1`] = `
 
 .c0 li {
   margin: 0;
-}
-
-.c0 pre {
-  margin: 0;
-  padding: 0;
-}
-
-.c0 code {
-  float: left;
-  width: 100%;
-  margin: 0 0 32px 0;
-  padding: 16px;
-  color: rgb(20,20,20);
-  background-color: rgb(222,222,222);
-  box-sizing: border-box;
 }
 
 .c0 blockquote {
@@ -120,7 +105,11 @@ exports[`<StyledEntryContent/> is styled correctly 1`] = `
 }
 
 .c0 hr {
-  margin: 64px;
+  width: 70%;
+  height: 1px;
+  margin: 64px auto;
+  border: 0;
+  border-top: 1px solid rgb(198,198,198);
 }
 
 .c0 .video-container {

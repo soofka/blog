@@ -49,7 +49,7 @@ export const StyledEntryContent = styledComponents.div`
   p,
   li {
     font-size: ${props => props.theme.fontSizeM};
-    line-height: ${props => props.theme.lineHeightM};
+    line-height: ${props => props.theme.lineHeightL};
     margin: 0 0 ${props => props.theme.marginL} 0;
     padding: 0;
     text-align: justify;
@@ -67,21 +67,6 @@ export const StyledEntryContent = styledComponents.div`
 
   li {
     margin: 0;
-  }
-
-  pre {
-    margin: 0;
-    padding: 0;
-  }
-
-  code {
-    float: left;
-    width: 100%;
-    margin: 0 0 ${props => props.theme.marginL} 0;
-    padding: ${props => props.theme.paddingM};
-    color: ${props => props.theme.black};
-    background-color: ${props => props.theme.darkWhite};
-    box-sizing: border-box;
   }
 
   blockquote {
@@ -108,7 +93,11 @@ export const StyledEntryContent = styledComponents.div`
   }
 
   hr {
-    margin: ${props => props.theme.marginXXL};
+    width: 70%;
+    height: 1px;
+    margin: ${props => props.theme.marginXXL} auto;
+    border: 0;
+    border-top: 1px solid ${props => props.theme.darkerWhite};
   }
 
   .video-container {

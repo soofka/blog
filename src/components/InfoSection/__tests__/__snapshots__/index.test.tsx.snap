@@ -4,6 +4,5 @@ exports[`<InfoSection/> renders correctly 1`] = `
 <styled.div>
   <Component />
   <Component />
-  <Component />
 </styled.div>
 `;

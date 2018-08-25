@@ -12,6 +12,10 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.4.0
+- simplified UI
+- added syntax highlight to code samples
+
 ### 1.3.10
 - removed Sass-based styling
 - added Styled Components
@@ -111,14 +115,12 @@ Blog is available at `localhost:3000`.
 - HTTPS does not work properly on Firefox
 - impossible to add blog to Feedly
 - service worker does not work properly when content is updated
+- social media tags does not reload
 - lack of tests
-- `npm audit fix`
 
 ### minor
 - specific metrics of google analytics are not being recorder properly
-- while loading entry content, "loading" appears at the same time as "error"
 - `any`
-
 
 ## improvements
 ### major
@@ -126,8 +128,8 @@ Blog is available at `localhost:3000`.
 - "about" page
 - "archive" pages
 - "lectures and trainings" page
+- "back to top" button
 - social media feed below newest posts, with differentiation between all feed sources
-- styling with Styled Components (tested with jest-styled-components)
 
 ### minor
 - sorting entries
@@ -135,11 +137,9 @@ Blog is available at `localhost:3000`.
 - loading indicator view with react-loadable
 - better security with content based policy
 - route based chunking
-- animated components
-- nicer and more interactive code display in entries (CodeSandbox?)
+- animated components with [popmotion](https://popmotion.io/pose/learn/route-transitions-reach-router/)
 - compilation to WebAssembly
 - different route paths per language
 - move entries and entry content to global state to avoid loading them again with each rerender
-- make about section collapsible
-- move styled-components to devDependencies
 - rethink styling variables and redo them properly
+- optimize header post images
