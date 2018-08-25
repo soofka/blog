@@ -114,7 +114,6 @@ Blog is available at `localhost:3000`.
 ### major
 - HTTPS does not work properly on Firefox
 - impossible to add blog to Feedly
-- service worker does not work properly when content is updated
 - social media tags does not reload
 - lack of tests
 
