@@ -3,12 +3,12 @@ import { shallow } from 'enzyme';
 import 'jest-styled-components';
 
 import theme from 'common/theme';
-import { StyledEntryBrief } from 'components/EntryBrief/styled';
+import { StyledEntryImage } from 'components/EntryBrief/styled';
 
-describe('<StyledEntryBrief/>', () => {
+describe('<StyledEntryImage/>', () => {
 
   it('is styled correctly', () => {
-    expect(shallow(<StyledEntryBrief theme={theme} />)).toMatchSnapshot();
+    expect(shallow(<StyledEntryImage theme={theme} />)).toMatchSnapshot();
   });
 
 });

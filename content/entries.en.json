@@ -135,7 +135,7 @@
     "tags": ["javascript", "react", "disqus", "how to"],
     "brief": {
       "text": "One of the challenges that I faced while programming this, so far, very simple blog app (the one that you are using to read this post, most likely), was how to give my readers a possibility to comment on my posts. Obviously, it is one of the crucial features of this kind of app – I would like my readers to be able to tell me where am I wrong, and I would like me to be able to respond to such heretic claims. However, the whole feature seems quite a lot of work to implement from scratch. Luckily, there are plenty of ready out of the box solutions out there, one of them being Disqus.",
-      "imageFileName": "disqus-logo.png"
+      "imageFileName": "disqus-logo.jpg"
     },
     "created": "2017-08-08",
     "updated": "2018-06-02",

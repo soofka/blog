@@ -30,7 +30,7 @@ export const StyledEntryContent = styledComponents.div`
     width: 100%;
     font-size: ${props => props.theme.fontSizeS};
     line-height: ${props => props.theme.lineHeightS};
-    margin: 0 0 ${props => props.theme.marginM} 0;
+    margin: ${props => props.theme.marginM} 0;
     padding: 0;
     color: ${props => props.theme.gray};
 
@@ -81,10 +81,9 @@ export const StyledEntryContent = styledComponents.div`
   img {
     display: block;
     max-width: 100%;
-    margin: ${props => props.theme.marginS} auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
-    border: 2px solid ${props => props.theme.white};
-    outline: 1px solid ${props => props.theme.lighterBlack};
   }
 
   ul {

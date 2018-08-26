@@ -38,7 +38,7 @@ exports[`<StyledEntryContent/> is styled correctly 1`] = `
   width: 100%;
   font-size: 0.7em;
   line-height: 1em;
-  margin: 0 0 16px 0;
+  margin: 16px 0;
   padding: 0;
   color: rgb(144,144,144);
 }
@@ -93,10 +93,9 @@ exports[`<StyledEntryContent/> is styled correctly 1`] = `
 .c0 img {
   display: block;
   max-width: 100%;
-  margin: 8px auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
-  border: 2px solid rgb(246,246,246);
-  outline: 1px solid rgb(44,44,44);
 }
 
 .c0 ul {

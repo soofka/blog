@@ -11,13 +11,11 @@ exports[`<EntryBrief/> renders correctly 1`] = `
 
 exports[`<EntryBrief/> renders correctly with optional props 1`] = `
 <div>
-  <styled.div
-    style={
-      Object {
-        "backgroundImage": "url(/images/testImageFileName)",
-      }
-    }
-  />
+  <styled.div>
+    <styled.img
+      src="/images/testImageFileName"
+    />
+  </styled.div>
   <p>
     testText
      

@@ -94,6 +94,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
           {!full &&
             <EntryBrief
               text={brief.text}
+              full={false}
               imageFileName={brief.imageFileName}
               moreButtonLink={niceUrlWithBasePath}
             />}
@@ -107,6 +108,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
             <div>
               <EntryBrief
                 text={brief.text}
+                full={true}
                 imageFileName={brief.imageFileName}
               />
               <EntryContent
