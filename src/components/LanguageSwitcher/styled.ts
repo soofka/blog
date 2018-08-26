@@ -26,7 +26,7 @@ export const StyledLanguageSwitcher = styledComponents.ul`
     }
   }
 
-  @media (max-width: ${props => props.theme.mobileBreakPointWidth}) {
+  @media (max-width: ${props => props.theme.breakpointM}) {
     float: right;
     margin: ${props => props.theme.marginS} 0;
 

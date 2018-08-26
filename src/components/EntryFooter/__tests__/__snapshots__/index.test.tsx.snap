@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EntryFooter/> renders correctly 1`] = `
+<div>
+  <Component />
+  <Component />
+  <EntryComments />
+</div>
+`;

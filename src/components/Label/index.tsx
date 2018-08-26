@@ -6,12 +6,13 @@ import { LanguageStoreInterface } from 'store/language';
 
 interface LabelPropsInterface {
   name: string;
+  params?: any;
   languageStore?: LanguageStoreInterface;
 }
 
 export const Label = (props: LabelPropsInterface) => {
-  const { name, languageStore: { getLanguage }, ...rest } = props;
-  return <span {...rest}>{LabelsProvider.getLabel(name, getLanguage())}</span>;
+  const { name, params = {}, languageStore: { getLanguage }, ...rest } = props;
+  return <span {...rest}>{LabelsProvider.getLabel(name, params, getLanguage())}</span>;
 };
 
 export default inject('languageStore')(observer(Label));

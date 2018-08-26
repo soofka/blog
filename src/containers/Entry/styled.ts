@@ -13,7 +13,7 @@ export const StyledEntry = styledComponents.div`
     margin-bottom: 0;
   }
 
-  @media (max-width: ${props => props.theme.mobileBreakPointWidth}) {
+  @media (max-width: ${props => props.theme.breakpointM}) {
     margin: ${props => props.theme.marginS} 0;
     padding: ${props => props.theme.paddingS};
 
@@ -89,6 +89,10 @@ export const StyledEntryContent = styledComponents.div`
   ul {
     margin: 0;
     padding: 0 0 0 ${props => props.theme.paddingL};
+  }
+  
+  pre code {
+    background-color: ${props => props.theme.blue};
   }
 
   hr {

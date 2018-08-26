@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Meta/> renders correctly 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+/>
+`;
+
+exports[`<Meta/> renders correctly with optional props 1`] = `
+<HelmetWrapper
+  defer={true}
+  encodeSpecialCharacters={true}
+>
+  <title
+    key="title"
+  >
+    testTitle
+  </title>
+  <meta
+    content="testTitle"
+    key="og:site_name"
+    property="og:site_name"
+  />
+  <meta
+    content="testTitle"
+    key="twitter:site"
+    property="twitter:site"
+  />
+  <meta
+    content="testSubtitle"
+    key="twitter:title"
+    property="twitter:title"
+  />
+  <meta
+    content="testDescription"
+    key="description"
+    name="description"
+  />
+  <meta
+    content="testDescription"
+    key="og:description"
+    property="og:description"
+  />
+  <meta
+    content="testDescription"
+    key="twitter:description"
+    property="twitter:description"
+  />
+  <meta
+    content="testKeywords"
+    key="keywords"
+    name="keywords"
+  />
+  <meta
+    content="testImageUrl"
+    key="og:image"
+    name="og:image"
+  />
+  <meta
+    content="testImageUrl"
+    key="twitter:image"
+    name="twitter:image"
+  />
+</HelmetWrapper>
+`;

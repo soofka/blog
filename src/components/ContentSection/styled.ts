@@ -21,7 +21,7 @@ export const StyledContentSection = styledComponents.div`
     }
   }
 
-@media (max-width: ${props => props.theme.mobileBreakPointWidth}) {
+@media (max-width: ${props => props.theme.breakpointM}) {
   margin: 0;
   padding: ${props => props.theme.paddingS};
   width: 100%;

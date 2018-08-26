@@ -1,4 +1,10 @@
+const url = 'https://soofka.pl';
 const title = 'soofka.pl';
+const author = {
+  name: 'Jakub Sowiński',
+  email: 'pansoofka@gmail.com',
+  link: url,
+};
 const logoUrl = '/images/soofka-logo.jpg';
 const icon128Url = '/images/soofka-icon-128.png';
 const themeColor = '#000131';
@@ -6,11 +12,16 @@ const description = 'Personal blog of Jakub Sowiński. Focused on programming, m
 const socialMediaDescription = '';
 
 module.exports = {
+  url,
   title,
+  description,
+  author,
+  image: logoUrl,
+  favicon: `${url}/favicon.png`,
   meta: [
     {
       name: 'author',
-      content: 'Jakub Sowiński',
+      content: `${author.name} <${author.email}> (${author.link})`,
     },
     {
       name: 'keywords',

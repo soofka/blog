@@ -3,10 +3,17 @@ import { inject } from 'mobx-react';
 
 import DateHelper from 'common/DateHelper';
 
+import EntriesByDateMeta from 'components/Meta/components/EntriesByDateMeta';
+
 import { Entries, EntriesParamsInterface } from 'containers/Entries';
 import { EntryInterface } from 'containers/Entry';
 
 export class AllEntriesByDate extends Entries {
+  getMeta() {
+    const { match: { params: { date } } } = this.props;
+    return <EntriesByDateMeta date={date} />;
+  }
+
   filterEntries(entries: EntryInterface[], params: EntriesParamsInterface): EntryInterface[] {
     const { date } = params;
 

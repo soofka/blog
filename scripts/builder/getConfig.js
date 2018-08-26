@@ -9,7 +9,7 @@ const CompressionWebpackPlugin = require('compression-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
-const appconfig = require('./app.config');
+const appconfig = require('./app.config.default');
 
 module.exports = (environment = 'dev', mode = null) => {
   const devEnv = environment === 'dev';

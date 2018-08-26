@@ -5,7 +5,8 @@ export const theme = {
   infoSectionHeightValue: 16 * baseDistanceValue,
 
   siteMaxWidth: '1200px',
-  mobileBreakPointWidth: '968px',
+  breakpointS: '420px',
+  breakpointM: '968px',
 
   blue: 'rgb(0,1,49)',
   darkBlue: 'rgb(0,0,24)',

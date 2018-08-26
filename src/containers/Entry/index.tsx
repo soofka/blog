@@ -2,20 +2,21 @@ import * as React from 'react';
 import { reaction } from 'mobx';
 import { inject } from 'mobx-react';
 
-import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
 import AssetsProvider from 'common/AssetsProvider';
+import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
 import RoutingProvider from 'common/RoutingProvider';
+import Scroller from 'common/Scroller';
 
 import { LanguageStoreInterface } from 'store/language';
 
+import EntryMeta from 'components/Meta/components/EntryMeta';
 import Label from 'components/Label';
 import EntryHeader from 'components/EntryHeader';
 import EntryBrief, { EntryBriefInterface } from 'components/EntryBrief';
 import LoadingCover from 'components/LoadingCover';
 import ErrorBox from 'components/ErrorBox';
 import EntryContent from 'components/EntryContent';
-import EntryComments from 'components/EntryComments';
-import ContentDivider from 'components/ContentDivider';
+import EntryFooter from 'components/EntryFooter';
 
 import { StyledEntry, StyledEntryContent } from './styled';
 
@@ -71,6 +72,8 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
           ? response.data
           : undefined;
         this.setState({ content, loading: false });
+
+        Scroller.scrollToEntryTop();
       });
   }
 
@@ -83,18 +86,24 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
 
     return (
       <StyledEntry>
+        {full && <EntryMeta
+          title={title}
+          description={brief.text}
+          keywords={tags}
+          imageFileName={brief.imageFileName}
+        />}
         <EntryHeader
           title={title}
           titleLink={niceUrlWithBasePath}
           tags={tags}
           created={created}
           updated={updated}
+          full={full}
         />
         <StyledEntryContent>
           {!full &&
             <EntryBrief
               text={brief.text}
-              full={false}
               imageFileName={brief.imageFileName}
               moreButtonLink={niceUrlWithBasePath}
             />}
@@ -108,18 +117,15 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
             <div>
               <EntryBrief
                 text={brief.text}
-                full={true}
                 imageFileName={brief.imageFileName}
               />
               <EntryContent
                 content={content}
               />
-              <ContentDivider/>
-              <EntryComments
+              <EntryFooter
                 title={title}
-                url={niceUrlWithBasePath}
-                shortName={niceUrl}
-                identifier={niceUrl}
+                niceUrl={niceUrl}
+                niceUrlWithBasePath={niceUrlWithBasePath}
               />
             </div>}
         </StyledEntryContent>

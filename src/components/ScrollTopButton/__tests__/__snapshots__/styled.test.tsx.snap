@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledScrollTopButton/> is styled correctly 1`] = `
+.c0 {
+  float: left;
+  width: 100%;
+  margin: 16px 0;
+}
+
+<a
+  className="c0"
+/>
+`;

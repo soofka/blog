@@ -6,7 +6,7 @@ export const StyledQuote = styledComponents.p`
   font-style: italic;
   text-align: center;
 
-  @media (max-width: ${props => props.theme.mobileBreakPointWidth}) {
+  @media (max-width: ${props => props.theme.breakpointM}) {
     display: none;
   }
 `;

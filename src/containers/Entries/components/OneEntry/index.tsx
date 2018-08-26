@@ -1,14 +1,14 @@
 import * as React from 'react';
 import { inject } from 'mobx-react';
 
+import RoutingProvider from 'common/RoutingProvider';
+
 import { Entries, EntriesParamsInterface, EntriesPropsInterface } from 'containers/Entries';
 import { EntryInterface } from 'containers/Entry';
 
-import RoutingProvider from 'common/RoutingProvider';
-
 export class OneEntry extends Entries {
-  constructor(props: EntriesPropsInterface) {
-    super(props);
+  getMeta() {
+    return null;
   }
 
   filterEntries(entries: EntryInterface[], params: EntriesParamsInterface): EntryInterface[] {

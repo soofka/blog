@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
 
-import EntryComments from 'components/EntryComments';
+import EntryComments from 'components/EntryFooter/components/EntryComments';
 
 describe('<EntryComments/>', () => {
 

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EntriesMeta/> renders correctly 1`] = `
+<_class
+  languageStore={
+    Object {
+      "getLanguage": [Function],
+      "setLanguage": [Function],
+    }
+  }
+/>
+`;

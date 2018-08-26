@@ -8,7 +8,6 @@ import { StyledEntryImageWrapper, StyledEntryImage } from './styled';
 
 export interface EntryBriefInterface {
   text: string;
-  full?: boolean;
   imageFileName?: string;
 }
 
@@ -17,7 +16,7 @@ interface EntryBriefPropsInterface extends EntryBriefInterface {
 }
 
 export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
-  const { text, full, imageFileName, moreButtonLink } = props;
+  const { text, imageFileName, moreButtonLink } = props;
   const imageUrl = AssetsProvider.getEntryImageFilePath(imageFileName);
 
   return (

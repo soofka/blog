@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface EntryCommentsPropsInterface {
+export interface EntryCommentsPropsInterface {
   title: string;
   url: string;
   shortName: string;

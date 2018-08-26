@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ScrollTopButton/> renders correctly 1`] = `
+<styled.a
+  href="#"
+  onClick={[Function]}
+>
+  ↑ 
+  <inject-_class-with-languageStore
+    name="scroll_to_top"
+  />
+</styled.a>
+`;

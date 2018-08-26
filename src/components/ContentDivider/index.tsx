@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { StyledHr } from './styled';
+import { StyledContentDivider } from './styled';
 
 export const ContentDivider = (): JSX.Element => {
-  return <StyledHr/>;
+  return <StyledContentDivider/>;
 };
 
 export default ContentDivider;

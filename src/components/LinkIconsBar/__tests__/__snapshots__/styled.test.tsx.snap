@@ -15,14 +15,31 @@ exports[`<StyledLinkIconsBar/> is styled correctly 1`] = `
 }
 
 .c0 li svg {
-  width: 40px;
-  height: 40px;
+  width: 3em;
+  height: 3em;
   opacity: 0.7;
 }
 
 .c0 li svg:hover,
 .c0 li svg:active {
   opacity: 1;
+}
+
+@media (max-width:968px) {
+  .c0 li {
+    margin: 24px 0px;
+  }
+
+  .c0 li svg {
+    width: 2.25em;
+    height: 2.25em;
+  }
+}
+
+@media (max-width:420px) {
+  .c0 {
+    display: none;
+  }
 }
 
 <ul

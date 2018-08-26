@@ -12,9 +12,13 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.4.1
+- added automated and user-triggered page scrolling
+- made meta tags variable based on current route and language
+
 ### 1.4.0
 - simplified UI
-- added syntax highlight to code samples
+- added syntax highlight to code samples in entries
 
 ### 1.3.10
 - removed Sass-based styling
@@ -114,7 +118,6 @@ Blog is available at `localhost:3000`.
 ### major
 - HTTPS does not work properly on Firefox
 - impossible to add blog to Feedly
-- social media tags does not reload
 - lack of tests
 
 ### minor

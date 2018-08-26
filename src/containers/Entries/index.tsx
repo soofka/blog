@@ -12,6 +12,7 @@ import Label from 'components/Label';
 import LoadingCover from 'components/LoadingCover';
 import ErrorBox from 'components/ErrorBox';
 import EntriesList from 'components/EntriesList';
+import EntriesMeta from 'components/Meta/components/EntriesMeta';
 
 import { EntryInterface } from 'containers/Entry';
 
@@ -85,11 +86,18 @@ export class Entries extends React.Component<EntriesPropsInterface, EntriesState
     );
 
     return (
-      <EntriesList
-        entries={entriesFiltered}
-        fullEntry={this.isEntryFull()}
-      />
+      <div>
+        {this.getMeta()}
+        <EntriesList
+          entries={entriesFiltered}
+          fullEntry={this.isEntryFull()}
+        />
+      </div>
     );
+  }
+
+  getMeta(): JSX.Element {
+    return <EntriesMeta/>;
   }
 
   filterEntries(entries: EntryInterface[], params: EntriesParamsInterface): EntryInterface[] {

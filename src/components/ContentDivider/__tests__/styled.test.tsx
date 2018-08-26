@@ -3,12 +3,12 @@ import { shallow } from 'enzyme';
 import 'jest-styled-components';
 
 import theme from 'common/theme';
-import { StyledHr } from 'components/ContentDivider/styled';
+import { StyledContentDivider } from 'components/ContentDivider/styled';
 
-describe('<StyledHr/>', () => {
+describe('<StyledContentDivider/>', () => {
 
   it('is styled correctly', () => {
-    expect(shallow(<StyledHr theme={theme} />)).toMatchSnapshot();
+    expect(shallow(<StyledContentDivider theme={theme} />)).toMatchSnapshot();
   });
 
 });
