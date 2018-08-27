@@ -13,6 +13,7 @@ Blog is available at `localhost:3000`.
 
 ## Changelog
 ### 1.4.1
+- added RSS feed
 - added automated and user-triggered page scrolling
 - made meta tags variable based on current route and language
 
@@ -117,7 +118,6 @@ Blog is available at `localhost:3000`.
 ## bugs
 ### major
 - HTTPS does not work properly on Firefox
-- impossible to add blog to Feedly
 - lack of tests
 
 ### minor
@@ -145,3 +145,4 @@ Blog is available at `localhost:3000`.
 - move entries and entry content to global state to avoid loading them again with each rerender
 - rethink styling variables and redo them properly
 - optimize header post images
+- add rss feed meta tag generation to React component (but keep generating feed files in build plan)
