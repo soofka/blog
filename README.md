@@ -146,3 +146,6 @@ Blog is available at `localhost:3000`.
 - rethink styling variables and redo them properly
 - optimize header post images
 - add rss feed meta tag generation to React component (but keep generating feed files in build plan)
+- update TypeScript to ^3.0.0
+- refine meta tags (Slack doesn't load them properly)
+- add keyboard mappings for increased accessibility
