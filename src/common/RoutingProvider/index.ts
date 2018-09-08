@@ -45,7 +45,7 @@ export class RoutingProvider {
       .trim()
       .toLowerCase()
       .replace(/\s+/g, '-')
-      .replace(/[!|?|.|,|:|;]/g, '');
+      .replace(/[!|?|.|,|:|;|(|)|{|}|\[|\]|\\|\/]/g, '');
   }
 }
 

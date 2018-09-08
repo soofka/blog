@@ -3,14 +3,6 @@ const Feed = require('feed').Feed;
 const appconfig = require('./app.config.default');
 const entries = require('../../content/entries.en');
 
-// @TODO:
-// - install feed from npm
-// - create scripting generating feed based on entries.en.json
-// -- possibly use AssetsProvider?
-// - add feed to build process
-// -- use getFeed in getConfig
-// -- use feed.rss2(), feed.atom1(), feed.json1() in getFeed
-// - add feed link to index.ejs
 const feed = new Feed({
   title: appconfig.title,
   description: appconfig.description,
@@ -31,7 +23,7 @@ const getUrlFromTitle = (title) => {
     .trim()
     .toLowerCase()
     .replace(/\s+/g, '-')
-    .replace(/[!|?|.|,|:|;]/g, '')}`;
+    .replace(/[!|?|.|,|:|;|(|)|{|}|\[|\]|\\|\/]/g, '')}`;
 };
 
 const getImageUrl = (imageFileName) => {
