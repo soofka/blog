@@ -11,9 +11,35 @@
     },
     "items": [
         {
+            "id": "1a130f64-1834-4157-953e-2a0eaae57a64",
+            "html_content": "Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool (it's also not cool when it comes to SEO, but it's not that much of my concern right now). I finally had to tackle it. Here's a simple way to do it that I've found.",
+            "url": "https://soofka.pl/entry/how-to-improve-seo-and-social-media-preview-of-your-website-with-react-helmet-and-prerender-service",
+            "title": "How to improve SEO and social media preview of your website with React Helmet and Prerender service",
+            "summary": "Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool (it's also not cool when it comes to SEO, but it's not that much of my concern right now). I finally had to tackle it. Here's a simple way to do it that I've found.",
+            "image": "https://soofka.pl/images/medieval-helmet-and-sword.jpg",
+            "date_modified": "2018-09-14T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "c52bd90a-7387-499f-8a07-9832d49392ee",
+            "html_content": "One of the most common issues I heard people have with my blog was lack of syntax highlighting in posts, especially those, which contain a lot of code. Okay, it's almost 2019, I'm software engineer, working mostly with front-end these times - I finally agreed, that it should be added. So I added it. And in the meantime, I also learned a little bit about Web Workers. Hence, this post, in which I describe this little adventure.",
+            "url": "https://soofka.pl/entry/syntax-highlighting-in-react-with-highlightjs-and-web-worker",
+            "title": "Syntax highlighting in React with highlight.js and Web Worker",
+            "summary": "One of the most common issues I heard people have with my blog was lack of syntax highlighting in posts, especially those, which contain a lot of code. Okay, it's almost 2019, I'm software engineer, working mostly with front-end these times - I finally agreed, that it should be added. So I added it. And in the meantime, I also learned a little bit about Web Workers. Hence, this post, in which I describe this little adventure.",
+            "image": "https://soofka.pl/images/colorful-abstraction.jpg",
+            "date_modified": "2018-09-08T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
             "id": "9a6a22e7-6468-4f1e-a066-4e06c437d383",
             "html_content": "Who doesn't like to constantly rework perfectly fine stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of famous \"JS fatigue\" feeling (so approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!",
-            "url": "https://soofka.pl/entry/moving-from-sass-to-styled-components-(with-snapshot-tests)",
+            "url": "https://soofka.pl/entry/moving-from-sass-to-styled-components-with-snapshot-tests",
             "title": "Moving from Sass to Styled Components (with snapshot tests)",
             "summary": "Who doesn't like to constantly rework perfectly fine stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of famous \"JS fatigue\" feeling (so approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!",
             "image": "https://soofka.pl/images/dubai-eye.jpg",
@@ -26,7 +52,7 @@
         {
             "id": "b0198de0-002b-47e2-a3c6-244314ddb757",
             "html_content": "My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle language parameter. And for that purpose, for the first time, I decided to use MobX.",
-            "url": "https://soofka.pl/entry/my-first-mobx-store-(and-how-i-wrote-it)",
+            "url": "https://soofka.pl/entry/my-first-mobx-store-and-how-i-wrote-it",
             "title": "My first MobX store (and how I wrote it)",
             "summary": "My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle language parameter. And for that purpose, for the first time, I decided to use MobX.",
             "image": "https://soofka.pl/images/react-mobx-typescript.jpg",
@@ -78,7 +104,7 @@
         {
             "id": "289744b1-366d-4d07-8a32-d8588de0fe6b",
             "html_content": "Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.",
-            "url": "https://soofka.pl/entry/webpack-4-config-explained-(with-example)",
+            "url": "https://soofka.pl/entry/webpack-4-config-explained-with-example",
             "title": "Webpack 4 config explained (with example)",
             "summary": "Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.",
             "image": "https://soofka.pl/images/the-doge-in-the-rye.jpg",

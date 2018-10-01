@@ -1,16 +1,16 @@
 [
   {
     "id": "1a130f64-1834-4157-953e-2a0eaae57a64",
-    "title": "How to add dynamic head tags to your website with React Helmet",
-    "tags": ["javascript", "document meta", "social media meta tags", "react", "react helmet", "how to"],
+    "title": "How to improve SEO and social media preview of your website with React Helmet and Prerender service",
+    "tags": ["javascript", "seo", "document meta", "social media", "social media preview", "social media meta tags", "react", "react helmet", "ssr", "prerender", "how to"],
     "brief": {
-      "text": "Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool. So I finally had to tackle it. Here's a simple way to do it that I've found.",
+      "text": "Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool (it's also not cool when it comes to SEO, but it's not that much of my concern right now). I finally had to tackle it. Here's a simple way to do it that I've found.",
       "imageFileName": "medieval-helmet-and-sword.jpg"
     },
     "created": "2018-09-14",
-    "updated": "2018-09-14",
-    "contentFileName": "how-to-add-dynamic-head-tags-to-your-website-with-react-helmet.html",
-    "public": false
+    "updated": "2018-10-01",
+    "contentFileName": "how-to-improve-seo-and-social-media-preview-of-your-website-with-react-helmet-and-prerender-service.html",
+    "public": true
   },
   {
     "id": "c52bd90a-7387-499f-8a07-9832d49392ee",

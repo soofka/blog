@@ -172,8 +172,7 @@ export const Quote = (): JSX.Element => {
 <p>I already had <a href="https://jestjs.io/docs/en/snapshot-testing" target="_blank">Jest snapshot tests</a> written for all my components, in order to ensure consistency and control over tree of DOM elements rendered by them. Why wouldn't I have similar snapshot dedicated for styling generated for such component? I never thought about it before, but now that I unearthed it, I immediately wanted to have it. It's simple to generate, check, and modify during development, and also very beneficial. So I went for it.</p>
 <p>Unfortunately, I didn't manage to successfully run setup presented in the documentation of this library, where they simply import it into their test files, and obtain styling of the component in their snapshot. I spent some time researching it and concluded that it might be caused by Enzyme or TypeScript, which I'm using. Not discouraged, I simply created separate tests to check my styles.</p>
 <pre>
-<code>
-import * as React from 'react';
+<code>import * as React from 'react';
 import { shallow } from 'enzyme';
 import 'jest-styled-components';
 
