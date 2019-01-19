@@ -115,7 +115,7 @@ function prepareEntries(entries: EntryInterface[]): EntryInterface[] {
 
 function filterPrivateEntries(entries: EntryInterface[]): EntryInterface[] {
   return entries.filter((entry: EntryInterface) => {
-    return entry.public === true;
+    return !!entry.public;
   });
 }
 

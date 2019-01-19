@@ -11,11 +11,63 @@
     },
     "items": [
         {
+            "id": "5c84ef0f-b7be-4aa9-af9b-dcf5d22028c6",
+            "html_content": "<p>I like to improve myself – at least that’s what I like to think about myself. That’s the thought I had in mind most of 2017. Not every day, of course, but for most of them I tried to remember about it, to learn new things, and to at least try to better myself. So, when 2017 came to an end, I asked myself: what did I actually learn that year?</p>",
+            "url": "https://soofka.pl/entry/3-things-i-learned-in-2017",
+            "title": "3 things I learned in 2017",
+            "summary": "<p>I like to improve myself – at least that’s what I like to think about myself. That’s the thought I had in mind most of 2017. Not every day, of course, but for most of them I tried to remember about it, to learn new things, and to at least try to better myself. So, when 2017 came to an end, I asked myself: what did I actually learn that year?</p>",
+            "image": "https://soofka.pl/images/train-leaving.jpg",
+            "date_modified": "2018-01-07T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "ebbc221e-2e4f-456f-9e4b-035f9109bfd2",
+            "html_content": "<p>At least every 6 months, I browse web to find interesting, upcoming IT conferences around the world and see if they fit my interests, budget, and calendar. Lately I'm focused particularly on front-end of web development. In this world, there are tons of events every weekend, on every, even tiniest and most specific subject. I find it challenging, to browse through hundreds of agendas, looking for accumulations of talks that seem to be time-worthy, so as I do my research, I try to share results as well. Here are they so far.</p>",
+            "url": "https://soofka.pl/entry/4-conferences-i-am-looking-forward-to-in-2nd-half-of-2018",
+            "title": "4 conferences I am looking forward to in 2nd half of 2018",
+            "summary": "<p>At least every 6 months, I browse web to find interesting, upcoming IT conferences around the world and see if they fit my interests, budget, and calendar. Lately I'm focused particularly on front-end of web development. In this world, there are tons of events every weekend, on every, even tiniest and most specific subject. I find it challenging, to browse through hundreds of agendas, looking for accumulations of talks that seem to be time-worthy, so as I do my research, I try to share results as well. Here are they so far.</p>",
+            "image": "https://soofka.pl/images/react-europe-2018-crowd.jpg",
+            "date_modified": "2018-07-09T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "26bb42df-78cb-4eb8-8685-89ea78d2fd8c",
+            "html_content": "<p>On 22nd and 23rd of September, there was <a href=\"https://frontend-con.io\" target=\"_blank\">Front-end Connect 2017</a> conference in Warsaw, Poland, and I was there. With plenty of speakers from around the globe and many news and announcements related to this event in polish Internet, I hoped for big, prestigious, and independent event focused on front-end of web development on my home soil. My expectations were utterly crushed, but I still had quite a good time.</p>",
+            "url": "https://soofka.pl/entry/front-end-connect-2017-summary",
+            "title": "Front-end Connect 2017: Summary",
+            "summary": "<p>On 22nd and 23rd of September, there was <a href=\"https://frontend-con.io\" target=\"_blank\">Front-end Connect 2017</a> conference in Warsaw, Poland, and I was there. With plenty of speakers from around the globe and many news and announcements related to this event in polish Internet, I hoped for big, prestigious, and independent event focused on front-end of web development on my home soil. My expectations were utterly crushed, but I still had quite a good time.</p>",
+            "image": "https://soofka.pl/images/frontend-connect-2017-badge.jpg",
+            "date_modified": "2017-09-26T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "3d1ec983-21a8-48bf-a135-bb2af572613c",
+            "html_content": "<p>In December of 2018, there was second edition of <a href=\"https://frontend-con.io\" target=\"_blank\">Front-end Connect</a> conference in Warsaw. I was present at first edition of this conference in 2017, and <a href=\"https://soofka.pl/entry/front-end-connect-2017-summary\" target=\"_blank\">wrote down my impression in blog post over a year ago</a>. TL;DR: I felt it was quite OK event, with plenty of things well thought and prepared, but also a lot of room for improvements. I was happy to see that many improvements were introduced, and the conference provided better experience when it comes to organization, but also level and quality of the talks. Here are my few thoughts to sum it up.</p>",
+            "url": "https://soofka.pl/entry/front-end-connect-2018-summary",
+            "title": "Front-end Connect 2018: Summary",
+            "summary": "<p>In December of 2018, there was second edition of <a href=\"https://frontend-con.io\" target=\"_blank\">Front-end Connect</a> conference in Warsaw. I was present at first edition of this conference in 2017, and <a href=\"https://soofka.pl/entry/front-end-connect-2017-summary\" target=\"_blank\">wrote down my impression in blog post over a year ago</a>. TL;DR: I felt it was quite OK event, with plenty of things well thought and prepared, but also a lot of room for improvements. I was happy to see that many improvements were introduced, and the conference provided better experience when it comes to organization, but also level and quality of the talks. Here are my few thoughts to sum it up.</p>",
+            "image": "https://soofka.pl/images/frontend-connect-2018-ceiling.jpg",
+            "date_modified": "2019-01-14T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
             "id": "1a130f64-1834-4157-953e-2a0eaae57a64",
-            "html_content": "Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool (it's also not cool when it comes to SEO, but it's not that much of my concern right now). I finally had to tackle it. Here's a simple way to do it that I've found.",
+            "html_content": "<p>Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool (it's also not cool when it comes to SEO, but it's not that much of my concern right now). I finally had to tackle it. Here's a simple way to do it that I've found.</p>",
             "url": "https://soofka.pl/entry/how-to-improve-seo-and-social-media-preview-of-your-website-with-react-helmet-and-prerender-service",
             "title": "How to improve SEO and social media preview of your website with React Helmet and Prerender service",
-            "summary": "Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool (it's also not cool when it comes to SEO, but it's not that much of my concern right now). I finally had to tackle it. Here's a simple way to do it that I've found.",
+            "summary": "<p>Hard to imagine, but it's over 1 year since I created this blog, and up until recently, it always had static head tags. Title always being \"soofka.pl\", for example, wasn't that much of an issue to me, but social meta tags never related to the content of the post I'm sharing on Twitter, that was not cool (it's also not cool when it comes to SEO, but it's not that much of my concern right now). I finally had to tackle it. Here's a simple way to do it that I've found.</p>",
             "image": "https://soofka.pl/images/medieval-helmet-and-sword.jpg",
             "date_modified": "2018-09-14T00:00:00.000Z",
             "author": {
@@ -24,13 +76,65 @@
             }
         },
         {
-            "id": "c52bd90a-7387-499f-8a07-9832d49392ee",
-            "html_content": "One of the most common issues I heard people have with my blog was lack of syntax highlighting in posts, especially those, which contain a lot of code. Okay, it's almost 2019, I'm software engineer, working mostly with front-end these times - I finally agreed, that it should be added. So I added it. And in the meantime, I also learned a little bit about Web Workers. Hence, this post, in which I describe this little adventure.",
-            "url": "https://soofka.pl/entry/syntax-highlighting-in-react-with-highlightjs-and-web-worker",
-            "title": "Syntax highlighting in React with highlight.js and Web Worker",
-            "summary": "One of the most common issues I heard people have with my blog was lack of syntax highlighting in posts, especially those, which contain a lot of code. Okay, it's almost 2019, I'm software engineer, working mostly with front-end these times - I finally agreed, that it should be added. So I added it. And in the meantime, I also learned a little bit about Web Workers. Hence, this post, in which I describe this little adventure.",
-            "image": "https://soofka.pl/images/colorful-abstraction.jpg",
-            "date_modified": "2018-09-08T00:00:00.000Z",
+            "id": "7d0ac221-e911-4f02-9cc7-4cd95be8f244",
+            "html_content": "<p>One of the challenges that I faced while programming this, so far, very simple blog app (the one that you are using to read this post, most likely), was how to give my readers a possibility to comment on my posts. Obviously, it is one of the crucial features of this kind of app – I would like my readers to be able to tell me where am I wrong, and I would like me to be able to respond to such heretic claims. However, the whole feature seems quite a lot of work to implement from scratch. Luckily, there are plenty of ready out of the box solutions out there, one of them being <a href=\"https://disqus.com/\" target=\"_blank\">Disqus</a>.</p>",
+            "url": "https://soofka.pl/entry/how-to-integrate-disqus-comments-in-react-app",
+            "title": "How to integrate Disqus comments in React app",
+            "summary": "<p>One of the challenges that I faced while programming this, so far, very simple blog app (the one that you are using to read this post, most likely), was how to give my readers a possibility to comment on my posts. Obviously, it is one of the crucial features of this kind of app – I would like my readers to be able to tell me where am I wrong, and I would like me to be able to respond to such heretic claims. However, the whole feature seems quite a lot of work to implement from scratch. Luckily, there are plenty of ready out of the box solutions out there, one of them being <a href=\"https://disqus.com/\" target=\"_blank\">Disqus</a>.</p>",
+            "image": "https://soofka.pl/images/disqus-logo.jpg",
+            "date_modified": "2017-08-08T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "4b15b77b-c727-49fe-b0e6-91f5656b2682",
+            "html_content": "<p>When building web applications in <a href=\"https://reactjs.org/\" target=\"_blank\">React</a> I usually choose <a href=\"https://expressjs.com/\" target=\"_blank\">Express</a> to be my server, and more often than not I use <a href=\"https://reacttraining.com/react-router/web\" target=\"_blank\">React-Router</a> to manage redirections and changes in history. Not without a reason - both are among the most popular choices in their respective fields nowadays; both are simple and elegant in every day work. However, I had some tough moments with both of them when it came up to setting all unrecognized routing to \"Not Found\" page, and this piece came as a result of them.</p>",
+            "url": "https://soofka.pl/entry/how-to-setup-routing-for-\"not-found\"-on-both-sides-with-react-router-and-express",
+            "title": "How to setup routing for \"Not Found\" on both sides with React-Router and Express",
+            "summary": "<p>When building web applications in <a href=\"https://reactjs.org/\" target=\"_blank\">React</a> I usually choose <a href=\"https://expressjs.com/\" target=\"_blank\">Express</a> to be my server, and more often than not I use <a href=\"https://reacttraining.com/react-router/web\" target=\"_blank\">React-Router</a> to manage redirections and changes in history. Not without a reason - both are among the most popular choices in their respective fields nowadays; both are simple and elegant in every day work. However, I had some tough moments with both of them when it came up to setting all unrecognized routing to \"Not Found\" page, and this piece came as a result of them.</p>",
+            "image": "https://soofka.pl/images/colorful-tiles.jpg",
+            "date_modified": "2018-03-26T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "3c594f32-c9f0-47a2-a811-7a2ca2555026",
+            "html_content": "<p>Yup, I did it again. Second big lecture in my life took place, similarly to <a href=\"https://soofka.pl/entry/i-gave-a-lecture-on-code-europe-spring-2017\" target=\"_blank\">my debut, on Code Europe in Warsaw, Poland</a>, this time during Autumn 2017 edition. On the afternoon of 7th of December I talked about my experience with building Progressive Web Apps, particularly in React. It was a case study based on two examples: big, complex application built for hundreds of thousands of users of StepStone; and small, home-brewed one: this blog.</p>",
+            "url": "https://soofka.pl/entry/how-to-setup-routing-for-\"not-found\"-on-both-sides-with-react-router-and-express",
+            "title": "How to setup routing for \"Not Found\" on both sides with React-Router and Express",
+            "summary": "<p>Yup, I did it again. Second big lecture in my life took place, similarly to <a href=\"https://soofka.pl/entry/i-gave-a-lecture-on-code-europe-spring-2017\" target=\"_blank\">my debut, on Code Europe in Warsaw, Poland</a>, this time during Autumn 2017 edition. On the afternoon of 7th of December I talked about my experience with building Progressive Web Apps, particularly in React. It was a case study based on two examples: big, complex application built for hundreds of thousands of users of StepStone; and small, home-brewed one: this blog.</p>",
+            "image": "https://soofka.pl/images/code-europe-autumn-2017-badge.jpg",
+            "date_modified": "2018-04-04T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "e16ac8a2-97cf-478a-bf9d-e29f55565929",
+            "html_content": "<p>That's right. Even before I became famous as a blog writer, I got an opportunity to give a lecture on one of the biggest IT conferences in Poland: <a href=\"https://www.codeeurope.pl/\" target=\"_blank\">Code Europe</a>, Spring edition of year 2017. It was my first time as a speaker in front of crowd of that size and volume, so after a few weeks of panicky preparations, I managed to deliver presentation on how to optimize your JavaScript code with variety of tricks and techniques.</p>",
+            "url": "https://soofka.pl/entry/i-gave-a-lecture-on-code-europe-spring-2017",
+            "title": "I gave a lecture on Code Europe Spring 2017!",
+            "summary": "<p>That's right. Even before I became famous as a blog writer, I got an opportunity to give a lecture on one of the biggest IT conferences in Poland: <a href=\"https://www.codeeurope.pl/\" target=\"_blank\">Code Europe</a>, Spring edition of year 2017. It was my first time as a speaker in front of crowd of that size and volume, so after a few weeks of panicky preparations, I managed to deliver presentation on how to optimize your JavaScript code with variety of tricks and techniques.</p>",
+            "image": "https://soofka.pl/images/code-europe-spring-2017-badge.jpg",
+            "date_modified": "2017-07-10T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
+            "id": "528cc6f7-2559-4b94-b6f1-fa22003dedd5",
+            "html_content": "<p>Back in the day, my JS projects were small and self-contained. Nowadays, in my professional work, majority, if not all of front-end applications I am working on are connected to multiple back-end services for variety of reasons. It gives me a freedom of not caring of the back-end, as long as we have defined a contract, and proceeding happily with what actually matters, i.e. colors and animations. But it also gave ma some headache, when I wanted to have pleasant, convenient coding environment on my localhost, and not have all of these weird back-end stuff running on my local machine as well. Here's how I worked it out with both <a href=\"https://github.com/webpack/webpack-dev-server\" target=\"_blank\">Webpack Dev Server</a> and <a href=\"https://expressjs.com/\" target=\"_blank\">Express</a>.</p>",
+            "url": "https://soofka.pl/entry/mocking-and-proxying-http-requests-from-localhost-with-webpack-dev-server-or-express",
+            "title": "Mocking and proxying HTTP requests from localhost with Webpack Dev Server or Express",
+            "summary": "<p>Back in the day, my JS projects were small and self-contained. Nowadays, in my professional work, majority, if not all of front-end applications I am working on are connected to multiple back-end services for variety of reasons. It gives me a freedom of not caring of the back-end, as long as we have defined a contract, and proceeding happily with what actually matters, i.e. colors and animations. But it also gave ma some headache, when I wanted to have pleasant, convenient coding environment on my localhost, and not have all of these weird back-end stuff running on my local machine as well. Here's how I worked it out with both <a href=\"https://github.com/webpack/webpack-dev-server\" target=\"_blank\">Webpack Dev Server</a> and <a href=\"https://expressjs.com/\" target=\"_blank\">Express</a>.</p>",
+            "image": "https://soofka.pl/images/eiffel-tower-and-some-people.jpg",
+            "date_modified": "2018-07-23T00:00:00.000Z",
             "author": {
                 "name": "Jakub Sowiński",
                 "url": "https://soofka.pl"
@@ -38,10 +142,10 @@
         },
         {
             "id": "9a6a22e7-6468-4f1e-a066-4e06c437d383",
-            "html_content": "Who doesn't like to constantly rework perfectly fine stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of famous \"JS fatigue\" feeling (so approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!",
+            "html_content": "<p>Who doesn't like to constantly rework perfectly fine stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of famous \"JS fatigue\" feeling (so approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!</p>",
             "url": "https://soofka.pl/entry/moving-from-sass-to-styled-components-with-snapshot-tests",
             "title": "Moving from Sass to Styled Components (with snapshot tests)",
-            "summary": "Who doesn't like to constantly rework perfectly fine stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of famous \"JS fatigue\" feeling (so approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!",
+            "summary": "<p>Who doesn't like to constantly rework perfectly fine stuff into something new and fancy just because it's trendy now? Well, probably pretty much every single JS developer, most certainly everyone who works with this language long enough to experience at least a glimpse of famous \"JS fatigue\" feeling (so approximately a few weeks). However, I created this blog as a playground to try out new libraries and frameworks, and since I'm learning Styled Components for my professional work at the moment, even though Sass-based styling worked perfectly for my needs, I reimplemented all of it into this controversial CSS-in-JS. And I'm still sane!</p>",
             "image": "https://soofka.pl/images/dubai-eye.jpg",
             "date_modified": "2018-08-20T00:00:00.000Z",
             "author": {
@@ -51,10 +155,10 @@
         },
         {
             "id": "b0198de0-002b-47e2-a3c6-244314ddb757",
-            "html_content": "My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle language parameter. And for that purpose, for the first time, I decided to use MobX.",
+            "html_content": "<p>My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle language parameter. And for that purpose, for the first time, I decided to use <a href=\"https://mobx.js.org\" target=\"_blank\">MobX</a>.</p>",
             "url": "https://soofka.pl/entry/my-first-mobx-store-and-how-i-wrote-it",
             "title": "My first MobX store (and how I wrote it)",
-            "summary": "My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle language parameter. And for that purpose, for the first time, I decided to use MobX.",
+            "summary": "<p>My dad wants to read my blog. The only issue is that he doesn't speak English very well. It's communicative, but it's not quite enough to understand intricate, sophisticated Shakespearean language, I am decorating my posts with. Worry not, father, as I've found the solution: language versions. I am currently working on adaptations of my posts in Polish language. In the meantime, I'm also adapting my codebase to be able to recognize and properly handle language parameter. And for that purpose, for the first time, I decided to use <a href=\"https://mobx.js.org\" target=\"_blank\">MobX</a>.</p>",
             "image": "https://soofka.pl/images/react-mobx-typescript.jpg",
             "date_modified": "2018-08-13T00:00:00.000Z",
             "author": {
@@ -63,26 +167,13 @@
             }
         },
         {
-            "id": "528cc6f7-2559-4b94-b6f1-fa22003dedd5",
-            "html_content": "Back in the day, my JS projects were small and self-contained. Nowadays, in my professional work, majority, if not all of front-end applications I am working on are connected to multiple back-end services for variety of reasons. It gives me a freedom of not caring of the back-end, as long as we have defined a contract, and proceeding happily with what actually matters, i.e. colors and animations. But it also gave ma some headache, when I wanted to have pleasant, convenient coding environment on my localhost, and not have all of these weird back-end stuff running on my local machine as well. Here's how I worked it out with both Webpack Dev Server and Express.",
-            "url": "https://soofka.pl/entry/mocking-and-proxying-http-requests-from-localhost-with-webpack-dev-server-or-express",
-            "title": "Mocking and proxying HTTP requests from localhost with Webpack Dev Server or Express",
-            "summary": "Back in the day, my JS projects were small and self-contained. Nowadays, in my professional work, majority, if not all of front-end applications I am working on are connected to multiple back-end services for variety of reasons. It gives me a freedom of not caring of the back-end, as long as we have defined a contract, and proceeding happily with what actually matters, i.e. colors and animations. But it also gave ma some headache, when I wanted to have pleasant, convenient coding environment on my localhost, and not have all of these weird back-end stuff running on my local machine as well. Here's how I worked it out with both Webpack Dev Server and Express.",
-            "image": "https://soofka.pl/images/eiffel-tower-and-some-people.jpg",
-            "date_modified": "2018-07-23T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "ebbc221e-2e4f-456f-9e4b-035f9109bfd2",
-            "html_content": "At least every 6 months, I browse web to find interesting, upcoming IT conferences around the world and see if they fit my interests, budget, and calendar. Lately I'm focused particularly on front-end of web development. In this world, there are tons of events every weekend, on every, even tiniest and most specific subject. I find it challenging, to browse through hundreds of agendas, looking for accumulations of talks that seem to be time-worthy, so as I do my research, I try to share results as well. Here are they so far.",
-            "url": "https://soofka.pl/entry/4-conferences-i-am-looking-forward-to-in-2nd-half-of-2018",
-            "title": "4 conferences I am looking forward to in 2nd half of 2018",
-            "summary": "At least every 6 months, I browse web to find interesting, upcoming IT conferences around the world and see if they fit my interests, budget, and calendar. Lately I'm focused particularly on front-end of web development. In this world, there are tons of events every weekend, on every, even tiniest and most specific subject. I find it challenging, to browse through hundreds of agendas, looking for accumulations of talks that seem to be time-worthy, so as I do my research, I try to share results as well. Here are they so far.",
-            "image": "https://soofka.pl/images/react-europe-2018-crowd.jpg",
-            "date_modified": "2018-07-09T00:00:00.000Z",
+            "id": "da1d29c9-5d66-4012-b73b-b4b45c708a20",
+            "html_content": "<p>I am web developer. My job is to solve problems, usually related to software architecture or specific details of software implementation. During that process, I often find myself browsing the Internet, looking for people who had similar problems, solved them and described their solution. This kind of content is generally found either on internet forums or professional blogs. Since these sources provided me with, often very comprehensive, answers on countless occasions, I thought that the best way to appreciate their effort to share their knowledge would be to contribute to this knowledge base myself.</p>",
+            "url": "https://soofka.pl/entry/on-the-surface",
+            "title": "On the surface",
+            "summary": "<p>I am web developer. My job is to solve problems, usually related to software architecture or specific details of software implementation. During that process, I often find myself browsing the Internet, looking for people who had similar problems, solved them and described their solution. This kind of content is generally found either on internet forums or professional blogs. Since these sources provided me with, often very comprehensive, answers on countless occasions, I thought that the best way to appreciate their effort to share their knowledge would be to contribute to this knowledge base myself.</p>",
+            "image": "https://soofka.pl/images/railroad-landscape.jpg",
+            "date_modified": "2017-06-15T00:00:00.000Z",
             "author": {
                 "name": "Jakub Sowiński",
                 "url": "https://soofka.pl"
@@ -90,10 +181,10 @@
         },
         {
             "id": "eb54a4f6-0ff9-4750-b211-5f2d7675af70",
-            "html_content": "A couple of weeks ago I've visited Paris for the first time in my life. The city, although horribly crowded by tourists at all places, at all times (at least that's what it feels like), made me fell in love with it in only one weekend. I wouldn't have an opportunity for this magnificent experience, if it wasn't for React Europe - a conference, that took place in Paris on 17th and 18th of May, that was my primary goal of the trip. And, similarly to the city itself, the conference exceeded my expectations on many levels. Let me tell you how.",
+            "html_content": "<p>A couple of weeks ago I've visited Paris for the first time in my life. The city, although horribly crowded by tourists at all places, at all times (at least that's what it feels like), made me fell in love with it in only one weekend. I wouldn't have an opportunity for this magnificent experience, if it wasn't for <a href=\"https://www.react-europe.org\" target=\"_blank\">React-Europe</a> - a conference, that took place in Paris on 17th and 18th of May, that was my primary goal of the trip. And, similarly to the city itself, the conference exceeded my expectations on many levels. Let me tell you how.</p>",
             "url": "https://soofka.pl/entry/react-europe-2018-summary-of-the-talks",
             "title": "React-Europe 2018: Summary of the talks",
-            "summary": "A couple of weeks ago I've visited Paris for the first time in my life. The city, although horribly crowded by tourists at all places, at all times (at least that's what it feels like), made me fell in love with it in only one weekend. I wouldn't have an opportunity for this magnificent experience, if it wasn't for React Europe - a conference, that took place in Paris on 17th and 18th of May, that was my primary goal of the trip. And, similarly to the city itself, the conference exceeded my expectations on many levels. Let me tell you how.",
+            "summary": "<p>A couple of weeks ago I've visited Paris for the first time in my life. The city, although horribly crowded by tourists at all places, at all times (at least that's what it feels like), made me fell in love with it in only one weekend. I wouldn't have an opportunity for this magnificent experience, if it wasn't for <a href=\"https://www.react-europe.org\" target=\"_blank\">React-Europe</a> - a conference, that took place in Paris on 17th and 18th of May, that was my primary goal of the trip. And, similarly to the city itself, the conference exceeded my expectations on many levels. Let me tell you how.</p>",
             "image": "https://soofka.pl/images/react-europe-2018-badge.jpg",
             "date_modified": "2018-06-03T00:00:00.000Z",
             "author": {
@@ -102,104 +193,26 @@
             }
         },
         {
+            "id": "c52bd90a-7387-499f-8a07-9832d49392ee",
+            "html_content": "<p>One of the most common issues I heard people have with my blog was lack of syntax highlighting in posts, especially those, which contain a lot of code. Okay, it's almost 2019, I'm software engineer, working mostly with front-end these times - I finally agreed, that it should be added. So I added it. And in the meantime, I also learned a little bit about Web Workers. Hence, this post, in which I describe this little adventure.</p>",
+            "url": "https://soofka.pl/entry/syntax-highlighting-in-react-with-highlightjs-and-web-worker",
+            "title": "Syntax highlighting in React with highlight.js and Web Worker",
+            "summary": "<p>One of the most common issues I heard people have with my blog was lack of syntax highlighting in posts, especially those, which contain a lot of code. Okay, it's almost 2019, I'm software engineer, working mostly with front-end these times - I finally agreed, that it should be added. So I added it. And in the meantime, I also learned a little bit about Web Workers. Hence, this post, in which I describe this little adventure.</p>",
+            "image": "https://soofka.pl/images/colorful-abstraction.jpg",
+            "date_modified": "2018-09-08T00:00:00.000Z",
+            "author": {
+                "name": "Jakub Sowiński",
+                "url": "https://soofka.pl"
+            }
+        },
+        {
             "id": "289744b1-366d-4d07-8a32-d8588de0fe6b",
-            "html_content": "Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.",
+            "html_content": "<p>Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.</p>",
             "url": "https://soofka.pl/entry/webpack-4-config-explained-with-example",
             "title": "Webpack 4 config explained (with example)",
-            "summary": "Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.",
+            "summary": "<p>Using a skeleton for your application prepared by someone else comes with great benefit of a lot of time saved, but also with huge cost of a lot of knowledge not obtained. Sometimes you'll manage to complete your assignment just fine with some predefined boilerplate, without too much need for deep investigation of it's nooks and crannies. Other times, you'll end up in a position, where you reverse engineer it in order to introduce some major change, or just give up and start from scratch with your own thing. I wouldn't like you to give up on my application skeleton. Thus, I'll describe some of it's shenanigans in it's documentation. Today, I'm explaining build process.</p>",
             "image": "https://soofka.pl/images/the-doge-in-the-rye.jpg",
             "date_modified": "2018-04-09T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "3c594f32-c9f0-47a2-a811-7a2ca2555026",
-            "html_content": "Yup, I did it again. Second big lecture in my life took place, similarly to my debut, on Code Europe in Warsaw, Poland, this time during Autumn 2017 edition. On the afternoon of 7th of December I talked about my experience with building Progressive Web Apps, particularly in React. It was a case study based on two examples: big, complex application built for hundreds of thousands of users of StepStone; and small, home-brewed one: this blog.",
-            "url": "https://soofka.pl/entry/i-gave-a-lecture-on-code-europe-autumn-2017-too",
-            "title": "I gave a lecture on Code Europe Autumn 2017 too!",
-            "summary": "Yup, I did it again. Second big lecture in my life took place, similarly to my debut, on Code Europe in Warsaw, Poland, this time during Autumn 2017 edition. On the afternoon of 7th of December I talked about my experience with building Progressive Web Apps, particularly in React. It was a case study based on two examples: big, complex application built for hundreds of thousands of users of StepStone; and small, home-brewed one: this blog.",
-            "image": "https://soofka.pl/images/code-europe-autumn-2017-badge.jpg",
-            "date_modified": "2018-04-04T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "4b15b77b-c727-49fe-b0e6-91f5656b2682",
-            "html_content": "When building web applications in React, I usually choose Express to be my server, and more often than not I use React-Router to manage redirections and changes in history. Not without a reason - both are among the most popular choices in their respective fields nowadays; both are simple and elegant in every day work. However, I had some tough moments with both of them when it came up to setting all unrecognized routing to \"Not Found\" page, and this piece came as a result of them.",
-            "url": "https://soofka.pl/entry/how-to-setup-routing-for-\"not-found\"-on-both-sides-with-react-router-and-express",
-            "title": "How to setup routing for \"Not Found\" on both sides with React-Router and Express",
-            "summary": "When building web applications in React, I usually choose Express to be my server, and more often than not I use React-Router to manage redirections and changes in history. Not without a reason - both are among the most popular choices in their respective fields nowadays; both are simple and elegant in every day work. However, I had some tough moments with both of them when it came up to setting all unrecognized routing to \"Not Found\" page, and this piece came as a result of them.",
-            "image": "https://soofka.pl/images/colorful-tiles.jpg",
-            "date_modified": "2018-03-26T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "5c84ef0f-b7be-4aa9-af9b-dcf5d22028c6",
-            "html_content": "I like to improve myself – at least that’s what I like to think about myself. That’s the thought I had in mind most of 2017. Not every day, of course, but for most of them I tried to remember about it, to learn new things, and to at least try to better myself. So, when 2017 came to an end, I asked myself: what did I actually learn that year?",
-            "url": "https://soofka.pl/entry/3-things-i-learned-in-2017",
-            "title": "3 things I learned in 2017",
-            "summary": "I like to improve myself – at least that’s what I like to think about myself. That’s the thought I had in mind most of 2017. Not every day, of course, but for most of them I tried to remember about it, to learn new things, and to at least try to better myself. So, when 2017 came to an end, I asked myself: what did I actually learn that year?",
-            "image": "https://soofka.pl/images/train-leaving.jpg",
-            "date_modified": "2018-01-07T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "26bb42df-78cb-4eb8-8685-89ea78d2fd8c",
-            "html_content": "On 22nd and 23rd of September, there was FrontEnd Connect 2017 conference in Warsaw, Poland, and I was there. With plenty of speakers from around the globe and many news and announcements related to this event in polish Internet, I hoped for big, prestigious, and independent event focused on front-end of web development on my home soil. My expectations were utterly crushed, but I still had quite a good time.",
-            "url": "https://soofka.pl/entry/frontend-con-2017-summary",
-            "title": "FrontEnd-Con 2017: Summary",
-            "summary": "On 22nd and 23rd of September, there was FrontEnd Connect 2017 conference in Warsaw, Poland, and I was there. With plenty of speakers from around the globe and many news and announcements related to this event in polish Internet, I hoped for big, prestigious, and independent event focused on front-end of web development on my home soil. My expectations were utterly crushed, but I still had quite a good time.",
-            "image": "https://soofka.pl/images/frontend-con-2017-badge.jpg",
-            "date_modified": "2017-09-26T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "7d0ac221-e911-4f02-9cc7-4cd95be8f244",
-            "html_content": "One of the challenges that I faced while programming this, so far, very simple blog app (the one that you are using to read this post, most likely), was how to give my readers a possibility to comment on my posts. Obviously, it is one of the crucial features of this kind of app – I would like my readers to be able to tell me where am I wrong, and I would like me to be able to respond to such heretic claims. However, the whole feature seems quite a lot of work to implement from scratch. Luckily, there are plenty of ready out of the box solutions out there, one of them being Disqus.",
-            "url": "https://soofka.pl/entry/how-to-integrate-disqus-comments-in-react-app",
-            "title": "How to integrate Disqus comments in React app",
-            "summary": "One of the challenges that I faced while programming this, so far, very simple blog app (the one that you are using to read this post, most likely), was how to give my readers a possibility to comment on my posts. Obviously, it is one of the crucial features of this kind of app – I would like my readers to be able to tell me where am I wrong, and I would like me to be able to respond to such heretic claims. However, the whole feature seems quite a lot of work to implement from scratch. Luckily, there are plenty of ready out of the box solutions out there, one of them being Disqus.",
-            "image": "https://soofka.pl/images/disqus-logo.jpg",
-            "date_modified": "2017-08-08T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "e16ac8a2-97cf-478a-bf9d-e29f55565929",
-            "html_content": "That's right. Even before I became famous as a blog writer, I got an opportunity to give a lecture on one of the biggest IT conferences in Poland: Code Europe, Spring edition of year 2017. It was my first time as a speaker in front of crowd of that size and volume, so after a few weeks of panicky preparations, I managed to deliver presentation on how to optimize your JavaScript code with variety of tricks and techniques.",
-            "url": "https://soofka.pl/entry/i-gave-a-lecture-on-code-europe-spring-2017",
-            "title": "I gave a lecture on Code Europe Spring 2017!",
-            "summary": "That's right. Even before I became famous as a blog writer, I got an opportunity to give a lecture on one of the biggest IT conferences in Poland: Code Europe, Spring edition of year 2017. It was my first time as a speaker in front of crowd of that size and volume, so after a few weeks of panicky preparations, I managed to deliver presentation on how to optimize your JavaScript code with variety of tricks and techniques.",
-            "image": "https://soofka.pl/images/code-europe-spring-2017-badge.jpg",
-            "date_modified": "2017-07-10T00:00:00.000Z",
-            "author": {
-                "name": "Jakub Sowiński",
-                "url": "https://soofka.pl"
-            }
-        },
-        {
-            "id": "da1d29c9-5d66-4012-b73b-b4b45c708a20",
-            "html_content": "I am web developer. My job is to solve problems, usually related to software architecture or specific details of software implementation. During that process, I often find myself browsing the Internet, looking for people who had similar problems, solved them and described their solution. This kind of content is generally found either on internet forums or professional blogs. Since these sources provided me with, often very comprehensive, answers on countless occasions, I thought that the best way to appreciate their effort to share their knowledge would be to contribute to this knowledge base myself.",
-            "url": "https://soofka.pl/entry/on-the-surface",
-            "title": "On the surface",
-            "summary": "I am web developer. My job is to solve problems, usually related to software architecture or specific details of software implementation. During that process, I often find myself browsing the Internet, looking for people who had similar problems, solved them and described their solution. This kind of content is generally found either on internet forums or professional blogs. Since these sources provided me with, often very comprehensive, answers on countless occasions, I thought that the best way to appreciate their effort to share their knowledge would be to contribute to this knowledge base myself.",
-            "image": "https://soofka.pl/images/railroad-landscape.jpg",
-            "date_modified": "2017-06-15T00:00:00.000Z",
             "author": {
                 "name": "Jakub Sowiński",
                 "url": "https://soofka.pl"

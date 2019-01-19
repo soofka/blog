@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom';
 import Label from 'components/Label';
 import AssetsProvider from 'common/AssetsProvider';
 
-import { StyledEntryImageWrapper, StyledEntryImage } from './styled';
+import {
+  StyledEntryImageWrapper,
+  StyledEntryImage,
+  StyledEntryBriefContainer,
+} from './styled';
 
 export interface EntryBriefInterface {
   text: string;
@@ -28,8 +32,9 @@ export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
           />
         </StyledEntryImageWrapper>
       }
+      <StyledEntryBriefContainer dangerouslySetInnerHTML={{ __html: text }}></StyledEntryBriefContainer>
       <p>
-        {text} {moreButtonLink && <Link to={moreButtonLink}>
+        {moreButtonLink && <Link to={moreButtonLink}>
           {<Label name="entry__continue_reading"/>} &raquo;
         </Link>}
       </p>

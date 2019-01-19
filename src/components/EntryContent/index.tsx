@@ -13,28 +13,7 @@ export class EntryContent extends React.Component<EntryContentPropsInterface> {
 
   componentDidMount(): void {
     this.highlightCodeBlocks();
-
-    // Example of Web Worker for future reference
-    // if (Worker) {
-    //   this.highlightCodeBlocksAsync();
-    // } else {
-    //   this.highlightCodeBlocks();
-    // }
   }
-
-  // highlightCodeBlocksAsync(): void {
-  //   const codeBlocks = document.querySelectorAll('pre code');
-  //   const worker = new WebWorker(highlightWorker);
-  //
-  //   worker.addEventListener('message', (event) => {
-  //     const { code, codeBlockIndex } = event.data;
-  //     codeBlocks[codeBlockIndex].innerHTML = code;
-  //   });
-  //
-  //   codeBlocks.forEach((codeBlock, index) => {
-  //     worker.postMessage([codeBlock.textContent, index]);
-  //   });
-  // }
 
   highlightCodeBlocks(): void {
     document.querySelectorAll('pre code').forEach((codeBlock: Node) => {

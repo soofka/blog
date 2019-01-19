@@ -43,8 +43,8 @@ export class AssetsProvider {
     return entriesBasePath;
   }
 
-  static getEntryFilePath(entryFileName?: string) {
-    return `${entriesBasePath}/${entryFileName || entryDefaultFileName}`;
+  static getEntryFilePath(language: string, entryFileName?: string) {
+    return `${entriesBasePath}/${language}/${entryFileName || entryDefaultFileName}`;
   }
 
   static getEntryImageFilePath(imageFileName?: string) {

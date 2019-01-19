@@ -1,8 +1,8 @@
 import { languages } from 'common/LanguageHandler/constants';
 
 export const entriesJsonPath = {
-  [languages.EN]: '/entries.en.json',
-  [languages.PL]: '/entries.pl.json',
+  [languages.EN]: '/entries/entries.en.json',
+  [languages.PL]: '/entries/entries.pl.json',
 };
 export const imagesBasePath = '/images';
 export const entriesBasePath = '/entries';

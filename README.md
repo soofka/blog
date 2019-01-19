@@ -12,6 +12,14 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.4.2
+- added automated entries parser
+- simplified content structure in code
+- fixed multiple bugs in entries
+- added link to blog on github to index.html source code
+- removed some of unused assets
+- `npm audit fix`
+
 ### 1.4.1
 - added RSS feed
 - added automated and user-triggered page scrolling
@@ -132,6 +140,7 @@ Blog is available at `localhost:3000`.
 - "lectures and trainings" page
 - "back to top" button
 - social media feed below newest posts, with differentiation between all feed sources
+- image optimization in build process
 
 ### minor
 - sorting entries
@@ -139,7 +148,7 @@ Blog is available at `localhost:3000`.
 - loading indicator view with react-loadable
 - better security with content based policy
 - route based chunking
-- animated components with [popmotion](https://popmotion.io/pose/learn/route-transitions-reach-router/)
+- animated components with [pose](https://popmotion.io/pose/learn/route-transitions-reach-router/)
 - compilation to WebAssembly
 - different route paths per language
 - move entries and entry content to global state to avoid loading them again with each rerender

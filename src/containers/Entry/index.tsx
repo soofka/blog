@@ -65,7 +65,7 @@ export class Entry extends React.Component<EntryPropsInterface, EntryStateInterf
   getContent() {
     this.setState({ loading: true });
     AssetsProvider
-      .getEntryContent(AssetsProvider.getEntryFilePath(this.props.contentFileName))
+      .getEntryContent(AssetsProvider.getEntryFilePath(this.props.languageStore.language, this.props.contentFileName))
       .then((response: RequestHandlerResponseInterface) => {
 
         const content = RequestHandler.validateResponse(response)

@@ -13,4 +13,10 @@ export const StyledEntryImage = styledComponents.img`
   margin-bottom: -25%;
 `;
 
+export const StyledEntryBriefContainer = styledComponents.div`
+  p:last-of-type {
+    margin-bottom: ${props => props.theme.marginS}
+  }
+`;
+
 export default StyledEntryImageWrapper;

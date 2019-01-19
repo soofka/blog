@@ -148,7 +148,8 @@ const getPlugins = (devEnv, audit) => {
     }),
     new CopyWebpackPlugin([
       { from: './assets/', to: './' },
-      { from: './content/', to: './' },
+      { from: './content/static/', to: './' },
+      { from: './content/generated/', to: './' },
     ]),
     new HtmlWebpackPlugin({
       inject: false,

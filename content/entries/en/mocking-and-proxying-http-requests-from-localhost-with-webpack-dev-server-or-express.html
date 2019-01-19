@@ -1,0 +1,72 @@
+<entry
+  id="528cc6f7-2559-4b94-b6f1-fa22003dedd5"
+  public="true"
+  tags="javascript, http, mock, proxy, localhost, webpack, webpack-dev-server, express, how to"
+  created="2018-07-23"
+  updated="2018-07-23"
+>
+  <title>Mocking and proxying HTTP requests from localhost with Webpack Dev Server or Express</title>
+  <banner src="eiffel-tower-and-some-people.jpg" />
+  <brief>
+    <p>Back in the day, my JS projects were small and self-contained. Nowadays, in my professional work, majority, if not all of front-end applications I am working on are connected to multiple back-end services for variety of reasons. It gives me a freedom of not caring of the back-end, as long as we have defined a contract, and proceeding happily with what actually matters, i.e. colors and animations. But it also gave ma some headache, when I wanted to have pleasant, convenient coding environment on my localhost, and not have all of these weird back-end stuff running on my local machine as well. Here's how I worked it out with both <a href="https://github.com/webpack/webpack-dev-server" target="_blank">Webpack Dev Server</a> and <a href="https://expressjs.com/" target="_blank">Express</a>.</p>
+  </brief>
+  <content>
+    <p>I've found two ways of dealing with HTTP requests coming out of my front-end, so that I can handle them freely, without major changes to development version of my application: <strong>mocking</strong> and <strong>proxying</strong>. Both are based on intercepting these requests on my localhost level, and handling them manually. However, they are handled differently, and they have their own pros, cons, and ideal case, in which you want to use them.</p>
+    <p>There is some code in this post, displaying how you can mock or proxy this problem out of your way. There is also some more code on this subject on my github, in <a href="https://github.com/soofka/blog/tree/master/code_examples/mocking-and-proxying-http-requests-from-localhost" target="_blank">code examples section of my blog repository</a>. You'll find a small setup there, which showcases all ideas I'm bragging about in this post. There is an application with a button, that sends HTTP request with fetch; local server, that you can proxy your requests to; and four examples, each demonstrating different solution to this problem. Check it out!</p>
+    <h2>Mocking</h2>
+    <p>With mocked HTTP request response, you don't even call any back-end at all. Request is intercepted, and mocked - manually defined by you - response is served by your localhost. It's useful for most cases, because it gets the job done easily. It's particularly useful, when your back-end is just slow, or there is a lot of data to transfer, or a lot of calls - you just don't transfer any data over the wire, and there is no delay in your development. Downside of this solution is that you never see actual response that is coming from the service. You may end up surprised by totally different data model provided by back-end, or by any other difference between your assumption stated in your mock and actual response.</p>
+    <h3>Webpack Dev Server</h3>
+    <p><code>proxy</code> is an option in <a href="https://webpack.js.org/configuration/dev-server/" target="_blank">configuration of Webpack Dev Server</a>, which allows you to define proxy for any HTTP request that comes out of your localhost. You can also define specific bypass in it, with conditions as detailed as you want. In my example, I'm intercepting all calls to <code>/api</code> URL, and respond with mocked JS object instead.</p>
+    <codeblock>devServer: {
+      // ...
+      proxy: {
+        '/api': {
+          bypass: (request, response) => {
+            if (request.url.substr(-4) === '/api') {
+              response.send({ data: 'mocked data from webpack.devserver.mock.config.js' })
+            }
+          },
+        },
+      },
+    },</codeblock>
+    <p>(content of the whole script available <a href="https://github.com/soofka/blog/blob/master/code_examples/mocking-and-proxying-http-requests-from-localhost/webpack.devserver.mock.config.js" target="_blank">here</a>)</p>
+    <h3>Express</h3>
+    <p>Contrary to Webpeck Dev Server, mocking a response in <a href="https://expressjs.com" target="_blank">Express</a> doesn't feel like hacking. It's very straightforward, almost like this framework was created specifically to perform tasks like this (?!).</p>
+    <codeblock>const app = express();
+
+    // ...
+
+    app.get('/api', (request, response) => {
+      response.json({ data: 'mocked data from express.mock.js' });
+    });</codeblock>
+    <p>(content of the whole script available <a href="https://github.com/soofka/blog/blob/master/code_examples/mocking-and-proxying-http-requests-from-localhost/express.mock.js" target="_blank">here</a>)</p>
+    <h2>Proxying</h2>
+    <p>With proxied HTTP request, you call actual back-end service. Request is only proxied - redirected to it's true destination, and potentially modified a bit. It's usually preferred for when you are fine with getting real data from real service, even at a cost of waiting some additional time with each visit to your localhost, but your back-end is on different host than your local, which is usually the case. Cons? If you can afford it time- and resources-wise, there are none, in my experience.</p>
+    <h3>Webpack Dev Server</h3>
+    <p>Proxy with Webpack Dev Server can be achieved using <code>proxy</code> configuration option, this time more like it was originally intended. <code>target</code> parameter describes destination to which certain call should be redirected. If <code>pathRewrite</code> parameter is not provided, <code>/api</code> will be concatenated with the target, which is not what I wanted to achieve here (hence I've defined this parameter), but you may find it useful.</p>
+    <codeblock>devServer: {
+      // ...
+      proxy: {
+        '/api': {
+          target: 'http://localhost:3001/get-secret-data',
+          pathRewrite: { '^/api': '' },
+        },
+      },
+    },</codeblock>
+    <p>(content of the whole script available <a href="https://github.com/soofka/blog/blob/master/code_examples/mocking-and-proxying-http-requests-from-localhost/webpack.devserver.proxy.config.js" target="_blank">here</a>)</p>
+    <h3>Express</h3>
+    <p>In Express, it's a little bit more effort, since it's required to incorporate http-proxy package for this operation. Similarly to Webpack Dev Server, <code>target</code> parameter defines destination of your redirection. The other parameter, <code>ignorePath</code>, is set to <code>false</code> by default. If you don't override it, <code>/api</code> will be added to the end of your request's URL. Again, it might be what you want in some cases.</p>
+    <codeblock>const app = express();
+    const apiProxy = httpProxy.createProxyServer();
+
+    // ...
+
+    app.get('/api', (request, response) => {
+      apiProxy.web(request, response, {
+        target: 'http://localhost:3001/get-secret-data',
+        ignorePath: true,
+      });
+    });</codeblock>
+    <p>(content of the whole script available <a href="https://github.com/soofka/blog/blob/master/code_examples/mocking-and-proxying-http-requests-from-localhost/express.proxy.js" target="_blank">here</a>)</p>
+  </content>
+</entry>

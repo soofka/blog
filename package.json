@@ -1,6 +1,6 @@
 {
   "name": "@soofka/blog",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "soofka blog",
   "keywords": [
     "soofka",
@@ -22,7 +22,7 @@
     "build": "npm run build:full",
     "build:full": "npm run build:full:prod",
     "build:full:dev": "npm run test && npm run build:clean && npm run build:dev",
-    "build:full:prod": "npm run test && npm run build:clean && npm run getfeed && npm run build:prod",
+    "build:full:prod": "npm run test && npm run build:clean && npm run generateEntries && npm run generateFeed && npm run build:prod",
     "build:dev": "cross-env env=dev npm run build:base",
     "build:prod": "cross-env env=prod npm run build:base",
     "build:base": "node ./scripts/builder/run.js",
@@ -35,7 +35,8 @@
     "test:update": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watch",
     "test:clean": "rimraf ./coverage",
-    "getfeed": "node ./scripts/builder/getFeed.js",
+    "generateEntries": "node ./scripts/builder/generateEntries.js",
+    "generateFeed": "node ./scripts/builder/generateFeed.js",
     "audit": "npm run build:clean && cross-env env=prod mode=audit npm run build:base",
     "lint": "npm run lint:ts && npm run lint:styles",
     "lint:js": "eslint ./scripts/**/*.js",
@@ -81,11 +82,12 @@
     "enzyme-to-json": "^3.2.2",
     "eslint": "^4.17.0",
     "express": "^4.15.3",
+    "fast-check": "^1.10.0",
     "feed": "^2.0.1",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.6",
     "identity-obj-proxy": "^3.0.0",
-    "imagemin-webpack-plugin": "^2.2.0",
+    "imagemin-webpack-plugin": "^2.4.0",
     "jest": "^23.5.0",
     "jest-styled-components": "^6.1.0",
     "raf": "^3.4.0",
@@ -109,6 +111,7 @@
     "webpack-bundle-analyzer": "^2.11.1",
     "webpack-cli": "^2.0.10",
     "webpack-dev-middleware": "^3.0.1",
-    "webpack-hot-middleware": "^2.21.2"
+    "webpack-hot-middleware": "^2.21.2",
+    "xml2js": "^0.4.19"
   }
 }
