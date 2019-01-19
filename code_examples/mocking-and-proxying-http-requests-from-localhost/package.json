@@ -1,12 +1,12 @@
 {
   "name": "@soofka/code-examples--http-request-from-localhost",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "devDependencies": {
     "express": "^4.16.3",
     "http-proxy": "^1.17.0",
     "webpack": "^4.1.1",
     "webpack-cli": "^3.0.8",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.11"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
