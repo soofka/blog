@@ -1,5 +1,7 @@
 export const homeNiceUrlBasePath = '/';
-export const aboutNiceUrlBasePath = '/about';
+export const aboutMeNiceUrlBasePath = '/about';
+export const talksNiceUrlBasePath = '/talks';
+export const archiveNiceUrlBasePath = '/archive';
 export const entryNiceUrlBasePath = '/entry';
 export const entriesByTagNiceUrlBasePath = '/tag';
 export const entriesByDateNiceUrlBasePath = '/date';

@@ -2,19 +2,20 @@ import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import theme from 'common/theme';
-import { StyledBlog, StyledBlogContainer } from './styled';
+import { StyledBlog } from './styled';
 
-import InfoSection from 'components/InfoSection';
-import ContentSection from 'components/ContentSection';
+import Sidebar from 'components/Sidebar';
+import Header from 'components/Header';
+import Main from 'components/Main';
 
 const Blog = () => {
   return (
     <ThemeProvider theme={theme}>
       <StyledBlog>
-        <StyledBlogContainer>
-          <InfoSection />
-          <ContentSection />
-        </StyledBlogContainer>
+        <Header />
+        <div id="page-wrap">
+          <Main />
+        </div>
       </StyledBlog>
     </ThemeProvider>
   );

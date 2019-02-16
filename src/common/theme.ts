@@ -2,14 +2,16 @@ const baseDistanceValue = 8;
 
 export const theme = {
   baseDistanceValue,
-  infoSectionHeightValue: 16 * baseDistanceValue,
+  headerHeight: `${14 * baseDistanceValue}px`,
+  headerHeightMobile: `${10 * baseDistanceValue}px`,
+  headerFontFamily: `'Raleway', sans-serif`,
 
   siteMaxWidth: '1200px',
   breakpointS: '420px',
   breakpointM: '968px',
 
   blue: 'rgb(0,1,49)',
-  darkBlue: 'rgb(0,0,24)',
+  darkBlue: 'rgb(0,1,32)',
   darkerBlue: 'rgb(0,0,0)',
   lightBlue: 'rgb(0,2,98)',
   lighterBlue: 'rgb(0,3,147)',

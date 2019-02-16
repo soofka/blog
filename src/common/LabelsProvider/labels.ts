@@ -1,6 +1,9 @@
 export default {
   en: {
     page_title: 'soofka.pl',
+    page_title__about_me: 'About me - soofka.pl',
+    page_title__talks: 'Talks - soofka.pl',
+    page_title__archive: 'Archive - soofka.pl',
     page_title__entry: '%entry_title% - soofka.pl',
     page_title__entries_by_tag: '%tag% entries - soofka.pl',
     page_title__entries_by_date: 'entries from %date% - soofka.pl',
@@ -9,6 +12,11 @@ export default {
       %description%
     `,
     page_keywords: 'html, css, php, javascript, react, %keywords%',
+    menu__header: 'My blog',
+    menu_item__home: 'Home',
+    menu_item__about: 'About me',
+    menu_item__talks: 'Talks',
+    menu_item__archive: 'Archive',
     errors__header: `Error!`,
     errors__default: `Something went wrong. Please try again.`,
     errors__page_not_found: `Whoops, there is no such page.`,
@@ -28,6 +36,9 @@ export default {
   },
   pl: {
     page_title: 'soofka.pl',
+    page_title__about_me: 'O mnie - soofka.pl',
+    page_title__talks: 'Wystąpienia - soofka.pl',
+    page_title__archive: 'Archiwum - soofka.pl',
     page_title__entry: '%entry_title% - soofka.pl',
     page_title__entries_by_tag: 'wpisy o %tag% - soofka.pl',
     page_title__entries_by_date: 'wpisy z %date% - soofka.pl',
@@ -36,6 +47,11 @@ export default {
       %description%
     `,
     page_keywords: 'html, css, php, javascript, react, %keywords%',
+    menu__header: 'Mój blog',
+    menu_item__home: 'Home',
+    menu_item__about: 'O mnie',
+    menu_item__talks: 'Wystąpienia',
+    menu_item__archive: 'Archiwum',
     errors__header: `Błąd!`,
     errors__default: `Coś poszło nie tak. Spróbuj ponownie.`,
     errors__page_not_found: `Ups, nie ma takiej strony.`,

@@ -2,7 +2,9 @@ import * as queryString from 'query-string';
 
 import {
   homeNiceUrlBasePath,
-  aboutNiceUrlBasePath,
+  aboutMeNiceUrlBasePath,
+  talksNiceUrlBasePath,
+  archiveNiceUrlBasePath,
   entryNiceUrlBasePath,
   entriesByTagNiceUrlBasePath,
   entriesByDateNiceUrlBasePath,
@@ -14,8 +16,16 @@ export class RoutingProvider {
     return homeNiceUrlBasePath;
   }
 
-  static getAboutNiceUrlBasePath(): string {
-    return aboutNiceUrlBasePath;
+  static getAboutMeNiceUrlBasePath(): string {
+    return aboutMeNiceUrlBasePath;
+  }
+
+  static getTalksNiceUrlBasePath(): string {
+    return talksNiceUrlBasePath;
+  }
+
+  static getArchiveNiceUrlBasePath(): string {
+    return archiveNiceUrlBasePath;
   }
 
   static getEntryNiceUrlBasePath(): string {

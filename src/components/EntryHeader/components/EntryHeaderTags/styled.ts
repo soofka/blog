@@ -16,7 +16,7 @@ export const StyledEntryHeaderTags = styledComponents.p`
 
     &:hover {
       background-color: ${props => props.theme.darkerWhite};
-      color: ${props => props.theme.darkBlue};
+      color: ${props => props.theme.darkerBlue};
     }
   }
 `;

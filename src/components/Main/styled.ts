@@ -1,6 +1,6 @@
 import styledComponents from 'styled-components';
 
-export const StyledContentSection = styledComponents.div`
+export const StyledMain = styledComponents.main`
   float: left;
   margin: 0 0 0 ${props => props.theme.infoSectionWidth};
   padding: ${props => props.theme.paddingM};
@@ -27,4 +27,4 @@ export const StyledContentSection = styledComponents.div`
   width: 100%;
 }`;
 
-export default StyledContentSection;
+export default StyledMain;

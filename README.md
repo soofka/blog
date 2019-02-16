@@ -12,6 +12,11 @@ npm start
 Blog is available at `localhost:3000`.
 
 ## Changelog
+### 1.4.3
+- added sidebar
+- added archive page
+- added talks page
+
 ### 1.4.2
 - added automated entries parser
 - simplified content structure in code
@@ -133,11 +138,13 @@ Blog is available at `localhost:3000`.
 - `any`
 
 ## improvements
+### critical
+- rethink `Entry` in the contect of `Archive`
+- rethink `EntryMeta` in the context of `ArchiveMeta`
+
 ### major
 - polish language version
 - "about" page
-- "archive" pages
-- "lectures and trainings" page
 - "back to top" button
 - social media feed below newest posts, with differentiation between all feed sources
 - image optimization in build process

@@ -127,6 +127,7 @@ const getPlugins = (devEnv, audit) => {
   let staticStyles = [
     '/styles/normalize.css',
     '/scripts/highlight/styles/dracula.css',
+    'https://fonts.googleapis.com/css?family=Raleway',
   ];
   let staticScripts = [
     '/scripts/highlight/highlight.pack.js',
@@ -158,7 +159,12 @@ const getPlugins = (devEnv, audit) => {
       favicon: './assets/favicon.png',
       title: appconfig.title,
       meta: appconfig.meta,
-      icons: appconfig.icons,
+      icons: appconfig.icons.map((icon) => ({
+        rel: 'icon',
+        sizes: `${icon.width}x${icon.height}`,
+        type: `image/${icon.url.substr(icon.url.lastIndexOf('.') + 1)}`,
+        href: icon.url,
+      })),
       links: staticStyles,
       scripts: staticScripts,
       minify: devEnv ? false : {

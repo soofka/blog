@@ -1,6 +1,6 @@
 {
   "name": "@soofka/blog",
-  "version": "1.4.2",
+  "version": "1.4.3",
   "description": "soofka blog",
   "keywords": [
     "soofka",
@@ -22,7 +22,7 @@
     "build": "npm run build:full",
     "build:full": "npm run build:full:prod",
     "build:full:dev": "npm run test && npm run build:clean && npm run build:dev",
-    "build:full:prod": "npm run test && npm run build:clean && npm run generateEntries && npm run generateFeed && npm run build:prod",
+    "build:full:prod": "npm run test && npm run build:clean && npm run generateData && npm run build:prod",
     "build:dev": "cross-env env=dev npm run build:base",
     "build:prod": "cross-env env=prod npm run build:base",
     "build:base": "node ./scripts/builder/run.js",
@@ -35,8 +35,7 @@
     "test:update": "npm run test -- --updateSnapshot",
     "test:watch": "npm run test -- --watch",
     "test:clean": "rimraf ./coverage",
-    "generateEntries": "node ./scripts/builder/generateEntries.js",
-    "generateFeed": "node ./scripts/builder/generateFeed.js",
+    "generateData": "node ./scripts/builder/generateData.js",
     "audit": "npm run build:clean && cross-env env=prod mode=audit npm run build:base",
     "lint": "npm run lint:ts && npm run lint:styles",
     "lint:js": "eslint ./scripts/**/*.js",
@@ -55,6 +54,7 @@
     "mobx-react-router": "^4.0.4",
     "query-string": "^6.1.0",
     "react": "^16.0.0",
+    "react-burger-menu": "^2.6.4",
     "react-dom": "^16.0.0",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^4.2.2"
@@ -83,7 +83,7 @@
     "eslint": "^4.17.0",
     "express": "^4.15.3",
     "fast-check": "^1.10.0",
-    "feed": "^2.0.1",
+    "feed": "^2.0.2",
     "file-loader": "^1.1.11",
     "html-webpack-plugin": "^3.0.6",
     "identity-obj-proxy": "^3.0.0",
