@@ -1,4 +1,8 @@
-import RequestHandler, { RequestHandlerResponseInterface, RequestHandlerErrorInterface } from 'common/RequestHandler';
+import {
+  RequestHandler,
+  RequestHandlerResponseInterface,
+  RequestHandlerErrorInterface,
+} from 'blog/common/RequestHandler';
 
 import {
   entriesJsonPath,

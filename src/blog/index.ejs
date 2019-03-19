@@ -1,69 +1,63 @@
 <!DOCTYPE html>
 <!-- Hello! Welcome to my blog's code. You can browse it all here: https://github.com/soofka/blog -->
 <html lang="en">
-  <head>
+<head>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="en" />
+  <meta name="robots" content="index,follow" />
+  <meta name="googlebot" content="index,follow" />
 
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="content-language" content="en"/>
-    <meta name="robots" content="index,follow"/>
-    <meta name="googlebot" content="index,follow"/>
-
-    <% if (Array.isArray(htmlWebpackPlugin.options.meta)) { %>
-        <% for (item of htmlWebpackPlugin.options.meta) { %>
-            <meta<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>>
-        <% } %>
+  <% if (Array.isArray(htmlWebpackPlugin.options.meta)) { %>
+    <% for (item of htmlWebpackPlugin.options.meta) { %>
+      <meta<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %> />
     <% } %>
+  <% } %>
 
-    <% if (htmlWebpackPlugin.files.favicon) { %>
-        <link href="<%= htmlWebpackPlugin.files.favicon %>" rel="shortcut icon">
+  <% if (htmlWebpackPlugin.files.favicon) { %>
+    <link href="<%= htmlWebpackPlugin.files.favicon %>" rel="shortcut icon" />
+  <% } %>
+
+  <% if (htmlWebpackPlugin.options.icons) { %>
+    <% for (item of htmlWebpackPlugin.options.icons) { %>
+      <link <% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %> />
     <% } %>
+  <% } %>
 
-    <% if (htmlWebpackPlugin.options.icons) { %>
-        <% for (item of htmlWebpackPlugin.options.icons) { %>
-            <link <% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>>
-        <% } %>
+  <% for (item of htmlWebpackPlugin.options.links) { %>
+    <% if (typeof item === 'string' || item instanceof String) { item = { href: item, rel: 'stylesheet' } } %>
+    <link<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %> />
+  <% } %>
+
+  <% for (key in htmlWebpackPlugin.files.css) { %>
+    <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet" />
+  <% } %>
+
+  <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
+</head>
+<body>
+  <main></main>
+
+  <% for (item of htmlWebpackPlugin.options.scripts) { %>
+    <% if (typeof item === 'string' || item instanceof String) { item = { src: item, type: 'text/javascript' } } %>
+    <script async defer<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>></script>
+  <% } %>
+
+  <% for (item of htmlWebpackPlugin.options.scripts) { %>
+    <% if (typeof item === 'function' || item instanceof Object) {  %>
+      <script async defer><%= item() %></script>
     <% } %>
+  <% } %>
 
-    <% for (item of htmlWebpackPlugin.options.links) { %>
-        <% if (typeof item === 'string' || item instanceof String) { item = { href: item, rel: 'stylesheet' } } %>
-            <link<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>>
-    <% } %>
+  <% for (key in htmlWebpackPlugin.files.chunks) { %>
+    <script src="<%= htmlWebpackPlugin.files.chunks[key].entry %>" type="text/javascript"></script>
+  <% } %>
 
-    <% for (key in htmlWebpackPlugin.files.css) { %>
-        <link href="<%= htmlWebpackPlugin.files.css[key] %>" rel="stylesheet">
-    <% } %>
-
-    <link rel="alternate" type="application/rss+xml" href="/rss.xml" />
-
-  </head>
-  <body>
-
-    <app></app>
-
-    <% for (item of htmlWebpackPlugin.options.scripts) { %>
-        <% if (typeof item === 'string' || item instanceof String) { item = { src: item, type: 'text/javascript' } } %>
-        <script async defer<% for (key in item) { %> <%= key %>="<%= item[key] %>"<% } %>></script>
-    <% } %>
-
-    <% for (item of htmlWebpackPlugin.options.scripts) { %>
-        <% if (typeof item === 'function' || item instanceof Object) {  %>
-            <script async defer><%= item() %></script>
-        <% } %>
-    <% } %>
-
-    <% for (key in htmlWebpackPlugin.files.chunks) { %>
-        <script src="<%= htmlWebpackPlugin.files.chunks[key].entry %>" type="text/javascript"></script>
-    <% } %>
-
-<noscript>
-        <p>
-            Please enable JavaScript in your browser to use this site.
-        </p>
-    </noscript>
-
-  </body>
+  <noscript>
+    <p>Please enable JavaScript in your browser to use this site.</p>
+  </noscript>
+</body>
 </html>

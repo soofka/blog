@@ -5,21 +5,28 @@ import { Router } from 'react-router-dom';
 import { syncHistoryWithStore } from 'mobx-react-router';
 import createBrowserHistory from 'history/createBrowserHistory';
 
-import Blog from 'components/Blog';
+import Blog from 'blog/components/Blog';
 
-import { store } from 'store';
+// import { store } from 'blog/store';
 
-const browserHistory = createBrowserHistory();
-const history = syncHistoryWithStore(browserHistory, store.routingStore);
+// const browserHistory = createBrowserHistory();
+// const history = syncHistoryWithStore(browserHistory, store.routingStore);
+
+// const render = () => {
+//   ReactDOM.render(
+//     <Provider {...store}>
+//       <Router history={history}>
+//         <Blog/>
+//       </Router>
+//     </Provider>,
+//     document.querySelector('app'),
+//   );
+// };
 
 const render = () => {
   ReactDOM.render(
-    <Provider {...store}>
-      <Router history={history}>
-        <Blog/>
-      </Router>
-    </Provider>,
-    document.querySelector('app'),
+    <Blog/>,
+    document.querySelector('main'),
   );
 };
 
@@ -35,5 +42,5 @@ registerServiceWorker();
 declare const module: any;
 
 if (module.hot) {
-  module.hot.accept('./components/Blog', () => { render(); });
+  module.hot.accept('blog/components/Blog', () => { render(); });
 }

@@ -68,10 +68,10 @@ const getResolve = () => ({
 });
 
 const getModule = (devEnv) => {
-  let typeScriptLoaders = [];
+  const typeScriptLoaders = [];
 
   if (!devEnv) {
-    typeScriptLoaders.push('babel-loader');
+    // typeScriptLoaders.push('babel-loader');
   }
 
   typeScriptLoaders.push(
@@ -79,8 +79,8 @@ const getModule = (devEnv) => {
       loader: 'awesome-typescript-loader',
       query: {
         configFileName: 'tsconfig.json',
-        silent: true
-      }
+        silent: true,
+      },
     },
   );
 
@@ -143,11 +143,11 @@ const getPlugins = (devEnv, audit) => {
     );
   }
 
-  let plugins = [
+  const plugins = [
     new webpack.DefinePlugin({
       'process.env':{
-        'NODE_ENV': JSON.stringify(devEnv ? 'development' : 'production')
-      }
+        NODE_ENV: JSON.stringify(devEnv ? 'development' : 'production'),
+      },
     }),
     new WebpackShellPlugin({
       onBuildStart: ['npm run build:blog:data'],
@@ -159,7 +159,7 @@ const getPlugins = (devEnv, audit) => {
     new HtmlWebpackPlugin({
       inject: false,
       mobile: true,
-      template: './src/blog/index.ejs',
+      template: 'src/blog/index.ejs',
       // favicon: './assets/favicon.png',
       title: blogConfig.title,
       meta: blogConfig.meta,
@@ -190,7 +190,7 @@ const getPlugins = (devEnv, audit) => {
       new webpack.HotModuleReplacementPlugin(),
       new TSLintWebpackPlugin({
         files: ['./src/blog/**/*.{ts,tsx}'],
-        config: './tslintconfig.json',
+        config: './tslint.json',
       }),
       new StyleLintWebpackPlugin(({
         files: ['./src/blog/**/*'],
@@ -216,7 +216,7 @@ const getPlugins = (devEnv, audit) => {
       }),
       new webpack.LoaderOptionsPlugin({
         minimize: true,
-        debug: false
+        debug: false,
       }),
       new CompressionWebpackPlugin({
         asset: '[path].gz[query]',
@@ -235,8 +235,8 @@ const getPlugins = (devEnv, audit) => {
     plugins.push(
       new WebpackBundleAnalyzerPlugin({
         analyzerMode: 'static',
-        reportFilename: '../stats/report.html'
-      })
+        reportFilename: '../stats/report.html',
+      }),
     );
   }
 

@@ -1,8 +1,8 @@
 import * as path from 'path';
-import express from 'express';
+import * as express from 'express';
 import * as webpack from 'webpack';
-import webpackDevMiddleware from 'webpack-dev-middleware';
-import webpackHotMiddleware from 'webpack-hot-middleware';
+import * as webpackDevMiddleware from 'webpack-dev-middleware';
+import * as webpackHotMiddleware from 'webpack-hot-middleware';
 
 import { getWebpackConfig } from './getWebpackConfig';
 
