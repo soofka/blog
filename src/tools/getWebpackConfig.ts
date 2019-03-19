@@ -1,15 +1,16 @@
-import path from 'path';
-import webpack from 'webpack';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-import CopyWebpackPlugin from 'copy-webpack-plugin';
-import SWPrecacheWebpackPlugin from 'sw-precache-webpack-plugin';
-import TSLintWebpackPlugin from 'tslint-webpack-plugin';
-import StyleLintWebpackPlugin from 'stylelint-webpack-plugin';
-import CompressionWebpackPlugin from 'compression-webpack-plugin';
-import ImageminWebpackPlugin from 'imagemin-webpack-plugin';
-import BundleAnalyzerPlugin from 'webpack-bundle-analyzer';
+import * as path from 'path';
+import * as webpack from 'webpack';
+import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as CopyWebpackPlugin from 'copy-webpack-plugin';
+import * as WebpackShellPlugin from 'webpack-shell-plugin';
+import * as SWPrecacheWebpackPlugin from 'sw-precache-webpack-plugin';
+import * as TSLintWebpackPlugin from 'tslint-webpack-plugin';
+import * as StyleLintWebpackPlugin from 'stylelint-webpack-plugin';
+import * as CompressionWebpackPlugin from 'compression-webpack-plugin';
+import * as ImageminWebpackPlugin from 'imagemin-webpack-plugin';
+import * as WebpackBundleAnalyzerPlugin from 'webpack-bundle-analyzer';
 
-import { blogConfig } from 'common/constants';
+import {blogConfig, GENERATED_CONTENT_PATH, STATIC_CONTENT_PATH} from '../common/constants';
 
 export const getWebpackConfig = (environment = 'dev', mode = null) => {
   const devEnv = environment === 'dev';
@@ -123,6 +124,7 @@ const getModule = (devEnv) => {
   };
 };
 
+//@todo: add paths from constants to whole config
 const getPlugins = (devEnv, audit) => {
   let staticStyles = [
     '/styles/normalize.css',
@@ -147,16 +149,18 @@ const getPlugins = (devEnv, audit) => {
         'NODE_ENV': JSON.stringify(devEnv ? 'development' : 'production')
       }
     }),
+    new WebpackShellPlugin({
+      onBuildStart: ['npm run build:blog:data'],
+    }),
     new CopyWebpackPlugin([
-      { from: './assets/', to: './' },
-      { from: './content/static/', to: './' },
-      { from: './content/generated/', to: './' },
+      { from: STATIC_CONTENT_PATH, to: './' },
+      { from: GENERATED_CONTENT_PATH, to: './' },
     ]),
     new HtmlWebpackPlugin({
       inject: false,
       mobile: true,
-      template: './src/index.ejs',
-      favicon: './assets/favicon.png',
+      template: './src/blog/index.ejs',
+      // favicon: './assets/favicon.png',
       title: blogConfig.title,
       meta: blogConfig.meta,
       icons: blogConfig.icons.map((icon) => ({
@@ -185,11 +189,11 @@ const getPlugins = (devEnv, audit) => {
       new webpack.NamedModulesPlugin(),
       new webpack.HotModuleReplacementPlugin(),
       new TSLintWebpackPlugin({
-        files: ['./src/**/*.{ts,tsx}'],
+        files: ['./src/blog/**/*.{ts,tsx}'],
         config: './tslintconfig.json',
       }),
       new StyleLintWebpackPlugin(({
-        files: ['./src/**/*'],
+        files: ['./src/blog/**/*'],
         configFile: './.stylelintrc',
       })),
     );
@@ -229,7 +233,7 @@ const getPlugins = (devEnv, audit) => {
 
   if (audit) {
     plugins.push(
-      new BundleAnalyzerPlugin({
+      new WebpackBundleAnalyzerPlugin({
         analyzerMode: 'static',
         reportFilename: '../stats/report.html'
       })

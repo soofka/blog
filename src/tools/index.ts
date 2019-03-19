@@ -1,26 +1,4 @@
-import { GENERATED_CONTENT_PATH } from 'common/constants';
-import { forceCreateDirectory } from './blogData/common';
-import { createManifestFile } from './blogData/manifest';
-import { createEntriesFiles } from './blogData/entries';
-import { createArchiveFiles } from './blogData/archive';
-import { createTalksFiles } from './blogData/talks';
-import { createFeedFiles } from './blogData/feed';
-import { createTagsFiles } from './blogData/talks';
-
-export const buildBlogData = (environment): void => {
-  createRootDestinationDirectory();
-  createManifestFile();
-
-  const entries = createEntriesFiles(environment);
-  const talks = createTalksFiles(environment);
-
-  createArchiveFiles(entries);
-  createFeedFiles(entries);
-  createTagsFiles(entries, talks);
-};
-
-const createRootDestinationDirectory = (): void => {
-  forceCreateDirectory(GENERATED_CONTENT_PATH);
-};
-
-buildBlogData(process.env.env);
+export { buildBlog } from './buildBlog';
+export { buildBlogData } from './buildBlogData';
+export { getWebpackConfig } from './getWebpackConfig';
+export { runLocalhost } from './runLocalhost';

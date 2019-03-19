@@ -1,4 +1,4 @@
-import webpack from 'webpack';
+import * as webpack from 'webpack';
 import { getWebpackConfig } from './getWebpackConfig';
 
 export const buildBlog = (environment, mode) => {

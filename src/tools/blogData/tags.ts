@@ -1,4 +1,4 @@
-import {forceCreateDirectory, saveDataFile} from "./common";
+import {forceCreateDirectory, saveDataFile} from "./helpers";
 import {TAGS_DESTINATION_PATH} from "../../common/constants";
 
 export const createTagsFiles = (entries, talks) => {
@@ -29,7 +29,7 @@ export const createTagsFiles = (entries, talks) => {
 };
 
 const combineTagsArrays = (allTags, tagsToBeAdded) => {
-  const newAllTags = allTags.slice();
+  const newAllTags = allTags ? allTags.slice() : [];
   const uniqueTagsToBeAdded = tagsToBeAdded.filter((tag1, index) =>
     tagsToBeAdded.findIndex((tag2) => tag1.id === tag2.id) === index,
   );
@@ -49,9 +49,9 @@ const combineTagsArrays = (allTags, tagsToBeAdded) => {
         newAllTags[existingTagIndex].count = 1;
       }
     }
-
-    return newAllTags;
   });
+
+  return newAllTags;
 };
 
 const createTagsDestinationDirectory = () =>

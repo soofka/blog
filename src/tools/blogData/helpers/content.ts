@@ -1,9 +1,9 @@
 import * as path from 'path';
 
-import {
-  ContentFileType,
-  Environment,
-} from '../../types';
+// import {
+//   ContentFileType,
+//   Environment,
+// } from '../../types';
 import {
   createDirectory,
   doesDirectoryExist,
@@ -16,12 +16,12 @@ import {
   replaceInStringBasedOnMap,
 } from './';
 import { getXmlParser } from './xml';
-import { Language } from '../../../common/types';
-import {
-  IContentData,
-  IContentDataRaw,
-  IContentVersions,
-} from './types';
+// import { Language } from '../../../common/types';
+// import {
+//   IContentData,
+//   IContentDataRaw,
+//   IContentVersions,
+// } from './types';
 import {
   IMAGES_DIRECTORY_NAME,
   SLIDES_DIRECTORY_NAME,
@@ -43,14 +43,14 @@ const CONTENT_FILE_EXTENSION = 'html';
 export const createContentFiles = (
   sourceDirectoryPath: string,
   destinationDirectoryPath: string,
-  contentType: ContentFileType,
-  environment: Environment,
+  contentType,
+  environment,
   formatContentData: (
-    contentDataRaw: IContentDataRaw,
+    contentDataRaw,
     contentFileName?: string,
-  ) => IContentData,
+  ) => any,
   entryToXmlMapElements?: string[],
-): IContentVersions => {
+) => {
   const contents = {};
 
   forceCreateDirectory(destinationDirectoryPath);
@@ -59,7 +59,7 @@ export const createContentFiles = (
     const contentRaw = getFileContent(path.join(sourceDirectoryPath, contentFileName));
     const contentXml = parseContentToXml(contentRaw, entryToXmlMapElements);
 
-    getXmlParser().parseString(contentXml, (error, contentDataRaw: IContentDataRaw) => {
+    getXmlParser().parseString(contentXml, (error, contentDataRaw) => {
       if (
         !error
         && contentDataRaw.hasOwnProperty('version')
@@ -71,7 +71,7 @@ export const createContentFiles = (
         const contentData = formatContentData(contentDataRaw, contentFileName);
 
         if (contentData && (contentData.meta.public || environment === 'dev')) {
-          let language: Language;
+          let language;
 
           for (language in contentData.versions) {
             const { content, ...restOfVersionData } = contentData.versions[language];
@@ -102,7 +102,7 @@ export const createContentFiles = (
     });
   });
 
-  Object.keys(contents).forEach((language: Language) => {
+  Object.keys(contents).forEach((language) => {
     saveDataFile(destinationDirectoryPath, contents[language], contentType, language);
   });
 

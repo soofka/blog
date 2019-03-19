@@ -3,19 +3,19 @@ import {
   ENTRIES_DESTINATION_PATH,
   IMAGES_DIRECTORY_NAME,
   LANGUAGES,
-} from 'common/constants';
+} from '../../../common/constants';
 import {
   parseTextToNiceUrl,
   isLanguageValid,
-} from 'common/helpers';
+} from '../../../common/helpers';
 import {
   createContentFiles,
   generateContentFileName,
   generateIdBasedOnDateString,
   parseTagToTagObject,
-} from 'tools/blogData/common';
+} from '../helpers';
 
-export const createEntriesFiles = (environment): void =>
+export const createEntriesFiles = (environment) =>
   createContentFiles(
     ENTRIES_SOURCE_PATH,
     ENTRIES_DESTINATION_PATH,

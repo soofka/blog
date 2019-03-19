@@ -1,5 +1,6 @@
+import {LANGUAGES} from "./languages";
+
 const url = 'https://soofka.pl';
-const feedUrl = `${url}/rss`;
 const title = 'soofka.pl';
 const author = {
   name: 'Jakub Sowiński',
@@ -16,14 +17,22 @@ const description = 'Personal blog of Jakub Sowiński. Focused on programming, m
 const categories = ['IT', 'blog'];
 const socialMediaDescription = description;
 
+const feedUrl = `${url}/rss.xml`;
+const feedUrls = [];
+Object.keys(LANGUAGES).forEach((languageKey) => {
+  feedUrls.push(`${url}/rss.${LANGUAGES[languageKey]}.xml`);
+});
+
 export const blogConfig = {
   url,
   feedUrl,
+  feedUrls,
   title,
   author,
   license,
   description,
   categories,
+  themeColor,
   imageUrl: logoUrl,
   favicon: `${url}/favicon.png`,
   meta: [

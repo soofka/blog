@@ -1,7 +1,6 @@
-import fs from 'fs';
-import path from 'path';
-import rimraf from 'rimraf';
-import {DEFAULT_LANGUAGE} from "../../../common/constants";
+import * as fs from 'fs';
+import * as path from 'path';
+import * as rimraf from 'rimraf';
 
 export const saveDataFile = (
   destinationDirectoryPath: string,

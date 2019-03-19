@@ -1,4 +1,4 @@
-import {saveDataFile} from "./common";
+import {saveDataFile} from "./helpers";
 import {blogConfig, MANIFEST_DESTINATION_PATH} from "../../common/constants";
 
 export const createManifestFile = () =>

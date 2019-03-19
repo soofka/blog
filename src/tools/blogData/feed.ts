@@ -1,4 +1,4 @@
-import {forceCreateDirectory, getXmlBuilder, getXmlParser, saveDataFile} from "./common";
+import {forceCreateDirectory, getXmlBuilder, getXmlParser, saveDataFile} from "./helpers";
 import {blogConfig, DEFAULT_LANGUAGE, FEED_DESTINATION_PATH, IMAGES_DIRECTORY_NAME} from "../../common/constants";
 import { Feed } from 'feed';
 

@@ -1,4 +1,4 @@
-import path from 'path';
+import * as path from 'path';
 import { LANGUAGES } from './languages';
 
 export const CONTENT_DIRECTORY_NAME = 'content';

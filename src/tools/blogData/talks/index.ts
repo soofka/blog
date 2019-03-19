@@ -2,21 +2,21 @@ import {
   TALKS_SOURCE_PATH,
   TALKS_DESTINATION_PATH,
   IMAGES_DIRECTORY_NAME,
+  SLIDES_DIRECTORY_NAME,
   LANGUAGES,
-} from 'common/constants';
+} from '../../../common/constants';
 import {
   parseTextToNiceUrl,
   isLanguageValid,
-} from 'common/helpers';
+} from '../../../common/helpers';
 import {
   createContentFiles,
   generateContentFileName,
   generateIdBasedOnDateString,
   parseTagToTagObject,
-} from 'tools/blogData/common';
-import {SLIDES_DIRECTORY_NAME} from "../../../common/constants";
+} from '../helpers';
 
-export const createEntriesFiles = (environment): void =>
+export const createTalksFiles = (environment) =>
   createContentFiles(
     TALKS_SOURCE_PATH,
     TALKS_DESTINATION_PATH,

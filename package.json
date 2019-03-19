@@ -27,6 +27,7 @@
     "build:prod": "npm run build:pre && cross-env env=prod npm run build:all",
     "build:prod:force": "npm run build:pre && cross-env env=prod npm run build:all:force",
     "build:blog": "npm run build:blog:clean && node ./scripts/tools/buildBlog.js",
+    "build:blog:data": "node ./scripts/tools/buildBlogData.js",
     "build:blog:clean": "rimraf ./dist",
     "build:tools": "node ./scripts/buildTools.js",
     "build:tools:force": "npm run build:tools:clean && tsc ./src/tools/index.ts --lib ES6,DOM --outDir ./scripts",
@@ -49,7 +50,7 @@
     "lint:ts:fix": "npm run lint:ts -- --fix",
     "lint:styles": "stylelint ./src/**/*",
     "postinstall": "npm run build:full:force",
-    "doopa": "tsc test.ts && node test.js"
+    "clean": "npm run build:blog:clean && npm run build:tools:clean && npm run test:clean"
   },
   "dependencies": {
     "axios": "^0.16.0",

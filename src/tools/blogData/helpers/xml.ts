@@ -1,4 +1,4 @@
-import xml2js from 'xml2js';
+import * as xml2js from 'xml2js';
 
 export const getXmlParser = () => new xml2js.Parser({
   trim: true,
