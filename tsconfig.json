@@ -13,7 +13,7 @@
     "types": ["node"]
   },
   "include": [
-    ".src/index.tsx"
+    "./src/blog/index.tsx"
   ],
   "exclude": [
     "node_modules",

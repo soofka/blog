@@ -1,0 +1,27 @@
+<entry
+  public="true"
+  created="2018-01-07"
+  updated="2018-01-07"
+  image="train-leaving.jpg"
+>
+  <version language="en">
+    <title>3 things I learned in 2017</title>
+    <tags list="react, typescript, brain, code europe, public speaking" />
+    <brief>
+      <p>I like to improve myself – at least that’s what I like to think about myself. That’s the thought I had in mind most of 2017. Not every day, of course, but for most of them I tried to remember about it, to learn new things, and to at least try to better myself. So, when 2017 came to an end, I asked myself: what did I actually learn that year?</p>
+    </brief>
+    <content>
+      <h2>React and TypeScript</h2>
+      <p>Despite I started working with these technologies in 2016, I only fully embraced them last year. I was lucky to closely cooperate on some of the first implementations based on those technologies in our office, and I took enough time to figure all of it out, from building around Redux, through testing with Jest, to compilation with Webpack, Babel and TSC, etc. A few days of trainings on React and TypeScript as well as few conferences, such as <a href="/entry/frontend-con-2017-summary" target="_blank">Front-End Connect</a>, helped expanding and solidifying my knowledge.</p>
+      <p>What’s even better, is that we did this together in StepStone. After we successfully introduced this first proof of concept, plenty of other teams started moving their development to React and TypeScript, as those were supposed to become our new default tools of choice. We started sharing knowledge and ideas, refining our codebase skeleton, refining testing and deployment processes, solving problems together and setting the standards for ourselves. It is ongoing process of learning new technology stack and building infrastructure with it in bunch of front-end developers from many different teams in my office, and we’re all doing it together, learning from each other.</p>
+      <h2>Importance of understanding brain</h2>
+      <p>Investigation of the nature of self-consciousness is the path I got interested in a few years ago already, but 2017 shed a very different light on this matter. This was accomplished in the process of trainings on negotiation and self-motivation with <a href="http://www.thmbiz.co.uk/" target="_blank">Garry Marsh</a>, and of reading “The 7 Habits of Highly Effective People” by Stephen Covey, “Emotional Intelligence” by Daniel Goleman, and “The Chimp Paradox” by Steve Peters.</p>
+      <p>Those studies taught me some interesting concepts behind thought processes I can relate to, answering questions about reasons of some of my thoughts and behaviors in a completely new way. Somehow, I fully realized, that I can train my brain in order to help me with reaching my goals instead of being a dead weight at times, and I should do it to better myself. I also understood how important emotional intelligence is in my relationship with myself and every other person in my life, and that I should practice being a little bit more intelligent about emotions as well, both mine and others, both in the office, and outside of it.</p>
+      <p>Mostly, I learned, that I need and want to learn a lot about this.</p>
+      <h2>Giving lectures on IT conferences</h2>
+      <p>In 2017 I was lucky to give two lectures on local IT conference - <a href="https://www.codeeurope.pl/" target="_blank">Code Europe</a>, editions Spring and Winter. The opportunity appeared when StepStone decided to attend those events as a partner, and I was happy to take it.</p>
+      <p>Before first lecture in May, I participated in public speaking workshop facilitated by Sławomir Sobótka from Bottega. Due to plenty of other stuff going on in the office at the same time, we had to squeeze all of it into one day, which turned out to be extremely intensive, but also incredibly educative. In more than 12 hours we discussed practiced whole spectrum of things, from basic concepts of building a story, to handling psychosomatic responses of your organism to stress before entering the stage. One week later, <a href="/entry/i-gave-a-lecture-on-code-europe-spring-2017" target="_blank">I entered the stage</a> and I talked about some cool ways to optimize JavaScript code in front of camera and around 200 people for 40 minutes. They applauded, even though I forgot to ask, if they have any questions.</p>
+      <p>I'm far from being good at it, though. It's not, that I learned public speaking in 12 hours. What I learned, is that I could do it. Despite the fact, that at the beginning, when this opportunity popped out, entering the stage in front of 200 people seemed terrifically stressful and rather unreal. I didn’t quit, I worked, I prepared myself good, and I did it. And then I did it again, in December, on Winter edition, with another lecture. I learned to believe in myself.</p>
+    </content>
+  </version>
+</entry>

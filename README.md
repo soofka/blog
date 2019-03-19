@@ -2,7 +2,6 @@
 Personal blog of Jakub Sowiński, implemented in React and Typescript.
 
 ## Usage
-
 ```
 npm install
 ```
@@ -23,9 +22,10 @@ Blog is available at `localhost:3000`.
 - added talks page
 - added route based chunking for new pages
 - added tags cloud
+- created data generation mechanism that generates different JSON files for entries, archives, tags, and talks 
 - reimplemented routing in order to take entry and tag ID instead of name into account (support for multi language version)
 - set up different route paths per language for homepage, each entry, and archive and tag pages
-- made "back to top" button sticky
+- made "back to top" button visible whenever user is not on top and sticky to the bottom of the page
 - added new post
 - `npm audit fix` again
 

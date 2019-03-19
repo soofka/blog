@@ -1,0 +1,19 @@
+<talk
+  public="true"
+  created="2017-12-07"
+  image="train-leaving.jpg"
+  videoUrl="https://www.youtube.com/watch?v=n1Be_RzXzjQ"
+  slidesUrl="progressive_web_apps__case_study.pdf"
+>
+  <version language="en">
+    <title>Modern web development: React PWA with Push Notifications (case study)</title>
+    <tags list="javascript, react, pwa, case study" />
+    <conference
+      name="Code Europe Autumn 2017"
+      location="National Stadium, Warsaw, Poland"
+    />
+    <brief>
+      <p>You've heard about Progressive Web Apps, Push Notifications and all the other, cool features, present in modern browsers nowadays, and available for modern web development. Have you seen them in action, though? In this talk I will discuss transformation of React web application to fully functional Progressive Web App, based on two, real life examples - small, private website, and complex, commercial web application. We'll go together through baseline PWA checklist, and dive deep into more detailed aspects of this process, such as performance improvements, caching with Service Workers, sending Push Notifications, and others. We'll explore, how experience of users of commercially available products is improved by making them more Progressive.</p>
+    </brief>
+  </version>
+</talk>

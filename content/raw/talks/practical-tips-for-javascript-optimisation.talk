@@ -1,0 +1,19 @@
+<talk
+  public="true"
+  created="2017-05-25"
+  image="train-leaving.jpg"
+  videoUrl="https://www.youtube.com/watch?v=Gl8vucNqtZQ"
+  slidesUrl="practical_tips_for_optimizing_javascript.pdf"
+>
+  <version language="en">
+    <title>Practical tips for JavaScript optimisation</title>
+    <tags list="javascript, optimisation, performance, webpack, rollup, prepack, pwa" />
+    <conference
+      name="Code Europe Spring 2017"
+      location="National Stadium, Warsaw, Poland"
+    />
+    <brief>
+      <p>With gain of popularity of JS-based web applications and growth of mobile web traffic, need for optimization of JavaScript code increases. I will present several techniques that can help satisfying this need, from the architecture of your application, through bundling and compile-time enhancements, to caching with service workers.</p>
+    </brief>
+  </version>
+</talk>

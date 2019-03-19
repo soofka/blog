@@ -4,6 +4,8 @@
     "variable-name": [
       "allow-pascal-case"
     ],
-    "max-line-length": [true, 120]
+    "max-line-length": [true, 120],
+    "arrow-parens": true,
+    "ter-arrow-parens": [true, "always"]
   }
 }

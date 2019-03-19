@@ -1,0 +1,30 @@
+<entry
+  public="true"
+  created="2018-07-09"
+  updated="2018-07-09"
+  image="react-europe-2018-crowd.jpg"
+>
+  <version language="en">
+    <title>4 conferences I am looking forward to in 2nd half of 2018</title>
+    <tags list="javascript, react, front-end, conference" />
+    <brief>
+      <p>At least every 6 months, I browse web to find interesting, upcoming IT conferences around the world and see if they fit my interests, budget, and calendar. Lately I'm focused particularly on front-end of web development. In this world, there are tons of events every weekend, on every, even tiniest and most specific subject. I find it challenging, to browse through hundreds of agendas, looking for accumulations of talks that seem to be time-worthy, so as I do my research, I try to share results as well. Here are they so far.</p>
+    </brief>
+    <content>
+      <h3>JS Conf US</h3>
+      <h5><a href="https://2018.jsconf.us" target="blank">2018.jsconf.us</a> - 21-23.08.2018 - Carlsbad, California, United States of America</h5>
+      <p>First conference, and first exception - this one most likely won't be affordable for my budget. To get good deals on flights from Poland, they would have to be booked way back for this event, which is quite expensive on it's own - $1600 for the cheapest tickets today. Nevertheless, I'm looking forward to it, I'll follow it closely while it takes place, and I hope for both great learning materials, and stunning announcements during this conference. Even though this years lineup is, so far (is it finished yet?), not that exciting, still I think that's the place to be, if you want to experience <i>creme de la creme</i> of professional software engineering in JavaScript, and, at some point, I'd like to have this opportunity too.</p>
+      <h3>Byteconf React 2018</h3>
+      <h5><a href="https://byteconf.com/" target="blank">byteconf.com</a> - 30-31.08.2018 - Twitch, Internet</h5>
+      <p>I won't attend Byteconf too. At least not in person. Byteconf takes place online, on Twitch. It's free, and they have great lineup already, with four speakers only. It's also one of the first events of such kind, which will be streamed only, without possibility of physical attendance - or at least the first one on Twitch, biggest streaming platform out there. Therefore, I have high hopes not only for the talks, but also for some innovative solutions for interactions with attendees during the event. I consider this an obligatory event in my calendar.</p>
+      <h3>Web Summit</h3>
+      <h5><a href="https://websummit.com/" target="blank">websummit.com</a> - 5-8.11.2018 - Lisbon, Portugal</h5>
+      <p>I must admit - it seems to be really big event, that I've entirely missed so far. I don't know anything about its previous editions, but this one seems to be quite exhausting on the subject, with over 1000 speakers during 4 days of talks, and quite affordable, with price of single ticket at 495 euros today. Although agenda is not there yet, I imagine, that there are talks on all kinds of topics related to web development planned. Using this time effectively would require careful planning and coordination with some colleagues, thus I think it might be good conference to attend for whole teams or groups of people from companies. I, for one, would like to go there with a few other developers from my organization, go to different talks, and share knowledge and experience afterwards.</p>
+      <h3>JS Poland</h3>
+      <h5><a href="https://js-poland.pl/" target="blank">js-poland.pl</a> - 16.11.2018 - Warsaw, Poland</h5>
+      <p>I've attended JS Poland in 2017, and I'm going there this year too. It's neither the biggest, nor the flashiest of polish JS events, but it had decent quality of talks, when it comes to innovations and technical stuff, and it seems to be the biggest conference in this field in latter part of this year anyway. With tickets for less than 400 zlotys today (less than 100 euros), and venue in the center of my city, I think I'll go, and then I'll tell you how it was, if you don't mind.</p>
+      <hr>
+      <p>Do you have any conferences in your calendar for remainder of 2018 already? Why do you want to attend them? I'm genuinely asking, I'd appreciate any suggestion, since, as you can see, my list is still quite far from satisfactory.</p>
+    </content>
+  </version>
+</entry>

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<EntryBackLink/> renders correctly 1`] = `
+<Link
+  replace={false}
+  to="/"
+>
+  «
+  <inject-_class-with-languageStore
+    name="entry__back"
+  />
+</Link>
+`;

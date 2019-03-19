@@ -1,0 +1,20 @@
+<entry
+  public="true"
+  created="2017-07-10"
+  updated="2017-07-10"
+  image="code-europe-spring-2017-badge.jpg"
+>
+  <version language="en">
+    <title>I gave a lecture on Code Europe Spring 2017!</title>
+    <tags list="javascript, optimisation, performance, code europe, conference, lecture, webpack, rollup, prepack, pwa" />
+    <brief>
+      <p>That's right. Even before I became famous as a blog writer, I got an opportunity to give a lecture on one of the biggest IT conferences in Poland: <a href="https://www.codeeurope.pl/" target="_blank">Code Europe</a>, Spring edition of year 2017. It was my first time as a speaker in front of crowd of that size and volume, so after a few weeks of panicky preparations, I managed to deliver presentation on how to optimize your JavaScript code with variety of tricks and techniques.</p>
+    </brief>
+    <content>
+      <youtube-video><iframe width="560" height="315" src="https://www.youtube.com/embed/Gl8vucNqtZQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></youtube-video>
+      <p>Apparently, my reception wasn’t that bad after all, since I was invited to give another lecture on this conference’s next edition, which will take place on Polish National Stadium in Warsaw on 7th of December. (I start panicking already.)</p>
+      <p>Slides, that I used to help me to get my point through, can be downloaded from <a origin="local/slides" href="practical_tips_for_optimizing_javascript.pdf" target="_blank">here</a>. In case of any other questions or suggestions related to what I was talking about when standing on that stage (or any other, really), feel free to contact me on <a href="https://twitter.com/pansoofka" target="_blank">Twitter</a>.</p>
+      <p>PS On the photo is my badge from that event. Yes, they didn't have the one with "SPEAKER" label prepared for me :-(</p>
+    </content>
+  </version>
+</entry>

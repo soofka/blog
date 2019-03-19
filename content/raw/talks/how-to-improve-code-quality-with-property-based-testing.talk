@@ -1,0 +1,15 @@
+<talk
+  public="true"
+  created="2019-02-08"
+  image="train-leaving.jpg"
+  slidesUrl="how-to-improve-code-quality-with-property-based-testing/"
+>
+  <version language="en">
+    <title>How to improve code quality with property-based testing</title>
+    <tags list="code quality, testing, property-based testing" />
+    <brief>
+      <p>Every day we write piles of tests for our software – unit, integration, API, end to end, you name it. More often than not, they are based on few examples made up by developer on the fly. More often than not, they cover only tiny fraction of possible scenarios that can happen to this software in real life. What if there was an easy way to test general properties that your software should preserve no matter what?</p>
+      <p>Let me invite you for a journey through world of property based testing – world of tools that make your tests run on randomized input data and check your code exhaustively, not only in one or two arbitrarily selected scenarios. During this KSH, I’ll tell you more about the idea of property based testing, show you examples of such tests (mostly written in JavaScript, but PHP and Java examples are included too), tools and patterns that facilitate this approach as well as it’s pros and cons.</p>
+    </brief>
+  </version>
+</talk>
