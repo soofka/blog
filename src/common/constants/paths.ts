@@ -28,8 +28,6 @@ export const TAGS_DESTINATION_PATH = path.join(GENERATED_CONTENT_PATH, TAGS_DIRE
 export const FEED_DESTINATION_PATH = path.join(GENERATED_CONTENT_PATH, FEED_DIRECTORY_NAME);
 export const MANIFEST_DESTINATION_PATH = GENERATED_CONTENT_PATH;
 
-export const ENTRIES_FINAL_PATH = `/${ENTRIES_DIRECTORY_NAME}`;
-
 const entriesJsonPaths = {};
 Object.keys(LANGUAGES).forEach((languageKey) => {
   const language = LANGUAGES[languageKey];
@@ -37,3 +35,12 @@ Object.keys(LANGUAGES).forEach((languageKey) => {
 });
 
 export const ENTRIES_JSON_PATHS = entriesJsonPaths;
+
+export const HOME_BASE_URL = '/';
+export const ENTRY_BASE_URL = '/entry';
+export const TALK_BASE_URL = '/talk';
+export const TALKS_BASE_URL = '/talks';
+export const TAG_BASE_URL = '/tag';
+export const ARCHIVE_BASE_URL = '/archive';
+export const ABOUT_ME_BASE_URL = '/about';
+export const ERROR_BASE_URL = '/error';

@@ -12,9 +12,9 @@ import {
   getFileNamesInDirectory,
   saveFile,
   saveDataFile,
-  isObject,
   replaceInStringBasedOnMap,
 } from './';
+import { isObject } from 'common/helpers/index';
 import { getXmlParser } from './xml';
 // import { Language } from '../../../common/types';
 // import {

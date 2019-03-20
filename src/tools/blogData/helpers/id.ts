@@ -1,5 +1,7 @@
+import {removeNonDigitCharactersFromDateString} from "../../../common/helpers";
+
 export const generateIdBasedOnDateString = (date: string): string =>
-  date.replace(/-/g, '');
+  removeNonDigitCharactersFromDateString(date);
 
 export const generateIdBasedOnCharacters = (text: string): string => {
   let sum = 0;
