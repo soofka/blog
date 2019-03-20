@@ -1,6 +1,6 @@
-import * as React from 'react';
 import { reaction } from 'mobx';
 import { inject } from 'mobx-react';
+import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
 import AssetsProvider from 'common/AssetsProvider';
@@ -8,10 +8,10 @@ import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestH
 
 import { LanguageStoreInterface } from 'store/language';
 
+import EntriesList from 'components/EntriesList';
+import ErrorBox from 'components/ErrorBox';
 import Label from 'components/Label';
 import LoadingCover from 'components/LoadingCover';
-import ErrorBox from 'components/ErrorBox';
-import EntriesList from 'components/EntriesList';
 import EntriesMeta from 'components/Meta/components/EntriesMeta';
 
 import { EntryInterface } from 'containers/Entry';

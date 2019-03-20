@@ -1,8 +1,8 @@
-import {LANGUAGE_QUERY_STRING_PARAM_NAME, LANGUAGE_COOKIE_NAME, DEFAULT_LANGUAGE} from "../../../common/constants";
-import {isLanguageValid} from "../../../common/helpers";
-import {Language} from "../../../common/types";
-import {getFromCookie, setInCookie} from "./cookie";
-import {getFromQueryString, setInQueryString} from "./queryString";
+import { DEFAULT_LANGUAGE, LANGUAGE_COOKIE_NAME, LANGUAGE_QUERY_STRING_PARAM_NAME } from '/common/constants/index';
+import { isLanguageValid } from '/common/helpers/index';
+import { Language } from '/common/types';
+import { getFromCookie, setInCookie } from './cookie';
+import { getFromQueryString, setInQueryString } from './queryString';
 
 export const getCurrentLanguage = (): Language => {
   const languageFromQueryString = getFromQueryString(LANGUAGE_QUERY_STRING_PARAM_NAME);

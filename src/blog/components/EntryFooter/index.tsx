@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import EntryComments from './components/EntryComments';
 import ContentDivider from 'components/ContentDivider';
 import ScrollTopButton from 'components/ScrollTopButton';
+import EntryComments from './components/EntryComments';
 
 interface EntryFooterPropsInterface {
   title: string;

@@ -1,5 +1,5 @@
-import {forceCreateDirectory, saveDataFile} from "./helpers";
-import {TAGS_DESTINATION_PATH} from "../../common/constants";
+import { TAGS_DESTINATION_PATH } from 'common/constants';
+import { forceCreateDirectory, saveDataFile } from './helpers';
 
 export const createTagsFiles = (entries, talks) => {
   createTagsDestinationDirectory();

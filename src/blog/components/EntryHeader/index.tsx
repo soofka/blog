@@ -1,9 +1,9 @@
 import * as React from 'react';
 
 import EntryBackLink from './components/EntryBackLink';
-import EntryHeaderTitle from './components/EntryHeaderTitle';
 import EntryHeaderMeta from './components/EntryHeaderMeta';
 import EntryHeaderTags from './components/EntryHeaderTags';
+import EntryHeaderTitle from './components/EntryHeaderTitle';
 
 interface EntryHeaderPropsInterface {
   title: string;

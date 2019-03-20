@@ -1,16 +1,16 @@
 import * as React from 'react';
-import { Switch, Route, withRouter } from 'react-router-dom';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
 import RoutingProvider from 'common/RoutingProvider';
 
 import Wrapper from 'components/Wrapper';
 
 // import Archive from 'containers/Archive';
-import AllEntries from 'containers/Entries/components/AllEntries';
-import AllEntriesByTag from 'containers/Entries/components/AllEntriesByTag';
-import AllEntriesByDate from 'containers/Entries/components/AllEntriesByDate';
-import OneEntry from 'containers/Entries/components/OneEntry';
 import NotFoundError from 'components/NotFoundError';
+import AllEntries from 'containers/Entries/components/AllEntries';
+import AllEntriesByDate from 'containers/Entries/components/AllEntriesByDate';
+import AllEntriesByTag from 'containers/Entries/components/AllEntriesByTag';
+import OneEntry from 'containers/Entries/components/OneEntry';
 
 import { StyledMain } from './styled';
 

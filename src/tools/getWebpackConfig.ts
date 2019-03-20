@@ -1,16 +1,16 @@
-import * as path from 'path';
-import * as webpack from 'webpack';
-import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as CompressionWebpackPlugin from 'compression-webpack-plugin';
 import * as CopyWebpackPlugin from 'copy-webpack-plugin';
-import * as WebpackShellPlugin from 'webpack-shell-plugin';
+import * as HtmlWebpackPlugin from 'html-webpack-plugin';
+import * as ImageminWebpackPlugin from 'imagemin-webpack-plugin';
+import * as path from 'path';
+import * as StyleLintWebpackPlugin from 'stylelint-webpack-plugin';
 import * as SWPrecacheWebpackPlugin from 'sw-precache-webpack-plugin';
 import * as TSLintWebpackPlugin from 'tslint-webpack-plugin';
-import * as StyleLintWebpackPlugin from 'stylelint-webpack-plugin';
-import * as CompressionWebpackPlugin from 'compression-webpack-plugin';
-import * as ImageminWebpackPlugin from 'imagemin-webpack-plugin';
+import * as webpack from 'webpack';
 import * as WebpackBundleAnalyzerPlugin from 'webpack-bundle-analyzer';
+import * as WebpackShellPlugin from 'webpack-shell-plugin';
 
-import {blogConfig, GENERATED_CONTENT_PATH, STATIC_CONTENT_PATH} from '../common/constants';
+import { BLOG_CONFIG, GENERATED_CONTENT_PATH, STATIC_CONTENT_PATH } from 'common/constants';
 
 export const getWebpackConfig = (environment = 'dev', mode = null) => {
   const devEnv = environment === 'dev';
@@ -78,7 +78,7 @@ const getModule = (devEnv) => {
     {
       loader: 'awesome-typescript-loader',
       query: {
-        configFileName: 'tsconfig.json',
+        configFileName: 'tsconfig.blog.json',
         silent: true,
       },
     },
@@ -126,12 +126,12 @@ const getModule = (devEnv) => {
 
 // @todo: add paths from constants to whole config
 const getPlugins = (devEnv, audit) => {
-  let staticStyles = [
+  const staticStyles = [
     '/styles/normalize.css',
     '/scripts/highlight/styles/dracula.css',
     'https://fonts.googleapis.com/css?family=Raleway',
   ];
-  let staticScripts = [
+  const staticScripts = [
     '/scripts/highlight/highlight.pack.js',
   ];
 
@@ -161,9 +161,9 @@ const getPlugins = (devEnv, audit) => {
       mobile: true,
       template: './src/blog/index.ejs',
       // favicon: './assets/favicon.png',
-      title: blogConfig.title,
-      meta: blogConfig.meta,
-      icons: blogConfig.icons.map((icon) => ({
+      title: BLOG_CONFIG.title,
+      meta: BLOG_CONFIG.meta,
+      icons: BLOG_CONFIG.icons.map((icon) => ({
         rel: 'icon',
         sizes: `${icon.width}x${icon.height}`,
         type: `image/${icon.url.substr(icon.url.lastIndexOf('.') + 1)}`,

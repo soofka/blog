@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "lib": ["ES6", "DOM"],
+    "outDir": "scripts"
+  },
+  "include": [
+    "./src/tools/index.ts"
+  ]
+}

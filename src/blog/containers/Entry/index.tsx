@@ -1,6 +1,6 @@
-import * as React from 'react';
 import { reaction } from 'mobx';
 import { inject } from 'mobx-react';
+import * as React from 'react';
 
 import AssetsProvider from 'common/AssetsProvider';
 import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
@@ -9,14 +9,14 @@ import Scroller from 'common/Scroller';
 
 import { LanguageStoreInterface } from 'store/language';
 
-import EntryMeta from 'components/Meta/components/EntryMeta';
-import Label from 'components/Label';
-import EntryHeader from 'components/EntryHeader';
 import EntryBrief, { EntryBriefInterface } from 'components/EntryBrief';
-import LoadingCover from 'components/LoadingCover';
-import ErrorBox from 'components/ErrorBox';
 import EntryContent from 'components/EntryContent';
 import EntryFooter from 'components/EntryFooter';
+import EntryHeader from 'components/EntryHeader';
+import ErrorBox from 'components/ErrorBox';
+import Label from 'components/Label';
+import LoadingCover from 'components/LoadingCover';
+import EntryMeta from 'components/Meta/components/EntryMeta';
 
 import { StyledEntry, StyledEntryContent } from './styled';
 

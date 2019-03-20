@@ -1,20 +1,15 @@
 {
   "compilerOptions": {
-    "baseUrl": "./src",
+    "baseUrl": "src",
+    "rootDirs": ["src"],
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "removeComments": true,
     "declaration": false,
-    "noImplicitAny": false,
-    "sourceMap": true,
-    "jsx": "react",
-    "types": ["node"]
+    "noImplicitAny": false
   },
-  "include": [
-    "./src/blog/index.tsx"
-  ],
   "exclude": [
     "node_modules",
     "**/*.test.ts*"

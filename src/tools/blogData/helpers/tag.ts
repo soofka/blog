@@ -1,4 +1,4 @@
-import { generateIdBasedOnCharacters } from "./";
+import { generateIdBasedOnCharacters } from './';
 
 export const parseTagToTagObject = (tag: string) => {
   const id = generateIdBasedOnCharacters(tag);

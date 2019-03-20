@@ -1,9 +1,11 @@
+import {
+  getRequestClient,
+  RequestFailureResponseInterface,
+  RequestResponseInterface,
+  RequestSuccessResponseInterface,
+} from './request';
 import { ENTRIES_JSON_PATHS } from '/common/constants/index';
 import { Language } from '/common/types';
-import {
-  getRequestClient,RequestFailureResponseInterface, RequestResponseInterface,
-  RequestSuccessResponseInterface
-} from "./request";
 
 export const getEntries = (language: Language): Promise<RequestResponseInterface> =>
   getRequestClient()

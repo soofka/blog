@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { shallow } from 'enzyme';
+import * as React from 'react';
 
 import LinkedInIcon from 'components/LinkIconsBar/icons/LinkedInIcon';
 

@@ -7,7 +7,7 @@ export const buildBlog = (environment, mode) => {
       throw error;
     }
     console.log(stats.toString());
-  })
+  });
 };
 
 buildBlog(process.env.env, process.env.mode);

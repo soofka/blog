@@ -1,5 +1,5 @@
-import * as React from 'react';
 import { inject, observer } from 'mobx-react';
+import * as React from 'react';
 
 import LabelsProvider from 'common/LabelsProvider';
 import { LanguageStoreInterface } from 'store/language';

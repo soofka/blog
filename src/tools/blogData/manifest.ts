@@ -1,16 +1,16 @@
-import {saveDataFile} from "./helpers";
-import {blogConfig, MANIFEST_DESTINATION_PATH} from "../../common/constants";
+import { BLOG_CONFIG, MANIFEST_DESTINATION_PATH } from 'common/constants';
+import { saveDataFile } from './helpers';
 
 export const createManifestFile = () =>
   saveManifestFile({
-    name: blogConfig.title,
-    short_name: blogConfig.title,
+    name: BLOG_CONFIG.title,
+    short_name: BLOG_CONFIG.title,
     start_url: '/',
     display: 'standalone',
-    background_color: blogConfig.themeColor,
-    theme_color: blogConfig.themeColor,
-    description: blogConfig.description,
-    icons: blogConfig.icons.map((icon) => ({
+    background_color: BLOG_CONFIG.themeColor,
+    theme_color: BLOG_CONFIG.themeColor,
+    description: BLOG_CONFIG.description,
+    icons: BLOG_CONFIG.icons.map((icon) => ({
       sizes: `${icon.width}x${icon.height}`,
       type: `image/${icon.url.substr(icon.url.lastIndexOf('.') + 1)}`,
       src: icon.url,

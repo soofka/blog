@@ -1,6 +1,6 @@
-import labels from '../labels';
-import { DEFAULT_LANGUAGE } from 'common/constants/index';
-import {isObject} from "../../../common/helpers";
+import { DEFAULT_LANGUAGE } from '/common/constants/index';
+import { isObject } from '/common/helpers/index';
+import labels from '/blog/common/labels';
 
 interface LabelParamsInterface {
   [s: string]: string;

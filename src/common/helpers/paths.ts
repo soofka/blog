@@ -1,8 +1,16 @@
 import {
-  ABOUT_ME_BASE_URL, ARCHIVE_BASE_URL, blogConfig, ENTRIES_DIRECTORY_NAME, ENTRY_BASE_URL, ERROR_BASE_URL,
+  ABOUT_ME_BASE_URL,
+  ARCHIVE_BASE_URL,
+  BLOG_CONFIG,
+  ENTRIES_DIRECTORY_NAME,
+  ENTRY_BASE_URL,
+  ERROR_BASE_URL,
   HOME_BASE_URL,
-  IMAGES_DIRECTORY_NAME, TAG_BASE_URL, TALK_BASE_URL, TALKS_BASE_URL
-} from "../constants";
+  IMAGES_DIRECTORY_NAME,
+  TAG_BASE_URL,
+  TALK_BASE_URL,
+  TALKS_BASE_URL,
+} from 'common/constants';
 
 export const getHomeBaseUrl = (absolute: boolean = false): string =>
   decorateWithAbsoluteBasePathConditionally(HOME_BASE_URL, absolute);
@@ -35,4 +43,4 @@ export const getImageFilePath = (imageFileName: string, absolute: boolean = fals
   decorateWithAbsoluteBasePathConditionally(`/${IMAGES_DIRECTORY_NAME}/${imageFileName}`, absolute);
 
 const decorateWithAbsoluteBasePathConditionally = (path: string, absolute: boolean = false): string =>
-  `${absolute ? blogConfig.url : ''}${path}`;
+  `${absolute ? BLOG_CONFIG.url : ''}${path}`;

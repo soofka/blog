@@ -1,8 +1,8 @@
 import * as React from 'react';
 
 import Scroller from 'common/Scroller';
-import Label from 'components/Label';
 import ErrorBox from 'components/ErrorBox';
+import Label from 'components/Label';
 import Entry, { EntryInterface } from 'containers/Entry';
 
 interface EntriesListPropsInterface extends React.Props<any> {

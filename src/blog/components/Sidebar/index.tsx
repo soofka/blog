@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 
 import Label from 'components/Label';
 import LinkIconsBar from 'components/LinkIconsBar';

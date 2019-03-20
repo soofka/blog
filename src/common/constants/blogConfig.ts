@@ -1,4 +1,4 @@
-import {LANGUAGES} from "./languages";
+import { LANGUAGES } from './languages';
 
 const url = 'https://soofka.pl';
 const title = 'soofka.pl';
@@ -23,7 +23,7 @@ Object.keys(LANGUAGES).forEach((languageKey) => {
   feedUrls.push(`${url}/rss.${LANGUAGES[languageKey]}.xml`);
 });
 
-export const blogConfig = {
+export const BLOG_CONFIG = {
   url,
   feedUrl,
   feedUrls,
@@ -108,6 +108,6 @@ export const blogConfig = {
       width: 512,
       height: 512,
       url: icon512Url,
-    }
-  ]
+    },
+  ],
 };

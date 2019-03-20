@@ -1,20 +1,20 @@
 import {
-  TALKS_SOURCE_PATH,
-  TALKS_DESTINATION_PATH,
   IMAGES_DIRECTORY_NAME,
-  SLIDES_DIRECTORY_NAME,
   LANGUAGES,
-} from '../../../common/constants';
+  SLIDES_DIRECTORY_NAME,
+  TALKS_DESTINATION_PATH,
+  TALKS_SOURCE_PATH,
+} from 'common/constants';
 import {
-  parseTextToNiceUrl,
   isLanguageValid,
-} from '../../../common/helpers';
+  parseTextToNiceUrl,
+} from 'common/helpers';
 import {
   createContentFiles,
   generateContentFileName,
   generateIdBasedOnDateString,
   parseTagToTagObject,
-} from '../helpers';
+} from 'tools/blogData/helpers';
 
 export const createTalksFiles = (environment) =>
   createContentFiles(

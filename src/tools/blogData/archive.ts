@@ -1,5 +1,5 @@
-import {forceCreateDirectory, saveDataFile} from "./helpers";
-import {ARCHIVE_DESTINATION_PATH} from "../../common/constants";
+import { ARCHIVE_DESTINATION_PATH } from 'common/constants';
+import { forceCreateDirectory, saveDataFile } from './helpers';
 
 export const createArchiveFiles = (entries) => {
   createArchiveDestinationDirectory();

@@ -1,9 +1,9 @@
+import createBrowserHistory from 'history/createBrowserHistory';
+import { Provider } from 'mobx-react';
+import { syncHistoryWithStore } from 'mobx-react-router';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Provider } from 'mobx-react';
 import { Router } from 'react-router-dom';
-import { syncHistoryWithStore } from 'mobx-react-router';
-import createBrowserHistory from 'history/createBrowserHistory';
 
 import Blog from 'blog/components/Blog';
 

@@ -1,4 +1,4 @@
-import {removeNonDigitCharactersFromDateString} from "../../../common/helpers";
+import { removeNonDigitCharactersFromDateString } from 'common/helpers';
 
 export const generateIdBasedOnDateString = (date: string): string =>
   removeNonDigitCharactersFromDateString(date);
@@ -20,5 +20,5 @@ export const generateIdBasedOnCharacters = (text: string): string => {
 
   return (Math.round(encodedNumber)
     .toString(16) as any)
-    .padStart(4, '0')
+    .padStart(4, '0');
 };

@@ -6,7 +6,7 @@ import RoutingProvider from 'common/RoutingProvider';
 
 import Label from 'components/Label';
 
-import { StyledLogoImageContainer, StyledLogoImage, StyledLogoHeader } from './styled';
+import { StyledLogoHeader, StyledLogoImage, StyledLogoImageContainer } from './styled';
 
 const LOGO_ITEMS_COUNT = 4;
 

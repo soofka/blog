@@ -1,5 +1,5 @@
-import * as path from 'path';
 import * as express from 'express';
+import * as path from 'path';
 import * as webpack from 'webpack';
 import * as webpackDevMiddleware from 'webpack-dev-middleware';
 import * as webpackHotMiddleware from 'webpack-hot-middleware';

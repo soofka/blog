@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import LinkedInIcon from './icons/LinkedInIcon';
-import TwitterIcon from './icons/TwitterIcon';
 import GitHubIcon from './icons/GitHubIcon';
 import InstagramIcon from './icons/InstagramIcon';
 import LastFmIcon from './icons/LastFmIcon';
+import LinkedInIcon from './icons/LinkedInIcon';
+import TwitterIcon from './icons/TwitterIcon';
 
 import { StyledLinkIconsBar } from './styled';
 

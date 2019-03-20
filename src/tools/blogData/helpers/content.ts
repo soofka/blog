@@ -1,21 +1,9 @@
 import * as path from 'path';
-
 // import {
 //   ContentFileType,
 //   Environment,
 // } from '../../types';
-import {
-  createDirectory,
-  doesDirectoryExist,
-  forceCreateDirectory,
-  getFileContent,
-  getFileNamesInDirectory,
-  saveFile,
-  saveDataFile,
-  replaceInStringBasedOnMap,
-} from './';
-import { isObject } from 'common/helpers/index';
-import { getXmlParser } from './xml';
+import { isObject } from 'common/helpers';
 // import { Language } from '../../../common/types';
 // import {
 //   IContentData,
@@ -25,8 +13,19 @@ import { getXmlParser } from './xml';
 import {
   IMAGES_DIRECTORY_NAME,
   SLIDES_DIRECTORY_NAME,
-} from '../../../common/constants';
-import { parseTextToNiceUrl } from '../../../common/helpers';
+} from 'common/constants';
+import { parseTextToNiceUrl } from 'common/helpers';
+import {
+  createDirectory,
+  doesDirectoryExist,
+  forceCreateDirectory,
+  getFileContent,
+  getFileNamesInDirectory,
+  replaceInStringBasedOnMap,
+  saveDataFile,
+  saveFile,
+} from './';
+import { getXmlParser } from './xml';
 
 export const CONTENT_TO_HTML_MAP = new Map([
   ['<youtube-video>', '<div class="video-container"><div class="video-container--wrapper">'],

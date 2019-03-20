@@ -1,13 +1,13 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-import Label from 'components/Label';
 import AssetsProvider from 'common/AssetsProvider';
+import Label from 'components/Label';
 
 import {
-  StyledEntryImageWrapper,
-  StyledEntryImage,
   StyledEntryBriefContainer,
+  StyledEntryImage,
+  StyledEntryImageWrapper,
 } from './styled';
 
 export interface EntryBriefInterface {

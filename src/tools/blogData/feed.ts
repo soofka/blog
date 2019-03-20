@@ -1,6 +1,6 @@
-import {forceCreateDirectory, getXmlBuilder, getXmlParser, saveDataFile} from "./helpers";
-import {blogConfig, DEFAULT_LANGUAGE, FEED_DESTINATION_PATH, IMAGES_DIRECTORY_NAME} from "../../common/constants";
 import { Feed } from 'feed';
+import { BLOG_CONFIG, DEFAULT_LANGUAGE, FEED_DESTINATION_PATH, IMAGES_DIRECTORY_NAME } from 'common/constants';
+import { forceCreateDirectory, getXmlBuilder, getXmlParser, saveDataFile } from './helpers';
 
 export const createFeedFiles = (entries) => {
   createFeedDestinationDirectory();
@@ -15,11 +15,11 @@ export const createFeedFiles = (entries) => {
       feedGenerator.addItem({
         id: entry.id,
         title: entry.title,
-        link: `${blogConfig.url}${entry.url}`,
+        link: `${BLOG_CONFIG.url}${entry.url}`,
         description: entry.brief,
-        author: [blogConfig.author],
+        author: [BLOG_CONFIG.author],
         date: new Date(entry.created),
-        image: `${blogConfig}/${IMAGES_DIRECTORY_NAME}/${entry.url}`,
+        image: `${BLOG_CONFIG}/${IMAGES_DIRECTORY_NAME}/${entry.url}`,
       });
     });
 
@@ -31,30 +31,30 @@ export const createFeedFiles = (entries) => {
           language,
         });
         saveFeedFile(feed, language);
-      }
+      },
     );
   });
 };
 
 const getFeedGenerator = (language) => {
   const feedGenerator = new Feed({
-    title: blogConfig.title,
-    description: blogConfig.description,
-    id: blogConfig.url,
-    link: blogConfig.url,
-    image: blogConfig.imageUrl,
-    copyright: blogConfig.license,
+    title: BLOG_CONFIG.title,
+    description: BLOG_CONFIG.description,
+    id: BLOG_CONFIG.url,
+    link: BLOG_CONFIG.url,
+    image: BLOG_CONFIG.imageUrl,
+    copyright: BLOG_CONFIG.license,
     feed: 'rss',
     feedLinks: {
-      rss: blogConfig.feedUrls[language]
+      rss: BLOG_CONFIG.feedUrls[language],
     },
-    author: blogConfig.author
+    author: BLOG_CONFIG.author,
   });
 
-  blogConfig.categories.forEach((category) => {
+  BLOG_CONFIG.categories.forEach((category) => {
     feedGenerator.addCategory(category);
   });
-  feedGenerator.addContributor(blogConfig.author);
+  feedGenerator.addContributor(BLOG_CONFIG.author);
 
   return feedGenerator;
 };

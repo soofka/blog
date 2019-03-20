@@ -1,4 +1,4 @@
-import {LANGUAGES} from "../constants";
+import { LANGUAGES } from 'common/constants';
 
 export const isLanguageValid = (language) => {
   const languageKeys = Object.keys(LANGUAGES);
