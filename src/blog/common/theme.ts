@@ -4,7 +4,7 @@ export const theme = {
   baseDistanceValue,
   headerHeight: `${14 * baseDistanceValue}px`,
   headerHeightMobile: `${10 * baseDistanceValue}px`,
-  headerFontFamily: `'Raleway', sans-serif`,
+  headerFontFamily: "'Raleway', sans-serif",
 
   siteMaxWidth: '1200px',
   breakpointS: '420px',

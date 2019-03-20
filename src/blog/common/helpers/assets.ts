@@ -1,7 +1,7 @@
-import { ENTRIES_JSON_PATHS } from 'common/constants/index';
-import {Language} from 'common/types';
+import { ENTRIES_JSON_PATHS } from '/common/constants/index';
+import { Language } from '/common/types';
 import {
-  getRequestClient, RequestFailureResponseInterface, RequestResponseInterface,
+  getRequestClient,RequestFailureResponseInterface, RequestResponseInterface,
   RequestSuccessResponseInterface
 } from "./request";
 

@@ -7,26 +7,20 @@ import createBrowserHistory from 'history/createBrowserHistory';
 
 import Blog from 'blog/components/Blog';
 
-// import { store } from 'blog/store';
+import { store } from 'blog/store';
 
-// const browserHistory = createBrowserHistory();
-// const history = syncHistoryWithStore(browserHistory, store.routingStore);
-
-// const render = () => {
-//   ReactDOM.render(
-//     <Provider {...store}>
-//       <Router history={history}>
-//         <Blog/>
-//       </Router>
-//     </Provider>,
-//     document.querySelector('app'),
-//   );
-// };
+const browserHistory = createBrowserHistory();
+const history = syncHistoryWithStore(browserHistory, store.routingStore);
+const rootElement = document.querySelector('main');
 
 const render = () => {
   ReactDOM.render(
-    <Blog/>,
-    document.querySelector('main'),
+    <Provider {...store}>
+      <Router history={history}>
+        <Blog/>
+      </Router>
+    </Provider>,
+    rootElement,
   );
 };
 

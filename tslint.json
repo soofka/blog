@@ -1,11 +1,16 @@
 {
   "extends": "tslint-config-airbnb",
   "rules": {
-    "variable-name": [
-      "allow-pascal-case"
-    ],
-    "max-line-length": [true, 120],
     "arrow-parens": true,
-    "ter-arrow-parens": [true, "always"]
+    "max-line-length": [true, 120],
+    "no-default-export": true,
+    "no-default-import": true,
+    "no-duplicate-imports": [true, {"allow-namespace-imports": true}],
+    "no-require-imports": true,
+    "no-submodule-imports": true,
+    "no-unused-variable": true,
+    "ordered-imports": true,
+    "ter-arrow-parens": [true, "always"],
+    "variable-name": ["allow-pascal-case"]
   }
 }
