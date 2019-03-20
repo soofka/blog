@@ -28,6 +28,8 @@ export const TAGS_DESTINATION_PATH = path.join(GENERATED_CONTENT_PATH, TAGS_DIRE
 export const FEED_DESTINATION_PATH = path.join(GENERATED_CONTENT_PATH, FEED_DIRECTORY_NAME);
 export const MANIFEST_DESTINATION_PATH = GENERATED_CONTENT_PATH;
 
+export const ENTRIES_FINAL_PATH = `/${ENTRIES_DIRECTORY_NAME}`;
+
 const entriesJsonPaths = {};
 Object.keys(LANGUAGES).forEach((languageKey) => {
   const language = LANGUAGES[languageKey];

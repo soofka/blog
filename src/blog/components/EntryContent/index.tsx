@@ -1,8 +1,5 @@
 import * as React from 'react';
 
-// import highlightWorker from './highlight.worker';
-// import WebWorker from 'common/WebWorker';
-
 interface EntryContentPropsInterface {
   content: string;
 }
