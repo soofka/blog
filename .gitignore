@@ -16,7 +16,7 @@ yarn-error.log
 /dist
 /stats
 
-#content
+#generated content
 /content/generated
 
 #generated scripts

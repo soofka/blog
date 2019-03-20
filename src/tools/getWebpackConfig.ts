@@ -29,7 +29,7 @@ export const getWebpackConfig = (environment = 'dev', mode = null) => {
 
 const getEntry = () => {
   const main = [
-    './src/blog/index.tsx'
+    './src/blog/index.tsx',
   ];
 
   const vendor =  [
@@ -58,20 +58,20 @@ const getOutput = () => {
 const getResolve = () => ({
   modules: [
     'src',
-    'node_modules'
+    'node_modules',
   ],
   extensions: [
     '.ts',
     '.tsx',
-    '.js'
-  ]
+    '.js',
+  ],
 });
 
 const getModule = (devEnv) => {
   const typeScriptLoaders = [];
 
   if (!devEnv) {
-    // typeScriptLoaders.push('babel-loader');
+    typeScriptLoaders.push('babel-loader');
   }
 
   typeScriptLoaders.push(
@@ -124,7 +124,7 @@ const getModule = (devEnv) => {
   };
 };
 
-//@todo: add paths from constants to whole config
+// @todo: add paths from constants to whole config
 const getPlugins = (devEnv, audit) => {
   let staticStyles = [
     '/styles/normalize.css',
@@ -159,7 +159,7 @@ const getPlugins = (devEnv, audit) => {
     new HtmlWebpackPlugin({
       inject: false,
       mobile: true,
-      template: 'src/blog/index.ejs',
+      template: './src/blog/index.ejs',
       // favicon: './assets/favicon.png',
       title: blogConfig.title,
       meta: blogConfig.meta,
@@ -193,7 +193,7 @@ const getPlugins = (devEnv, audit) => {
         config: './tslint.json',
       }),
       new StyleLintWebpackPlugin(({
-        files: ['./src/blog/**/*'],
+        files: ['./src/blog/**/styled.ts'],
         configFile: './.stylelintrc',
       })),
     );
