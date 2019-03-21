@@ -1,12 +1,12 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import { Blog } from '../';
+import { Wrapper } from '../';
 
-describe('<Blog/>', () => {
+describe('<Wrapper/>', () => {
 
   it('renders correctly', () => {
-    expect(shallow(<Blog/>)).toMatchSnapshot();
+    expect(shallow(<Wrapper/>)).toMatchSnapshot();
   });
 
 });

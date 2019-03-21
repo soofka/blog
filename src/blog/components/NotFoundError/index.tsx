@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import ErrorBox from 'components/ErrorBox';
-import Label from 'components/Label';
+import { ErrorBox } from 'blog/components/ErrorBox';
+import { Label } from 'blog/components/Label';
 
 export const NotFoundError = (): JSX.Element => {
   return (
@@ -11,5 +11,3 @@ export const NotFoundError = (): JSX.Element => {
     </div>
   );
 };
-
-export default NotFoundError;

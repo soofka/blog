@@ -2,8 +2,8 @@ import { shallow } from 'enzyme';
 import 'jest-styled-components';
 import * as React from 'react';
 
-import theme from 'common/theme';
-import { StyledEntryHeaderTitle } from 'components/EntryHeader/components/EntryHeaderTitle/styled';
+import { theme } from 'blog/common/theme';
+import { StyledEntryHeaderTitle } from '../styled';
 
 describe('<StyledEntryHeaderTitle/>', () => {
 

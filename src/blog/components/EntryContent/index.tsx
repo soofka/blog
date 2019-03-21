@@ -22,10 +22,8 @@ export class EntryContent extends React.Component<EntryContentPropsInterface> {
     const { content } = this.props;
 
     return (
-      <div dangerouslySetInnerHTML={{ __html: content }}></div>
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     );
   }
 
 }
-
-export default EntryContent;

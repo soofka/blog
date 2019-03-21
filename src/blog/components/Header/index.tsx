@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import Logo from 'components/Logo';
+import Logo from 'blog/components/Logo';
 // import Quote from 'components/Quote';
 // import LinkIconsBar from 'components/LinkIconsBar';
 // import LanguageSwitcher from 'components/LanguageSwitcher';
-import Sidebar from 'components/Sidebar';
-import Wrapper from 'components/Wrapper';
+import Sidebar from 'blog/components/Sidebar';
+import Wrapper from 'blog/components/Wrapper';
 
 import { StyledHeader } from './styled';
 
@@ -22,5 +22,3 @@ export const Header = (): JSX.Element => {
     </StyledHeader>
   );
 };
-
-export default Header;

@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import LinkedInIcon from 'components/LinkIconsBar/icons/LinkedInIcon';
+import { LinkedInIcon } from '../';
 
 describe('<LinkedInIcon/>', () => {
 

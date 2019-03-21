@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import LinkIconsBar from 'components/LinkIconsBar';
+import { LinkIconsBar } from '../';
 
 describe('<LinkIconsBar/>', () => {
 

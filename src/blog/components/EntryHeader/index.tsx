@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import EntryBackLink from './components/EntryBackLink';
-import EntryHeaderMeta from './components/EntryHeaderMeta';
-import EntryHeaderTags from './components/EntryHeaderTags';
-import EntryHeaderTitle from './components/EntryHeaderTitle';
+import { EntryBackLink } from './components/EntryBackLink';
+import { EntryHeaderMeta } from './components/EntryHeaderMeta';
+import { EntryHeaderTags } from './components/EntryHeaderTags';
+import { EntryHeaderTitle } from './components/EntryHeaderTitle';
 
 interface EntryHeaderPropsInterface {
   title: string;
@@ -11,7 +11,7 @@ interface EntryHeaderPropsInterface {
   tags: string[];
   created: string;
   updated: string;
-  full: boolean;
+  full?: boolean;
 }
 
 export const EntryHeader = (props: EntryHeaderPropsInterface): JSX.Element => {
@@ -19,7 +19,7 @@ export const EntryHeader = (props: EntryHeaderPropsInterface): JSX.Element => {
 
   return (
     <div>
-      { full && <EntryBackLink/> }
+      { full === true && <EntryBackLink/> }
       <EntryHeaderTitle
         title={title}
         link={titleLink}
@@ -34,5 +34,3 @@ export const EntryHeader = (props: EntryHeaderPropsInterface): JSX.Element => {
     </div>
   );
 };
-
-export default EntryHeader;

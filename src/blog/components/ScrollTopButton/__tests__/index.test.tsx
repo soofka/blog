@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import ScrollTopButton from 'components/ScrollTopButton';
+import { ScrollTopButton } from '../';
 
 describe('<ScrollTopButton/>', () => {
 

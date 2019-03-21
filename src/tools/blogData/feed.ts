@@ -1,5 +1,5 @@
-import { Feed } from 'feed';
 import { BLOG_CONFIG, DEFAULT_LANGUAGE, FEED_DESTINATION_PATH, IMAGES_DIRECTORY_NAME } from 'common/constants';
+import { Feed } from 'feed';
 import { forceCreateDirectory, getXmlBuilder, getXmlParser, saveDataFile } from './helpers';
 
 export const createFeedFiles = (entries) => {

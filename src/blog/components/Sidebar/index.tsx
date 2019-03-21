@@ -2,8 +2,8 @@ import * as React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 
-import Label from 'components/Label';
-import LinkIconsBar from 'components/LinkIconsBar';
+import { Label } from 'blog/components/Label';
+import { LinkIconsBar } from 'blog/components/LinkIconsBar';
 
 import { StyledSidebar, StyledSidebarHeader } from './styled';
 
@@ -31,5 +31,3 @@ export const Sidebar = (): JSX.Element => {
     </StyledSidebar>
   );
 };
-
-export default Sidebar;

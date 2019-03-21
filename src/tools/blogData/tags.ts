@@ -44,7 +44,7 @@ const combineTagsArrays = (allTags, tagsToBeAdded) => {
       });
     } else {
       if (newAllTags[existingTagIndex].count && !isNaN(newAllTags[existingTagIndex].count)) {
-        newAllTags[existingTagIndex].count++;
+        newAllTags[existingTagIndex].count += 1;
       } else {
         newAllTags[existingTagIndex].count = 1;
       }

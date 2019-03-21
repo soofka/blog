@@ -1,9 +1,9 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import { mockStoreProps } from 'common/testMocks';
+import { mockStoreProps } from 'blog/common/testMocks';
 
-import LanguageSwitcher from 'components/LanguageSwitcher';
+import { LanguageSwitcher } from '../';
 
 describe('<LanguageSwitcher/>', () => {
 

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SvgIconPropsInterface } from '../../index';
+import { SvgIconPropsInterface } from '../../';
 
 export const LinkedInIcon = (props: SvgIconPropsInterface) => (
   <a href="https://www.linkedin.com/in/jakub-sowi%C5%84ski-613557b7" target="_blank">
@@ -9,5 +9,3 @@ export const LinkedInIcon = (props: SvgIconPropsInterface) => (
     </svg>
   </a>
 );
-
-export default LinkedInIcon;

@@ -18,5 +18,3 @@ export const StyledEntryBriefContainer = styledComponents.div`
     margin-bottom: ${(props) => props.theme.marginS}
   }
 `;
-
-export default StyledEntryImageWrapper;

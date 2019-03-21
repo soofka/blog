@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-import AssetsProvider from 'common/AssetsProvider';
-import RoutingProvider from 'common/RoutingProvider';
-
-import Label from 'components/Label';
+import { Label } from 'blog/components/Label';
+import { getHomeBaseUrl, getImageFilePath } from 'common/helpers';
 
 import { StyledLogoHeader, StyledLogoImage, StyledLogoImageContainer } from './styled';
 
@@ -19,11 +17,11 @@ export const Logo = (props: LogoPropsInterface): JSX.Element => {
   return (
     <div>
       <StyledLogoImageContainer>
-        <Link to={RoutingProvider.getHomeNiceUrlBasePath()}>
-          <StyledLogoImage src={`${AssetsProvider.getImagesBasePath()}/soofka-logo-${number}.jpg`}/>
+        <Link to={getHomeBaseUrl()}>
+          <StyledLogoImage src={getImageFilePath(`soofka-logo-${number}.jpg`)} />
         </Link>
       </StyledLogoImageContainer>
-      <Link to={RoutingProvider.getHomeNiceUrlBasePath()}>
+      <Link to={getHomeBaseUrl()}>
         <StyledLogoHeader>
           <Label name="page_title" />
         </StyledLogoHeader>
@@ -31,5 +29,3 @@ export const Logo = (props: LogoPropsInterface): JSX.Element => {
     </div>
   );
 };
-
-export default Logo;

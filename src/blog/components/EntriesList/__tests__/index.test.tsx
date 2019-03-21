@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import EntriesList from 'components/EntriesList';
+import { EntriesList } from '../';
 
 describe('<EntriesList/>', () => {
 

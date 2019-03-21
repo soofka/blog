@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-import RoutingProvider from 'common/RoutingProvider';
-
 import { StyledEntryHeaderTags } from './styled';
 
 interface EntryHeaderTagsPropsInterface {
@@ -12,13 +10,14 @@ interface EntryHeaderTagsPropsInterface {
 export const EntryHeaderTags = (props: EntryHeaderTagsPropsInterface): JSX.Element => {
   const { tags } = props;
 
+  // @todo: fix link
   return (
     <StyledEntryHeaderTags>
       {tags.map((tag: string, index: number) => {
         return (
           <Link
             key={index}
-            to={`${RoutingProvider.getEntriesByTagNiceUrlBasePath()}/${RoutingProvider.parseTextToNiceUrl(tag)}`}
+            to={''}
           >
             {tag}
           </Link>
@@ -27,5 +26,3 @@ export const EntryHeaderTags = (props: EntryHeaderTagsPropsInterface): JSX.Eleme
     </StyledEntryHeaderTags>
   );
 };
-
-export default EntryHeaderTags;

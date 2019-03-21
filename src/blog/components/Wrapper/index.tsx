@@ -1,2 +1,1 @@
-import { StyledWrapper } from './styled';
-export default StyledWrapper;
+export { StyledWrapper as Wrapper } from './styled';

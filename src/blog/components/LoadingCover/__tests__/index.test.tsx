@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import LoadingCover from 'components/LoadingCover';
+import { LoadingCover } from '../';
 
 describe('<LoadingCover/>', () => {
 

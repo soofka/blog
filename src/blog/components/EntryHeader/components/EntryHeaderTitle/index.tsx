@@ -17,5 +17,3 @@ export const EntryHeaderTitle = (props: EntryHeaderTitlePropsInterface): JSX.Ele
     </StyledEntryHeaderTitle>
   );
 };
-
-export default EntryHeaderTitle;

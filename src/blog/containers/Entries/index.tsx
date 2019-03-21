@@ -3,18 +3,21 @@ import { inject } from 'mobx-react';
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 
-import AssetsProvider from 'common/AssetsProvider';
-import RequestHandler, { RequestHandlerResponseInterface } from 'common/RequestHandler';
+import { LanguageStoreInterface } from 'blog/store/language';
 
-import { LanguageStoreInterface } from 'store/language';
+import { EntriesList } from 'blog/components/EntriesList';
+import { ErrorBox } from 'blog/components/ErrorBox';
+import { Label } from 'blog/components/Label';
+import { LoadingCover } from 'blog/components/LoadingCover';
+import { EntriesMeta } from 'blog/components/Meta/components/EntriesMeta';
 
-import EntriesList from 'components/EntriesList';
-import ErrorBox from 'components/ErrorBox';
-import Label from 'components/Label';
-import LoadingCover from 'components/LoadingCover';
-import EntriesMeta from 'components/Meta/components/EntriesMeta';
+import {
+  getEntries,
+  RequestSuccessResponseInterface,
+  validateRequestSuccessResponse,
+} from 'blog/common/helpers';
 
-import { EntryInterface } from 'containers/Entry';
+import { EntryInterface } from 'blog/containers/Entry';
 
 export interface EntriesParamsInterface {
   tag?: string;
@@ -31,7 +34,7 @@ interface EntriesStateInterface {
   loading: boolean;
 }
 
-export class Entries extends React.Component<EntriesPropsInterface, EntriesStateInterface> {
+export class EntriesContainer extends React.Component<EntriesPropsInterface, EntriesStateInterface> {
   constructor(props: EntriesPropsInterface) {
     super(props);
     this.state = { entries: undefined, loading: false };
@@ -52,10 +55,9 @@ export class Entries extends React.Component<EntriesPropsInterface, EntriesState
 
   getEntries() {
     this.setState({ loading: true });
-    AssetsProvider
-      .getEntries(this.props.languageStore.getLanguage())
-      .then((response: RequestHandlerResponseInterface) => {
-        const entries = RequestHandler.validateResponse(response)
+    getEntries(this.props.languageStore.getLanguage())
+      .then((response: RequestSuccessResponseInterface) => {
+        const entries = validateRequestSuccessResponse(response, true)
           ? response.data
           : undefined;
         this.setState({ entries, loading: false });
@@ -109,14 +111,9 @@ export class Entries extends React.Component<EntriesPropsInterface, EntriesState
   }
 }
 
-function prepareEntries(entries: EntryInterface[]): EntryInterface[] {
-  return filterPrivateEntries(entries);
-}
+const prepareEntries = (entries: EntryInterface[]): EntryInterface[] => filterPrivateEntries(entries);
 
-function filterPrivateEntries(entries: EntryInterface[]): EntryInterface[] {
-  return entries.filter((entry: EntryInterface) => {
-    return !!entry.public;
-  });
-}
+const filterPrivateEntries = (entries: EntryInterface[]): EntryInterface[] =>
+  entries.filter((entry: EntryInterface) => !!entry.public);
 
-export default inject('languageStore')(Entries);
+export const Entries = inject('languageStore')(EntriesContainer);

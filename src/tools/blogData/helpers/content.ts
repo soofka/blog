@@ -1,9 +1,3 @@
-import * as path from 'path';
-// import {
-//   ContentFileType,
-//   Environment,
-// } from '../../types';
-import { isObject } from 'common/helpers';
 // import { Language } from '../../../common/types';
 // import {
 //   IContentData,
@@ -14,7 +8,12 @@ import {
   IMAGES_DIRECTORY_NAME,
   SLIDES_DIRECTORY_NAME,
 } from 'common/constants';
-import { parseTextToNiceUrl } from 'common/helpers';
+// import {
+//   ContentFileType,
+//   Environment,
+// } from '../../types';
+import { isObject, parseTextToNiceUrl } from 'common/helpers';
+import * as path from 'path';
 import {
   createDirectory,
   doesDirectoryExist,

@@ -1,18 +1,18 @@
 import { inject, observer } from 'mobx-react';
 import * as React from 'react';
 
-import LabelsProvider from 'common/LabelsProvider';
-import { LanguageStoreInterface } from 'store/language';
+import { getLabel } from 'blog/common/helpers';
+import { LanguageStoreInterface } from 'blog/store/language';
 
-interface LabelPropsInterface {
+interface LabelPropsInterface extends React.HTMLAttributes<any> {
   name: string;
-  params?: any;
+  params?: { [s: string]: string };
   languageStore?: LanguageStoreInterface;
 }
 
-export const Label = (props: LabelPropsInterface) => {
+const LabelComponent = (props: LabelPropsInterface): JSX.Element => {
   const { name, params = {}, languageStore: { getLanguage }, ...rest } = props;
-  return <span {...rest}>{LabelsProvider.getLabel(name, params, getLanguage())}</span>;
+  return <span {...rest}>{getLabel(name, params, getLanguage())}</span>;
 };
 
-export default inject('languageStore')(observer(Label));
+export const Label = inject('languageStore')(observer(LabelComponent));

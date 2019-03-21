@@ -5,5 +5,3 @@ export class WebWorker {
     return new Worker(URL.createObjectURL(blob));
   }
 }
-
-export default WebWorker;

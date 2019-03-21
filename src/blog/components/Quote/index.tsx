@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-import Label from 'components/Label';
-
+import { Label } from 'blog/components/Label';
 import { StyledQuote } from './styled';
 
 export const Quote = (): JSX.Element => {
@@ -11,5 +10,3 @@ export const Quote = (): JSX.Element => {
     </StyledQuote>
   );
 };
-
-export default Quote;

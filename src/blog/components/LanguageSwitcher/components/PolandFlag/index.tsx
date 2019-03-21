@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { FlagPropsInterface } from '../../index';
+import { FlagPropsInterface } from '../../';
 
 export const PolandFlag = (props: FlagPropsInterface) => (
   <svg width={100} height={60} viewBox="0 0 16 10" {...props}>
@@ -7,5 +7,3 @@ export const PolandFlag = (props: FlagPropsInterface) => (
     <path fill="#dc143c" d="M0 5h16v5H0z" />
   </svg>
 );
-
-export default PolandFlag;

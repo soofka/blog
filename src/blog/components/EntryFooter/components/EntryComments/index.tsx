@@ -41,10 +41,6 @@ export class EntryComments extends React.Component<EntryCommentsPropsInterface, 
   }
 
   render(): JSX.Element {
-    return (
-      <div id="disqus_thread"></div>
-    );
+    return <div id="disqus_thread" />;
   }
 }
-
-export default EntryComments;

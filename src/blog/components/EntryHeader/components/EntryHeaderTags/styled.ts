@@ -20,5 +20,3 @@ export const StyledEntryHeaderTags = styledComponents.p`
     }
   }
 `;
-
-export default StyledEntryHeaderTags;

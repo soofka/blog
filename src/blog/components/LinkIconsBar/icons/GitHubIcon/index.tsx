@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SvgIconPropsInterface } from '../../index';
+import { SvgIconPropsInterface } from '../../';
 
 export const GitHubIcon = (props: SvgIconPropsInterface) => (
   <a href="https://github.com/soofka" target="_blank">
@@ -9,5 +9,3 @@ export const GitHubIcon = (props: SvgIconPropsInterface) => (
     </svg>
   </a>
 );
-
-export default GitHubIcon;

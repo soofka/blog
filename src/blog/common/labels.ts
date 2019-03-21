@@ -1,4 +1,4 @@
-export default {
+export const labels = {
   en: {
     page_title: 'soofka.pl',
     page_title__about_me: 'About me - soofka.pl',

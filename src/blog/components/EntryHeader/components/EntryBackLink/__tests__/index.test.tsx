@@ -1,17 +1,12 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import EntryBackLink from 'components/EntryHeader/components/EntryBackLink';
+import { EntryBackLink } from '../';
 
 describe('<EntryBackLink/>', () => {
 
   it('renders correctly', () => {
-    expect(shallow(
-      <EntryBackLink
-        created="testCreated"
-        updated="testUpdated"
-      />,
-    )).toMatchSnapshot();
+    expect(shallow(<EntryBackLink />)).toMatchSnapshot();
   });
 
 });

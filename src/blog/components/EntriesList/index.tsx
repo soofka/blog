@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import Scroller from 'common/Scroller';
-import ErrorBox from 'components/ErrorBox';
-import Label from 'components/Label';
-import Entry, { EntryInterface } from 'containers/Entry';
+import { scrollToTop } from 'blog/common/helpers';
+import { ErrorBox } from 'blog/components/ErrorBox';
+import { Label } from 'blog/components/Label';
+import { Entry, EntryInterface } from 'blog/containers/Entry';
 
 interface EntriesListPropsInterface extends React.Props<any> {
   entries: EntryInterface[];
@@ -12,7 +12,7 @@ interface EntriesListPropsInterface extends React.Props<any> {
 
 export class EntriesList extends React.Component<EntriesListPropsInterface> {
   componentDidMount() {
-    Scroller.scrollToTop();
+    scrollToTop();
   }
 
   render() {
@@ -52,5 +52,3 @@ function sortEntriesByDateCreated(entryA: EntryInterface, entryB: EntryInterface
 
   return 0;
 }
-
-export default EntriesList;

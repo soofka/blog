@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import PolandFlag from 'components/LanguageSwitcher/components/PolandFlag';
+import { PolandFlag } from '../';
 
 describe('<PolandFlag/>', () => {
 
@@ -9,7 +9,7 @@ describe('<PolandFlag/>', () => {
     expect(shallow(<PolandFlag/>)).toMatchSnapshot();
   });
 
-  it('renders correctly with optional props', () => {
+  it('renders correctly with custom class', () => {
     expect(shallow(
       <PolandFlag
         className="testClassName"

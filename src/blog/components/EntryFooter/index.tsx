@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import ContentDivider from 'components/ContentDivider';
-import ScrollTopButton from 'components/ScrollTopButton';
-import EntryComments from './components/EntryComments';
+import { ContentDivider } from 'blog/components/ContentDivider';
+import { ScrollTopButton } from 'blog/components/ScrollTopButton';
+import { EntryComments } from './components/EntryComments';
 
 interface EntryFooterPropsInterface {
   title: string;
@@ -25,5 +25,3 @@ export const EntryFooter = (props: EntryFooterPropsInterface): JSX.Element => {
     </div>
   );
 };
-
-export default EntryFooter;

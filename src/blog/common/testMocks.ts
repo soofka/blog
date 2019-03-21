@@ -1,7 +1,8 @@
 export const mockStoreProps = {
   languageStore: {
-    getLanguage: () => 'en',
-    setLanguage: () => null,
+    language: 'testLanguage',
+    getLanguage: () => 'testLanguage',
+    setLanguage: (language: string) => null,
   },
 };
 

@@ -27,5 +27,3 @@ export const StyledLinkIconsBar = styledComponents.ul`
     }
   }
 `;
-
-export default StyledLinkIconsBar;

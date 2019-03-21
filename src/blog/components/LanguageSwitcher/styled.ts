@@ -36,5 +36,3 @@ export const StyledLanguageSwitcher = styledComponents.ul`
     }
   }
 `;
-
-export default StyledLanguageSwitcher;

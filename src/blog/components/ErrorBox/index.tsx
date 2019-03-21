@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import Label from 'components/Label';
+import { Label } from 'blog/components/Label';
 
 interface ErrorBoxPropsInterface {
   message?: any;
@@ -16,5 +16,3 @@ export const ErrorBox = (props: ErrorBoxPropsInterface): JSX.Element => {
     </div>
   );
 };
-
-export default ErrorBox;

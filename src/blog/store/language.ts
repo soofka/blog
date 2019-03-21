@@ -1,23 +1,25 @@
 import { action, decorate, observable } from 'mobx';
 
-import LanguageHandler from 'common/LanguageHandler';
+import { getCurrentLanguage, setCurrentLanguage } from 'blog/common/helpers';
+import { isLanguageValid } from 'common/helpers';
+import { Language } from 'common/types';
 
 export interface LanguageStoreInterface {
-  language: string;
-  getLanguage: () => string;
-  setLanguage: (language: string) => void;
+  language: Language;
+  getLanguage: () => Language;
+  setLanguage: (language: Language) => void;
 }
 
 class LanguageStore implements LanguageStoreInterface {
 
-  language = LanguageHandler.getCurrentLanguage();
+  language = getCurrentLanguage();
 
-  getLanguage = (): string => this.language;
+  getLanguage = (): Language => this.language;
 
-  setLanguage = (language: string): void => {
-    if (LanguageHandler.isLanguageValid(language)) {
+  setLanguage = (language: Language): void => {
+    if (isLanguageValid(language)) {
       this.language = language;
-      LanguageHandler.setCurrentLanguage(language);
+      setCurrentLanguage(language);
     }
   }
 

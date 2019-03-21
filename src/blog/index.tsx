@@ -11,7 +11,7 @@ import { store } from 'blog/store';
 
 const browserHistory = createBrowserHistory();
 const history = syncHistoryWithStore(browserHistory, store.routingStore);
-const rootElement = document.querySelector('main');
+const rootElement = document.querySelector('#root');
 
 const render = () => {
   ReactDOM.render(

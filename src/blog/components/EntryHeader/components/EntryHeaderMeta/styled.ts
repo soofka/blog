@@ -13,5 +13,3 @@ export const StyledEntryHeaderMeta = styledComponents.p`
     font-weight: bold;
   }
 `;
-
-export default StyledEntryHeaderMeta;

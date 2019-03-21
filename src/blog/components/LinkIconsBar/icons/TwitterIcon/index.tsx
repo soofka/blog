@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SvgIconPropsInterface } from '../../index';
+import { SvgIconPropsInterface } from '../../';
 
 export const TwitterIcon = (props: SvgIconPropsInterface) => (
   <a href="https://twitter.com/pansoofka" target="_blank">
@@ -9,5 +9,3 @@ export const TwitterIcon = (props: SvgIconPropsInterface) => (
     </svg>
   </a>
 );
-
-export default TwitterIcon;

@@ -7,7 +7,7 @@ export const generateIdBasedOnCharacters = (text: string): string => {
   let sum = 0;
   const length = text.length;
 
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < length; i += 1) {
     sum += text.charCodeAt(i);
   }
 

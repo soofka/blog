@@ -52,5 +52,3 @@ export const Meta = (props: MetaPropsInterface) => {
     </Helmet>
   );
 };
-
-export default Meta;

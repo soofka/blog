@@ -1,9 +1,8 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import { mockStoreProps } from 'common/testMocks';
-
-import EntriesMeta from 'components/Meta/components/EntriesMeta';
+import { mockStoreProps } from 'blog/common/testMocks';
+import { EntriesMeta } from '../';
 
 describe('<EntriesMeta/>', () => {
 

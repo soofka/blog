@@ -23,5 +23,3 @@ export const StyledHeader = styledComponents.header`
     height: ${(props) => props.theme.headerHeightMobile};
   }
 `;
-
-export default StyledHeader;

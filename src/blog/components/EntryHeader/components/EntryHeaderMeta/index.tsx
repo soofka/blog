@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-import Label from 'components/Label';
-
+import { Label } from 'blog/components/Label';
 import { StyledEntryHeaderMeta } from './styled';
 
 interface EntryHeaderMetaPropsInterface {
@@ -21,5 +20,3 @@ export const EntryHeaderMeta = (props: EntryHeaderMetaPropsInterface): JSX.Eleme
     </StyledEntryHeaderMeta>
   );
 };
-
-export default EntryHeaderMeta;

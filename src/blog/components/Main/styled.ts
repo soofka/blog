@@ -26,5 +26,3 @@ export const StyledMain = styledComponents.main`
   padding: ${(props) => props.theme.paddingS};
   width: 100%;
 }`;
-
-export default StyledMain;

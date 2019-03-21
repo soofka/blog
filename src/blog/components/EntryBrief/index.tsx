@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-import AssetsProvider from 'common/AssetsProvider';
-import Label from 'components/Label';
+import { Label } from 'blog/components/Label';
+import { getImageFilePath } from 'common/helpers';
 
 import {
   StyledEntryBriefContainer,
@@ -21,7 +21,7 @@ interface EntryBriefPropsInterface extends EntryBriefInterface {
 
 export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
   const { text, imageFileName, moreButtonLink } = props;
-  const imageUrl = AssetsProvider.getEntryImageFilePath(imageFileName);
+  const imageUrl = getImageFilePath(imageFileName);
 
   return (
     <div>
@@ -41,5 +41,3 @@ export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
     </div>
   );
 };
-
-export default EntryBrief;

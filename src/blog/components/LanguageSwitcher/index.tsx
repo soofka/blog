@@ -1,10 +1,10 @@
 import { inject } from 'mobx-react';
 import * as React from 'react';
 
-import { LanguageStoreInterface } from 'store/language';
+import { LanguageStoreInterface } from 'blog/store/language';
 
-import GreatBritainFlag from './components/GreatBritainFlag';
-import PolandFlag from './components/PolandFlag';
+import { GreatBritainFlag } from './components/GreatBritainFlag';
+import { PolandFlag } from './components/PolandFlag';
 
 import { StyledLanguageSwitcher } from './styled';
 
@@ -12,11 +12,9 @@ interface LanguageSwitcherPropsInterface {
   languageStore?: LanguageStoreInterface;
 }
 
-export interface FlagPropsInterface {
-  onClick: () => void;
-}
+export interface FlagPropsInterface extends React.HTMLAttributes<any> {}
 
-export const LanguageSwitcher = (props: LanguageSwitcherPropsInterface): JSX.Element => {
+const LanguageSwitcherComponent = (props: LanguageSwitcherPropsInterface): JSX.Element => {
   const { languageStore: { setLanguage } } = props;
 
   return (
@@ -31,4 +29,4 @@ export const LanguageSwitcher = (props: LanguageSwitcherPropsInterface): JSX.Ele
   );
 };
 
-export default inject('languageStore')(LanguageSwitcher);
+export const LanguageSwitcher = inject('languageStore')(LanguageSwitcherComponent);

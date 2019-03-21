@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import EntryBrief from 'components/EntryBrief';
+import { EntryBrief } from '../';
 
 describe('<EntryBrief/>', () => {
 

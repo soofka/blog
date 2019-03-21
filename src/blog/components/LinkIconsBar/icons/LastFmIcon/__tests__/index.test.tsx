@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import LastFmIcon from 'components/LinkIconsBar/icons/LastFmIcon';
+import { LastFmIcon } from '../';
 
 describe('<LastFmIcon/>', () => {
 

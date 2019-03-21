@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { SvgIconPropsInterface } from '../../index';
+import { SvgIconPropsInterface } from '../../';
 
 export const LastFmIcon = (props: SvgIconPropsInterface) => (
   <a href="https://www.last.fm/user/soofka" target="_blank">
@@ -9,5 +9,3 @@ export const LastFmIcon = (props: SvgIconPropsInterface) => (
     </svg>
   </a>
 );
-
-export default LastFmIcon;

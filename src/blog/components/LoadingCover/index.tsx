@@ -7,5 +7,3 @@ export const LoadingCover = (): JSX.Element => {
     </div>
   );
 };
-
-export default LoadingCover;

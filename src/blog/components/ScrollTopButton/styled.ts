@@ -5,5 +5,3 @@ export const StyledScrollTopButton = styledComponents.a`
   width: 100%;
   margin: ${(props) => props.theme.marginM} 0;
 `;
-
-export default StyledScrollTopButton;

@@ -15,5 +15,3 @@ export const StyledEntryHeaderTitle = styledComponents.h1`
     }
   }
 `;
-
-export default StyledEntryHeaderTitle;

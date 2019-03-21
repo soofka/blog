@@ -2,8 +2,8 @@ import { shallow } from 'enzyme';
 import 'jest-styled-components';
 import * as React from 'react';
 
-import theme from 'common/theme';
-import { StyledLanguageSwitcher } from 'components/LanguageSwitcher/styled';
+import { theme } from 'blog/common/theme';
+import { StyledLanguageSwitcher } from '../styled';
 
 describe('<StyledLanguageSwitcher/>', () => {
 

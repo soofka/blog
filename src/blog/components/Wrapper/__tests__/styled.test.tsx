@@ -3,12 +3,12 @@ import 'jest-styled-components';
 import * as React from 'react';
 
 import { theme } from 'blog/common/theme';
-import { StyledEntryImage } from '../styled';
+import { StyledWrapper } from '../styled';
 
-describe('<StyledEntryImage/>', () => {
+describe('<StyledWrapper/>', () => {
 
   it('is styled correctly', () => {
-    expect(shallow(<StyledEntryImage theme={theme} />)).toMatchSnapshot();
+    expect(shallow(<StyledWrapper theme={theme} />)).toMatchSnapshot();
   });
 
 });

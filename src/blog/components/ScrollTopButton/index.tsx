@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import Scroller from 'common/Scroller';
-import Label from 'components/Label';
+import { scrollToTop } from 'blog/common/helpers';
+import { Label } from 'blog/components/Label';
 
 import { StyledScrollTopButton } from './styled';
 
@@ -11,12 +11,10 @@ export const ScrollTopButton = (): JSX.Element => {
       href="#"
       onClick={(e) => {
         e.preventDefault();
-        Scroller.scrollToTop();
+        scrollToTop();
       }}
     >
       &uarr; <Label name="scroll_to_top"/>
     </StyledScrollTopButton>
   );
 };
-
-export default ScrollTopButton;

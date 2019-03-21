@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import EntryHeaderMeta from 'components/EntryHeader/components/EntryHeaderMeta';
+import { EntryHeaderMeta } from '../';
 
 describe('<EntryHeaderMeta/>', () => {
 

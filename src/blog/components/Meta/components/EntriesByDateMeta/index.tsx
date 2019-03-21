@@ -1,21 +1,21 @@
 import { inject, observer } from 'mobx-react';
 import * as React from 'react';
 
-import LabelsProvider from 'common/LabelsProvider';
-import { LanguageStoreInterface } from 'store/language';
+import { getLabel } from 'blog/common/helpers';
+import { LanguageStoreInterface } from 'blog/store/language';
 
-import Meta from 'components/Meta';
+import { Meta } from '../../';
 
 interface EntriesByDateMetaPropsInterface {
   date: string;
   languageStore?: LanguageStoreInterface;
 }
 
-export const EntriesByDateMeta = (props: EntriesByDateMetaPropsInterface) => {
+export const EntriesByDateMetaComponent = (props: EntriesByDateMetaPropsInterface) => {
   const { date, languageStore: { getLanguage } } = props;
   return <Meta
-    title={LabelsProvider.getLabel('page_title__entries_by_date', { date }, getLanguage())}
+    title={getLabel('page_title__entries_by_date', { date }, getLanguage())}
   />;
 };
 
-export default inject('languageStore')(observer(EntriesByDateMeta));
+export const EntriesByDateMeta = inject('languageStore')(observer(EntriesByDateMetaComponent));

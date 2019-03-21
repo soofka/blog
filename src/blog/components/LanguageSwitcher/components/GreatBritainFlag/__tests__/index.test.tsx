@@ -1,7 +1,7 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import GreatBritainFlag from 'components/LanguageSwitcher/components/GreatBritainFlag';
+import { GreatBritainFlag } from '../';
 
 describe('<GreatBritainFlag/>', () => {
 
@@ -9,7 +9,7 @@ describe('<GreatBritainFlag/>', () => {
     expect(shallow(<GreatBritainFlag/>)).toMatchSnapshot();
   });
 
-  it('renders correctly with optional props', () => {
+  it('renders correctly with custom class', () => {
     expect(shallow(
       <GreatBritainFlag
         className="testClassName"

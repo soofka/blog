@@ -58,5 +58,3 @@ export const theme = {
   lineHeightL: '1.5em',
   // lineHeightXL: '4em',
 };
-
-export default theme;

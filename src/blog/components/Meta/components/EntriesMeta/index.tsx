@@ -1,22 +1,22 @@
 import { inject, observer } from 'mobx-react';
 import * as React from 'react';
 
-import LabelsProvider from 'common/LabelsProvider';
-import { LanguageStoreInterface } from 'store/language';
+import { getLabel } from 'blog/common/helpers';
+import { LanguageStoreInterface } from 'blog/store/language';
 
-import Meta from 'components/Meta';
+import { Meta } from '../../';
 
 interface EntriesMetaPropsInterface {
   languageStore?: LanguageStoreInterface;
 }
 
-export const EntriesMeta = (props: EntriesMetaPropsInterface) => {
+export const EntriesMetaComponent = (props: EntriesMetaPropsInterface) => {
   const { languageStore: { getLanguage } } = props;
   return <Meta
-    title={LabelsProvider.getLabel('page_title', {}, getLanguage())}
-    description={LabelsProvider.getLabel('page_description', { description: '' }, getLanguage())}
-    keywords={LabelsProvider.getLabel('page_keywords', { keywords: '' }, getLanguage())}
+    title={getLabel('page_title', {}, getLanguage())}
+    description={getLabel('page_description', { description: '' }, getLanguage())}
+    keywords={getLabel('page_keywords', { keywords: '' }, getLanguage())}
   />;
 };
 
-export default inject('languageStore')(observer(EntriesMeta));
+export const EntriesMeta = inject('languageStore')(observer(EntriesMetaComponent));
