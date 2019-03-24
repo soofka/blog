@@ -8,14 +8,14 @@ import {
   getTagBaseUrl,
 } from 'common/helpers';
 
-import Wrapper from 'blog/components/Wrapper';
+import { Wrapper } from 'blog/components/Wrapper';
 
 // import Archive from 'containers/Archive';
-import NotFoundError from 'blog/components/NotFoundError';
-import AllEntries from 'blog/containers/Entries/components/AllEntries';
-import AllEntriesByDate from 'blog/containers/Entries/components/AllEntriesByDate';
-import AllEntriesByTag from 'blog/containers/Entries/components/AllEntriesByTag';
-import OneEntry from 'blog/containers/Entries/components/OneEntry';
+import { NotFoundError } from 'blog/components/NotFoundError';
+import { AllEntries } from 'blog/containers/Entries/components/AllEntries';
+import { AllEntriesByDate } from 'blog/containers/Entries/components/AllEntriesByDate';
+import { AllEntriesByTag } from 'blog/containers/Entries/components/AllEntriesByTag';
+import { OneEntry } from 'blog/containers/Entries/components/OneEntry';
 
 import { StyledMain } from './styled';
 
@@ -25,28 +25,23 @@ export const MainComponent = (): JSX.Element => {
     <StyledMain>
       <Wrapper>
         <Switch>
-          <Route
-            exact
-            path={getHomeBaseUrl()}
-            component={AllEntries}
-          />
           {/*<Route*/}
             {/*exact*/}
-            {/*path={RoutingProvider.getArchiveNiceUrlBasePath()}*/}
-            {/*component={Archive}*/}
+            {/*path={getHomeBaseUrl()}*/}
+            {/*component={AllEntries}*/}
           {/*/>*/}
-          <Route
-            path={`${getTagBaseUrl()}/:tag`}
-            component={AllEntriesByTag}
-          />
-          <Route
-            path={`${getArchiveBaseUrl()}/:date`}
-            component={AllEntriesByDate}
-          />
-          <Route
-            path={`${getEntryBaseUrl()}/:niceUrl`}
-            component={OneEntry}
-          />
+          {/*<Route*/}
+            {/*path={`${getTagBaseUrl()}/:tag`}*/}
+            {/*component={AllEntriesByTag}*/}
+          {/*/>*/}
+          {/*<Route*/}
+            {/*path={`${getArchiveBaseUrl()}/:date`}*/}
+            {/*component={AllEntriesByDate}*/}
+          {/*/>*/}
+          {/*<Route*/}
+            {/*path={`${getEntryBaseUrl()}/:niceUrl`}*/}
+            {/*component={OneEntry}*/}
+          {/*/>*/}
           <Route
             component={NotFoundError}
           />

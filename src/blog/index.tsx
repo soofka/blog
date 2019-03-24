@@ -5,7 +5,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom';
 
-import Blog from 'blog/components/Blog';
+import { Blog } from 'blog/components/Blog';
 
 import { store } from 'blog/store';
 
