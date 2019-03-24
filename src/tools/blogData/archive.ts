@@ -1,16 +1,6 @@
 import { ARCHIVE_DESTINATION_PATH } from 'common/constants';
-import { Language } from 'common/types';
-import { EntriesInterface, EntryInterface } from './entries';
+import { ArchiveInterface, ArchivesInterface, EntriesInterface, EntryInterface, Language } from 'common/types';
 import { forceCreateDirectory, saveDataFile } from './helpers';
-
-export interface ArchiveItemInterface {
-  id: string;
-  title: string;
-  niceUrl: string;
-  created: string;
-}
-
-export interface ArchiveInterface extends Array<ArchiveItemInterface> {}
 
 export const createArchiveFiles = (entries: EntriesInterface) => {
   createArchiveDestinationDirectory();
@@ -26,7 +16,7 @@ export const createArchiveFiles = (entries: EntriesInterface) => {
   });
 };
 
-const getArchiveFromEntry = (entry: EntryInterface): ArchiveItemInterface => ({
+const getArchiveFromEntry = (entry: EntryInterface): ArchiveInterface => ({
   id: entry.id,
   title: entry.title,
   niceUrl: entry.niceUrl,
@@ -36,5 +26,5 @@ const getArchiveFromEntry = (entry: EntryInterface): ArchiveItemInterface => ({
 const createArchiveDestinationDirectory = (): void =>
   forceCreateDirectory(ARCHIVE_DESTINATION_PATH);
 
-const saveArchiveFile = (archive: ArchiveInterface, language: Language): void =>
+const saveArchiveFile = (archive: ArchivesInterface, language: Language): void =>
   saveDataFile(ARCHIVE_DESTINATION_PATH, archive, language, 'archive');

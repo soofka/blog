@@ -8,14 +8,12 @@ import {
   isLanguageValid,
   parseTextToNiceUrl,
 } from 'common/helpers';
-import { Environment, Language } from 'common/types';
+import { EntriesInterface, Environment, Language, TagsInterface } from 'common/types';
 import {
-  ContentVersionInterface,
   createContentFiles,
   generateContentFileName,
   generateIdBasedOnDateString,
   parseTagToTagObject,
-  TagInterface,
 } from 'tools/blogData/helpers';
 
 interface EntryVersionsRawInterface {
@@ -47,7 +45,7 @@ interface EntryVersionsInterface {
   };
 }
 
-interface EntryMetaInterface {
+export interface EntryMetaInterface {
   id: string;
   url: string;
   public: boolean;
@@ -56,19 +54,14 @@ interface EntryMetaInterface {
   imageUrl: string;
 }
 
-interface EntryVersionInterface {
+export interface EntryVersionInterface {
   title: string;
-  tags: TagInterface[];
+  tags: TagsInterface;
   brief: string;
   content?: string;
   contentFileName?: string;
   niceUrl?: string;
 }
-
-export type EntryInterface = ContentVersionInterface<EntryMetaInterface, EntryVersionInterface>;
-export type EntriesInterface = {
-  [s: string]: EntryInterface[];
-};
 
 export const createEntriesFiles = (environment: Environment): EntriesInterface =>
   createContentFiles(

@@ -17,7 +17,7 @@ import {
   validateRequestSuccessResponse,
 } from 'blog/common/helpers';
 
-import { EntryInterface } from 'blog/containers/Entry';
+import { EntryInterface } from 'common/types';
 
 export interface EntriesParamsInterface {
   tag?: string;
@@ -114,6 +114,6 @@ export class EntriesContainer extends React.Component<EntriesPropsInterface, Ent
 const prepareEntries = (entries: EntryInterface[]): EntryInterface[] => filterPrivateEntries(entries);
 
 const filterPrivateEntries = (entries: EntryInterface[]): EntryInterface[] =>
-  entries.filter((entry: EntryInterface) => !!entry.public);
+  entries.filter((entry: EntryInterface) => entry.public);
 
 export const Entries = inject('languageStore')(EntriesContainer);

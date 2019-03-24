@@ -1,8 +1,6 @@
 import { TAGS_DESTINATION_PATH } from 'common/constants';
-import { Language } from 'common/types';
-import { EntriesInterface, EntryInterface } from './entries';
-import { forceCreateDirectory, saveDataFile, TagInterface } from './helpers';
-import { TalkInterface, TalksInterface } from './talks';
+import { EntriesInterface, EntryInterface, Language, TagInterface, TalkInterface, TalksInterface } from 'common/types';
+import { forceCreateDirectory, saveDataFile } from './helpers';
 
 interface CountedTagInterface extends TagInterface {
   count: number;

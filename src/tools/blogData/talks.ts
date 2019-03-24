@@ -1,6 +1,5 @@
 import {
   IMAGES_DIRECTORY_NAME,
-  LANGUAGES,
   SLIDES_DIRECTORY_NAME,
   TALKS_DESTINATION_PATH,
   TALKS_SOURCE_PATH,
@@ -9,16 +8,13 @@ import {
   isLanguageValid,
   parseTextToNiceUrl,
 } from 'common/helpers';
-import { Environment, Language } from 'common/types';
+import { Environment, Language, TagsInterface, TalkConferenceInterface, TalksInterface } from 'common/types';
 import {
-  ContentVersionInterface,
   createContentFiles,
   generateContentFileName,
   generateIdBasedOnDateString,
   parseTagToTagObject,
-  TagInterface,
 } from 'tools/blogData/helpers';
-import {EntryInterface} from "./entries";
 
 interface TalkVersionsRawInterface {
   $: {
@@ -56,7 +52,7 @@ interface TalkVersionsInterface {
   };
 }
 
-interface TalkMetaInterface {
+export interface TalkMetaInterface {
   id: string;
   url: string;
   public: boolean;
@@ -66,25 +62,15 @@ interface TalkMetaInterface {
   videoUrl?: string;
 }
 
-interface TalkVersionInterface {
+export interface TalkVersionInterface {
   title: string;
-  tags: TagInterface[];
+  tags: TagsInterface;
   conference?: TalkConferenceInterface;
   brief: string;
   content?: string;
   contentFileName?: string;
   niceUrl?: string;
 }
-
-export interface TalkConferenceInterface {
-  name: string;
-  location: string;
-}
-
-export type TalkInterface = ContentVersionInterface<TalkMetaInterface, TalkVersionInterface>;
-export type TalksInterface = {
-  [s: string]: TalkInterface[];
-};
 
 export const createTalksFiles = (environment: Environment): TalksInterface =>
   createContentFiles(
