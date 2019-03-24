@@ -1,15 +1,15 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import { mockRouteProps, mockStoreProps } from 'common/testMocks';
+import { mockRouteProps, mockStoreProps } from 'blog/common/testMocks';
 
-import AllEntriesByTag from 'containers/Entries/components/AllEntriesByTag';
+import { EntriesByTag } from '../';
 
-describe('<AllEntriesByTag/>', () => {
+describe('<EntriesByTag/>', () => {
 
   it('renders correctly', () => {
     expect(shallow(
-      <AllEntriesByTag
+      <EntriesByTag
         {...mockStoreProps}
         {...mockRouteProps}
       />,

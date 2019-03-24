@@ -29,12 +29,16 @@ export const FEED_DESTINATION_PATH = path.join(GENERATED_CONTENT_PATH, FEED_DIRE
 export const MANIFEST_DESTINATION_PATH = GENERATED_CONTENT_PATH;
 
 const entriesJsonPaths = {};
+const tagsJsonPaths = {};
+
 Object.keys(LANGUAGES).forEach((languageKey) => {
   const language = LANGUAGES[languageKey];
   entriesJsonPaths[language] = `/${ENTRIES_DIRECTORY_NAME}/entries.${language}.json`;
+  tagsJsonPaths[language] = `/${TAGS_DIRECTORY_NAME}/tags.${language}.json`;
 });
 
 export const ENTRIES_JSON_PATHS = entriesJsonPaths;
+export const TAGS_JSON_PATHS = tagsJsonPaths;
 
 export const HOME_BASE_URL = '/';
 export const ENTRY_BASE_URL = '/entry';

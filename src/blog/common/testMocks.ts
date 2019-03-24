@@ -1,17 +1,16 @@
+import { Language } from 'common/types';
+import { RouteComponentProps } from 'react-router';
+
 export const mockStoreProps = {
   languageStore: {
-    language: 'testLanguage',
-    getLanguage: () => 'testLanguage',
-    setLanguage: (language: string) => null,
+    language: 'en' as Language,
+    getLanguage: () => 'en' as Language,
+    setLanguage: (language: Language) => null,
   },
 };
 
 export const mockRouteProps = {
   match: {
-    params: {
-      tag: 'testTag',
-      date: 'testDate',
-      niceUrl: 'testNiceUrl',
-    },
+    params: {},
   },
-};
+} as RouteComponentProps<any>;

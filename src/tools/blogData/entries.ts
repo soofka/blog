@@ -5,6 +5,7 @@ import {
   LANGUAGES,
 } from 'common/constants';
 import {
+  generateIdBasedOnDateString,
   isLanguageValid,
   parseTextToNiceUrl,
 } from 'common/helpers';
@@ -12,7 +13,6 @@ import { EntriesInterface, Environment, Language, TagsInterface } from 'common/t
 import {
   createContentFiles,
   generateContentFileName,
-  generateIdBasedOnDateString,
   parseTagToTagObject,
 } from 'tools/blogData/helpers';
 

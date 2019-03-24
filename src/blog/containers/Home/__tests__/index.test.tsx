@@ -1,15 +1,15 @@
 import { shallow } from 'enzyme';
 import * as React from 'react';
 
-import { mockRouteProps, mockStoreProps } from 'common/testMocks';
+import { mockRouteProps, mockStoreProps } from 'blog/common/testMocks';
 
-import AllEntriesByDate from 'containers/Entries/components/AllEntriesByDate';
+import { Home } from '../';
 
-describe('<AllEntriesByDate/>', () => {
+describe('<Home/>', () => {
 
   it('renders correctly', () => {
     expect(shallow(
-      <AllEntriesByDate
+      <Home
         {...mockStoreProps}
         {...mockRouteProps}
       />,

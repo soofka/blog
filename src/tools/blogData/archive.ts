@@ -1,5 +1,5 @@
 import { ARCHIVE_DESTINATION_PATH } from 'common/constants';
-import { ArchiveInterface, ArchivesInterface, EntriesInterface, EntryInterface, Language } from 'common/types';
+import { ArchiveInterface, ArchiveItemInterface, EntriesInterface, EntryInterface, Language } from 'common/types';
 import { forceCreateDirectory, saveDataFile } from './helpers';
 
 export const createArchiveFiles = (entries: EntriesInterface) => {
@@ -16,7 +16,7 @@ export const createArchiveFiles = (entries: EntriesInterface) => {
   });
 };
 
-const getArchiveFromEntry = (entry: EntryInterface): ArchiveInterface => ({
+const getArchiveFromEntry = (entry: EntryInterface): ArchiveItemInterface => ({
   id: entry.id,
   title: entry.title,
   niceUrl: entry.niceUrl,
@@ -26,5 +26,5 @@ const getArchiveFromEntry = (entry: EntryInterface): ArchiveInterface => ({
 const createArchiveDestinationDirectory = (): void =>
   forceCreateDirectory(ARCHIVE_DESTINATION_PATH);
 
-const saveArchiveFile = (archive: ArchivesInterface, language: Language): void =>
+const saveArchiveFile = (archive: ArchiveInterface, language: Language): void =>
   saveDataFile(ARCHIVE_DESTINATION_PATH, archive, language, 'archive');

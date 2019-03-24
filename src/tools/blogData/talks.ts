@@ -5,6 +5,7 @@ import {
   TALKS_SOURCE_PATH,
 } from 'common/constants';
 import {
+  generateIdBasedOnDateString,
   isLanguageValid,
   parseTextToNiceUrl,
 } from 'common/helpers';
@@ -12,7 +13,6 @@ import { Environment, Language, TagsInterface, TalkConferenceInterface, TalksInt
 import {
   createContentFiles,
   generateContentFileName,
-  generateIdBasedOnDateString,
   parseTagToTagObject,
 } from 'tools/blogData/helpers';
 

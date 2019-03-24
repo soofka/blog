@@ -27,10 +27,10 @@ export interface TagInterface {
 }
 export interface TagsInterface extends Array<TagInterface> {}
 
-export interface ArchiveInterface {
+export interface ArchiveItemInterface {
   id: string;
   title: string;
   niceUrl: string;
   created: string;
 }
-export interface ArchivesInterface extends Array<ArchiveInterface> {}
+export interface ArchiveInterface extends Array<ArchiveItemInterface> {}

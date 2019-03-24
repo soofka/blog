@@ -9,7 +9,7 @@ import { EntriesList } from 'blog/components/EntriesList';
 import { ErrorBox } from 'blog/components/ErrorBox';
 import { Label } from 'blog/components/Label';
 import { LoadingCover } from 'blog/components/LoadingCover';
-import { EntriesMeta } from 'blog/components/Meta/components/EntriesMeta';
+import { HomeMeta } from './meta';
 
 import {
   getEntries,
@@ -19,23 +19,17 @@ import {
 
 import { EntryInterface } from 'common/types';
 
-export interface EntriesParamsInterface {
-  tag?: string;
-  date?: string;
-  niceUrl?: string;
-}
-
-export interface EntriesPropsInterface extends RouteComponentProps<EntriesParamsInterface> {
+export interface HomePropsInterface extends RouteComponentProps<any> {
   languageStore?: LanguageStoreInterface;
 }
 
-interface EntriesStateInterface {
+interface HomeStateInterface {
   entries: EntryInterface[];
   loading: boolean;
 }
 
-export class EntriesContainer extends React.Component<EntriesPropsInterface, EntriesStateInterface> {
-  constructor(props: EntriesPropsInterface) {
+export class HomeContainer extends React.Component<HomePropsInterface, HomeStateInterface> {
+  constructor(props: HomePropsInterface) {
     super(props);
     this.state = { entries: undefined, loading: false };
 
@@ -65,7 +59,6 @@ export class EntriesContainer extends React.Component<EntriesPropsInterface, Ent
   }
 
   render() {
-    const { match: { params } } = this.props;
     const { entries, loading } = this.state;
 
     if (loading) {
@@ -82,38 +75,19 @@ export class EntriesContainer extends React.Component<EntriesPropsInterface, Ent
       );
     }
 
-    const entriesFiltered = this.filterEntries(
-      prepareEntries(entries),
-      params,
-    );
-
     return (
       <div>
-        {this.getMeta()}
+        <HomeMeta />
         <EntriesList
-          entries={entriesFiltered}
-          fullEntry={this.isEntryFull()}
+          entries={filterPrivateEntries(entries)}
+          fullEntry={false}
         />
       </div>
     );
   }
-
-  getMeta(): JSX.Element {
-    return <EntriesMeta/>;
-  }
-
-  filterEntries(entries: EntryInterface[], params: EntriesParamsInterface): EntryInterface[] {
-    return entries;
-  }
-
-  isEntryFull(): boolean {
-    return false;
-  }
 }
-
-const prepareEntries = (entries: EntryInterface[]): EntryInterface[] => filterPrivateEntries(entries);
 
 const filterPrivateEntries = (entries: EntryInterface[]): EntryInterface[] =>
   entries.filter((entry: EntryInterface) => entry.public);
 
-export const Entries = inject('languageStore')(EntriesContainer);
+export const Home = inject('languageStore')(HomeContainer);
