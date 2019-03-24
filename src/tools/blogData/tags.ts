@@ -1,41 +1,48 @@
 import { TAGS_DESTINATION_PATH } from 'common/constants';
-import { forceCreateDirectory, saveDataFile } from './helpers';
+import { Language } from 'common/types';
+import { EntriesInterface, EntryInterface } from './entries';
+import { forceCreateDirectory, saveDataFile, TagInterface } from './helpers';
+import { TalkInterface, TalksInterface } from './talks';
 
-export const createTagsFiles = (entries, talks) => {
+interface CountedTagInterface extends TagInterface {
+  count: number;
+}
+
+export const createTagsFiles = (entries: EntriesInterface, talks: TalksInterface): void => {
   createTagsDestinationDirectory();
   const tags = {};
 
-  Object.keys(entries).forEach((language) => {
+  Object.keys(entries).forEach((language: Language) => {
     if (!tags.hasOwnProperty(language)) {
       tags[language] = [];
     }
-    entries[language].forEach((entry) => {
+    entries[language].forEach((entry: EntryInterface) => {
       tags[language] = combineTagsArrays(tags[language], entry.tags);
     });
   });
 
-  Object.keys(talks).forEach((language) => {
+  Object.keys(talks).forEach((language: Language) => {
     if (!tags.hasOwnProperty(language)) {
       tags[language] = [];
     }
-    talks[language].forEach((talk) => {
+    talks[language].forEach((talk: TalkInterface) => {
       tags[language] = combineTagsArrays(tags[language], talk.tags);
     });
   });
 
-  Object.keys(tags).forEach((language) => {
+  Object.keys(tags).forEach((language: Language) => {
     saveTagsFile(tags[language], language);
   });
 };
 
-const combineTagsArrays = (allTags, tagsToBeAdded) => {
+const combineTagsArrays = (allTags: CountedTagInterface[], tagsToBeAdded: TagInterface[]): CountedTagInterface[] => {
   const newAllTags = allTags ? allTags.slice() : [];
   const uniqueTagsToBeAdded = tagsToBeAdded.filter((tag1, index) =>
     tagsToBeAdded.findIndex((tag2) => tag1.id === tag2.id) === index,
   );
 
-  uniqueTagsToBeAdded.forEach((tagToBeAdded) => {
-    const existingTagIndex = newAllTags.findIndex((existingTag) => existingTag.id === tagsToBeAdded.id);
+  uniqueTagsToBeAdded.forEach((tagToBeAdded: TagInterface) => {
+    const existingTagIndex = newAllTags.findIndex((existingTag) => existingTag.id === tagToBeAdded.id);
 
     if (existingTagIndex === -1) {
       newAllTags.push({
@@ -50,12 +57,11 @@ const combineTagsArrays = (allTags, tagsToBeAdded) => {
       }
     }
   });
-
   return newAllTags;
 };
 
-const createTagsDestinationDirectory = () =>
+const createTagsDestinationDirectory = (): void =>
   forceCreateDirectory(TAGS_DESTINATION_PATH);
 
-const saveTagsFile = (tags, language) =>
-  saveDataFile(TAGS_DESTINATION_PATH, tags, 'tags', language);
+const saveTagsFile = (tags: CountedTagInterface[], language: Language): void =>
+  saveDataFile(TAGS_DESTINATION_PATH, tags, language, 'tags');

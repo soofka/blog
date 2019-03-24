@@ -2,7 +2,7 @@
   public="true"
   created="2019-02-08"
   image="train-leaving.jpg"
-  slidesUrl="how-to-improve-code-quality-with-property-based-testing/"
+  slides="how-to-improve-code-quality-with-property-based-testing/"
 >
   <version language="en">
     <title>How to improve code quality with property-based testing</title>

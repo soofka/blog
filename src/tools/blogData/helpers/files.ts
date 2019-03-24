@@ -1,18 +1,20 @@
+import { Language } from 'common/types';
 import * as fs from 'fs';
 import * as path from 'path';
 import * as rimraf from 'rimraf';
+import { ContentFileExtension, ContentFileType } from './content';
 
 export const saveDataFile = (
   destinationDirectoryPath: string,
-  data: string,
-  contentFileType,
-  language = undefined,
-  contentFileExtension = 'json',
+  data: {} | string,
+  language: Language = undefined,
+  contentFileType: ContentFileType,
+  contentFileExtension: ContentFileExtension = 'json',
 ): void => {
   const fileName = `${language ? `${contentFileType}.${language}` : contentFileType}.${contentFileExtension}`;
   saveFile(
     path.join(destinationDirectoryPath, fileName),
-    contentFileExtension === 'json' ? JSON.stringify(data) : data,
+    contentFileExtension === 'json' ? JSON.stringify(data) : data as string,
   );
 };
 

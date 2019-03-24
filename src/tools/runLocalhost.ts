@@ -4,9 +4,10 @@ import * as webpack from 'webpack';
 import * as webpackDevMiddleware from 'webpack-dev-middleware';
 import * as webpackHotMiddleware from 'webpack-hot-middleware';
 
+import { Environment } from 'common/types';
 import { getWebpackConfig } from './getWebpackConfig';
 
-export const runLocalhost = (environment = 'dev') => {
+export const runLocalhost = (environment: Environment = 'dev') => {
   const config = getWebpackConfig(environment);
   const compiler = webpack(config);
 
@@ -58,4 +59,4 @@ export const runLocalhost = (environment = 'dev') => {
   });
 };
 
-runLocalhost(process.env.env);
+runLocalhost(process.env.env as Environment);

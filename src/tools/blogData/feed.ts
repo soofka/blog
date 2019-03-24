@@ -1,17 +1,19 @@
 import { BLOG_CONFIG, DEFAULT_LANGUAGE, FEED_DESTINATION_PATH, IMAGES_DIRECTORY_NAME } from 'common/constants';
+import { Language } from 'common/types';
 import { Feed } from 'feed';
+import { EntriesInterface, EntryInterface } from './entries';
 import { forceCreateDirectory, getXmlBuilder, getXmlParser, saveDataFile } from './helpers';
 
-export const createFeedFiles = (entries) => {
+export const createFeedFiles = (entries: EntriesInterface): void => {
   createFeedDestinationDirectory();
 
   const xmlParser = getXmlParser();
   const xmlBuilder = getXmlBuilder();
 
-  Object.keys(entries).forEach((language) => {
+  Object.keys(entries).forEach((language: Language) => {
     const feedGenerator = getFeedGenerator(language);
 
-    entries[language].forEach((entry) => {
+    entries[language].forEach((entry: EntryInterface) => {
       feedGenerator.addItem({
         id: entry.id,
         title: entry.title,
@@ -36,7 +38,7 @@ export const createFeedFiles = (entries) => {
   });
 };
 
-const getFeedGenerator = (language) => {
+const getFeedGenerator = (language: Language): Feed => {
   const feedGenerator = new Feed({
     title: BLOG_CONFIG.title,
     description: BLOG_CONFIG.description,
@@ -59,16 +61,16 @@ const getFeedGenerator = (language) => {
   return feedGenerator;
 };
 
-const createFeedDestinationDirectory = () =>
+const createFeedDestinationDirectory = (): void =>
   forceCreateDirectory(FEED_DESTINATION_PATH);
 
-const saveFeedFile = (feed, language) => {
+const saveFeedFile = (feed: string, language: Language) => {
   const contentFileType = 'rss';
   const contentFileExtension = 'xml';
 
-  saveDataFile(FEED_DESTINATION_PATH, feed, contentFileType, language, contentFileExtension);
+  saveDataFile(FEED_DESTINATION_PATH, feed, language, contentFileType, contentFileExtension);
 
   if (language === DEFAULT_LANGUAGE) {
-    saveDataFile(FEED_DESTINATION_PATH, feed, contentFileType, undefined, contentFileExtension);
+    saveDataFile(FEED_DESTINATION_PATH, feed, undefined, contentFileType, contentFileExtension);
   }
 };

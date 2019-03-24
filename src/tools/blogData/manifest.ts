@@ -1,7 +1,22 @@
 import { BLOG_CONFIG, MANIFEST_DESTINATION_PATH } from 'common/constants';
 import { saveDataFile } from './helpers';
 
-export const createManifestFile = () =>
+interface ManifestInterface {
+  name: string;
+  short_name: string;
+  start_url: string;
+  display: 'fullscreen' | 'standalone' | 'minimal-ui' | 'browser';
+  background_color: string;
+  theme_color: string;
+  description: string;
+  icons: {
+    sizes: string;
+    type: string;
+    src: string;
+  }[];
+}
+
+export const createManifestFile = (): void =>
   saveManifestFile({
     name: BLOG_CONFIG.title,
     short_name: BLOG_CONFIG.title,
@@ -17,5 +32,5 @@ export const createManifestFile = () =>
     })),
   });
 
-export const saveManifestFile = (manifest) =>
-  saveDataFile(MANIFEST_DESTINATION_PATH, manifest, 'manifest');
+export const saveManifestFile = (manifest: ManifestInterface): void =>
+  saveDataFile(MANIFEST_DESTINATION_PATH, manifest as {}, undefined, 'manifest');

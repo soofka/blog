@@ -2,8 +2,8 @@
   public="true"
   created="2017-12-07"
   image="train-leaving.jpg"
+  slides="progressive_web_apps__case_study.pdf"
   videoUrl="https://www.youtube.com/watch?v=n1Be_RzXzjQ"
-  slidesUrl="progressive_web_apps__case_study.pdf"
 >
   <version language="en">
     <title>Modern web development: React PWA with Push Notifications (case study)</title>

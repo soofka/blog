@@ -2,8 +2,8 @@
   public="true"
   created="2017-05-25"
   image="train-leaving.jpg"
+  slides="practical_tips_for_optimizing_javascript.pdf"
   videoUrl="https://www.youtube.com/watch?v=Gl8vucNqtZQ"
-  slidesUrl="practical_tips_for_optimizing_javascript.pdf"
 >
   <version language="en">
     <title>Practical tips for JavaScript optimisation</title>

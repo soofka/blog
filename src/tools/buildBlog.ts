@@ -1,7 +1,8 @@
+import { Environment, Mode } from 'common/types';
 import * as webpack from 'webpack';
 import { getWebpackConfig } from './getWebpackConfig';
 
-export const buildBlog = (environment, mode) => {
+export const buildBlog = (environment: Environment, mode: Mode) => {
   webpack(getWebpackConfig(environment, mode), (error, stats) => {
     if (error) {
       throw error;
@@ -10,4 +11,4 @@ export const buildBlog = (environment, mode) => {
   });
 };
 
-buildBlog(process.env.env, process.env.mode);
+buildBlog(process.env.env as Environment, process.env.mode as Mode);

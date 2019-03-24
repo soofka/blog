@@ -11,8 +11,9 @@ import * as WebpackBundleAnalyzerPlugin from 'webpack-bundle-analyzer';
 import * as WebpackShellPlugin from 'webpack-shell-plugin';
 
 import { BLOG_CONFIG, GENERATED_CONTENT_PATH, STATIC_CONTENT_PATH } from 'common/constants';
+import { Environment, Mode } from 'common/types';
 
-export const getWebpackConfig = (environment = 'dev', mode = null) => {
+export const getWebpackConfig = (environment: Environment = 'dev', mode: Mode = 'normal') => {
   const devEnv = environment === 'dev';
   const audit = mode === 'audit';
 
@@ -67,7 +68,7 @@ const getResolve = () => ({
   ],
 });
 
-const getModule = (devEnv) => {
+const getModule = (devEnv: boolean) => {
   const typeScriptLoaders = [];
 
   if (!devEnv) {
@@ -124,8 +125,7 @@ const getModule = (devEnv) => {
   };
 };
 
-// @todo: add paths from constants to whole config
-const getPlugins = (devEnv, audit) => {
+const getPlugins = (devEnv: boolean, audit: boolean) => {
   const staticStyles = [
     '/styles/normalize.css',
     '/scripts/highlight/styles/dracula.css',
@@ -260,4 +260,4 @@ const getStats = () => ({
   publicPath: false,
 });
 
-const getMode = (devEnv) => devEnv ? 'development' : 'production';
+const getMode = (devEnv: boolean) => devEnv ? 'development' : 'production';

@@ -1,18 +1,9 @@
-// import { Language } from '../../../common/types';
-// import {
-//   IContentData,
-//   IContentDataRaw,
-//   IContentVersions,
-// } from './types';
 import {
   IMAGES_DIRECTORY_NAME,
   SLIDES_DIRECTORY_NAME,
 } from 'common/constants';
-// import {
-//   ContentFileType,
-//   Environment,
-// } from '../../types';
 import { isObject, parseTextToNiceUrl } from 'common/helpers';
+import { Environment, Language } from 'common/types';
 import * as path from 'path';
 import {
   createDirectory,
@@ -26,6 +17,10 @@ import {
 } from './';
 import { getXmlParser } from './xml';
 
+export type ContentVersionInterface<A, B> = A & Exclude<B, 'content'>;
+export type ContentFileType = 'archive' | 'entries' | 'manifest' | 'rss' | 'tags' | 'talks';
+export type ContentFileExtension = 'json' | 'xml';
+
 export const CONTENT_TO_HTML_MAP = new Map([
   ['<youtube-video>', '<div class="video-container"><div class="video-container--wrapper">'],
   ['</youtube-video>', '</div></div>'],
@@ -38,13 +33,15 @@ export const CONTENT_TO_HTML_MAP = new Map([
 const STANDARD_CONTENT_TO_XML_MAP_ELEMENTS = ['brief', 'content'];
 const CONTENT_FILE_EXTENSION = 'html';
 
+type dupa<A, B> = (asd: A) => B;
+
 export const createContentFiles = (
   sourceDirectoryPath: string,
   destinationDirectoryPath: string,
-  contentType,
-  environment,
+  contentFileType: ContentFileType,
+  environment: Environment,
   formatContentData: (
-    contentDataRaw,
+    contentDataRaw: any,
     contentFileName?: string,
   ) => any,
   entryToXmlMapElements?: string[],
@@ -100,8 +97,8 @@ export const createContentFiles = (
     });
   });
 
-  Object.keys(contents).forEach((language) => {
-    saveDataFile(destinationDirectoryPath, contents[language], contentType, language);
+  Object.keys(contents).forEach((language: Language) => {
+    saveDataFile(destinationDirectoryPath, contents[language], language, contentFileType);
   });
 
   return contents;

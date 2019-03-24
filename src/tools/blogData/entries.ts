@@ -8,14 +8,69 @@ import {
   isLanguageValid,
   parseTextToNiceUrl,
 } from 'common/helpers';
+import { Environment, Language } from 'common/types';
 import {
+  ContentVersionInterface,
   createContentFiles,
   generateContentFileName,
   generateIdBasedOnDateString,
   parseTagToTagObject,
+  TagInterface,
 } from 'tools/blogData/helpers';
 
-export const createEntriesFiles = (environment) =>
+interface EntryVersionsRawInterface {
+  $: {
+    public: boolean;
+    created: string;
+    updated: string;
+    image: string;
+  };
+  version: {
+    $: {
+      language: Language;
+    };
+    title: string;
+    tags: {
+      $: {
+        list: string;
+      };
+    };
+    brief: string;
+    content: string;
+  }[];
+}
+
+interface EntryVersionsInterface {
+  meta: EntryMetaInterface;
+  versions: {
+    [s: string]: EntryVersionInterface;
+  };
+}
+
+interface EntryMetaInterface {
+  id: string;
+  url: string;
+  public: boolean;
+  created: string;
+  updated: string;
+  imageUrl: string;
+}
+
+interface EntryVersionInterface {
+  title: string;
+  tags: TagInterface[];
+  brief: string;
+  content?: string;
+  contentFileName?: string;
+  niceUrl?: string;
+}
+
+export type EntryInterface = ContentVersionInterface<EntryMetaInterface, EntryVersionInterface>;
+export type EntriesInterface = {
+  [s: string]: EntryInterface[];
+};
+
+export const createEntriesFiles = (environment: Environment): EntriesInterface =>
   createContentFiles(
     ENTRIES_SOURCE_PATH,
     ENTRIES_DESTINATION_PATH,
@@ -24,13 +79,13 @@ export const createEntriesFiles = (environment) =>
     formatEntryData,
   );
 
-const formatEntryData = (entryDataRaw) => {
+const formatEntryData = (entryDataRaw: EntryVersionsRawInterface): EntryVersionsInterface => {
   const id = generateIdBasedOnDateString(entryDataRaw.$.created);
-  const entryData = {
+  const entryData: EntryVersionsInterface = {
     meta: {
       id,
       url: `/${id}`,
-      public: !!entryDataRaw.$.public,
+      public: entryDataRaw.$.public,
       created: entryDataRaw.$.created,
       updated: entryDataRaw.$.updated,
       imageUrl: `/${IMAGES_DIRECTORY_NAME}/${entryDataRaw.$.image}`,

@@ -1,6 +1,12 @@
 import { generateIdBasedOnCharacters } from './';
 
-export const parseTagToTagObject = (tag: string) => {
+export interface TagInterface {
+  id: string;
+  url: string;
+  name: string;
+}
+
+export const parseTagToTagObject = (tag: string): TagInterface => {
   const id = generateIdBasedOnCharacters(tag);
   return {
     id,
