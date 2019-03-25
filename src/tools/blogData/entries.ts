@@ -9,7 +9,7 @@ import {
   isLanguageValid,
   parseTextToNiceUrl,
 } from 'common/helpers';
-import { EntriesInterface, Environment, Language, TagsInterface } from 'common/types';
+import { EntriesInterface, Environment, Language, TagInterface } from 'common/types';
 import {
   createContentFiles,
   generateContentFileName,
@@ -56,7 +56,7 @@ export interface EntryMetaInterface {
 
 export interface EntryVersionInterface {
   title: string;
-  tags: TagsInterface;
+  tags: TagInterface[];
   brief: string;
   content?: string;
   contentFileName?: string;

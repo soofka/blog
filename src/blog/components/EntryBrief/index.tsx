@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 
 import { Label } from 'blog/components/Label';
-import { getImageFilePath } from 'common/helpers';
 
 import {
   StyledEntryBriefContainer,
@@ -12,20 +11,20 @@ import {
 
 export interface EntryBriefInterface {
   text: string;
-  imageFileName?: string;
+  imageUrl?: string;
 }
 
 interface EntryBriefPropsInterface extends EntryBriefInterface {
   moreButtonLink?: string;
 }
 
+// @todo: fix links
 export const EntryBrief = (props: EntryBriefPropsInterface): JSX.Element => {
-  const { text, imageFileName, moreButtonLink } = props;
-  const imageUrl = getImageFilePath(imageFileName);
+  const { text, imageUrl, moreButtonLink } = props;
 
   return (
     <div>
-      {imageFileName &&
+      {imageUrl &&
         <StyledEntryImageWrapper>
           <StyledEntryImage
             src={imageUrl}

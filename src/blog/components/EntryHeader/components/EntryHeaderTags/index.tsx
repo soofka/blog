@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
+import { TagInterface } from 'common/types';
 import { StyledEntryHeaderTags } from './styled';
 
 interface EntryHeaderTagsPropsInterface {
-  tags: string[];
+  tags: TagInterface[];
 }
 
 export const EntryHeaderTags = (props: EntryHeaderTagsPropsInterface): JSX.Element => {
@@ -13,13 +14,13 @@ export const EntryHeaderTags = (props: EntryHeaderTagsPropsInterface): JSX.Eleme
   // @todo: fix link
   return (
     <StyledEntryHeaderTags>
-      {tags.map((tag: string, index: number) => {
+      {tags.map((tag: TagInterface, index: number) => {
         return (
           <Link
             key={index}
             to={''}
           >
-            {tag}
+            {tag.name}
           </Link>
         );
       })}

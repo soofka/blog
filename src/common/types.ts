@@ -25,7 +25,6 @@ export interface TagInterface {
   url: string;
   name: string;
 }
-export interface TagsInterface extends Array<TagInterface> {}
 
 export interface ArchiveItemInterface {
   id: string;

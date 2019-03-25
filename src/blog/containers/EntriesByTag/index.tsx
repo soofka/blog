@@ -110,10 +110,7 @@ export class EntriesByTagContainer extends React.Component<EntriesByTagPropsInte
       : (
         <div>
           <EntriesByTagMeta tag={tag} />
-          <EntriesList
-            entries={filterPrivateEntries(entries)}
-            fullEntry={false}
-          />
+          <EntriesList entries={filterPrivateEntries(entries)} />
         </div>
       );
   }

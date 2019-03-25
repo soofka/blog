@@ -9,7 +9,7 @@ import {
   isLanguageValid,
   parseTextToNiceUrl,
 } from 'common/helpers';
-import { Environment, Language, TagsInterface, TalkConferenceInterface, TalksInterface } from 'common/types';
+import { Environment, Language, TagInterface, TalkConferenceInterface, TalksInterface } from 'common/types';
 import {
   createContentFiles,
   generateContentFileName,
@@ -64,7 +64,7 @@ export interface TalkMetaInterface {
 
 export interface TalkVersionInterface {
   title: string;
-  tags: TagsInterface;
+  tags: TagInterface[];
   conference?: TalkConferenceInterface;
   brief: string;
   content?: string;

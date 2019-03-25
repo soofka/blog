@@ -78,10 +78,7 @@ export class HomeContainer extends React.Component<HomePropsInterface, HomeState
     return (
       <div>
         <HomeMeta />
-        <EntriesList
-          entries={filterPrivateEntries(entries)}
-          fullEntry={false}
-        />
+        <EntriesList entries={filterPrivateEntries(entries)} />
       </div>
     );
   }
