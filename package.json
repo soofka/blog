@@ -47,7 +47,7 @@
     "postinstall": "npm run check-version"
   },
   "dependencies": {
-    "axios": "^0.16.0",
+    "axios": "^0.18.1",
     "babel-polyfill": "^6.26.0",
     "js-cookie": "^2.2.0",
     "mobx": "^5.0.3",
