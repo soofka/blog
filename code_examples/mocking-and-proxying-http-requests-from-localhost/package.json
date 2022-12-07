@@ -2,7 +2,7 @@
   "name": "@soofka/code-examples--http-request-from-localhost",
   "version": "1.0.1",
   "devDependencies": {
-    "express": "^4.16.3",
+    "express": "^4.18.2",
     "http-proxy": "^1.17.0",
     "webpack": "^4.1.1",
     "webpack-cli": "^3.0.8",
